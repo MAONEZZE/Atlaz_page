@@ -14,7 +14,7 @@ const stats = [
     value: 50,
     prefix: "+R$",
     suffix: "M",
-    label: "Movimentados",
+    label: "Gerados",
     sublabel: "em vendas de alto valor",
   },
   {
