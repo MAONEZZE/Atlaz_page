@@ -622,9 +622,9 @@ function Home() {
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$sections$2f$ImpactPhrase$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["ImpactPhrase"], {
-                        text: "Você está a uma decisão de mudar a trajetória",
+                        text: "Você está a uma decisão de mudar o patamar comercial",
                         highlight: "do seu negócio.",
-                        subtext: "Empresários que crescem são os que param de improvisar e constroem com processo."
+                        subtext: "Empresários que crescem com consistência são os que entendem a lógica das vendas de alto valor e constroem um comercial capaz de sustentar esse crescimento."
                     }, void 0, false, {
                         fileName: "[project]/app/page.tsx",
                         lineNumber: 46,
@@ -636,8 +636,8 @@ function Home() {
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$sections$2f$ImpactPhrase$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["ImpactPhrase"], {
-                        text: "Crescimento real começa quando você decide",
-                        highlight: "parar de reagir e começar a construir."
+                        text: "Crescimento real começa quando você deixa de buscar soluções isoladas e passa a construir",
+                        highlight: "processo, posicionamento e direção comercial."
                     }, void 0, false, {
                         fileName: "[project]/app/page.tsx",
                         lineNumber: 56,

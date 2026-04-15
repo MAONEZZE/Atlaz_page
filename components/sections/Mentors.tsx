@@ -6,7 +6,7 @@ import Image from "next/image";
 const mentors = [
   {
     name: "Jacob Lima",
-    role: "Co-fundador da Atlaz",
+    role: "Fundador da Atlaz",
     photo: "/mentores/jacob.jpg",
     badges: ["R$2M no 1º Ano", "500+ Clientes Ativos"],
     highlights: [
@@ -19,9 +19,9 @@ const mentors = [
     name: "Mariana Chinarelli",
     role: "Co-fundadora da Atlaz",
     photo: "/mentores/mari.jpg",
-    badges: ["ESPM", "R$50M+ Movimentados"],
+    badges: ["ESPM", "R$50M+ Gerados"],
     highlights: [
-      "R$ 50M+ movimentados em lançamentos digitais",
+      "R$ 50M+ gerados em lançamentos digitais",
       "Formada pela ESPM",
       "Projetos com Flávio Augusto, Caio Carneiro e Joel Jota",
     ],
@@ -70,7 +70,7 @@ export function Mentors() {
           className="text-center mb-14"
         >
           <blockquote className="font-heading italic text-white/45 text-lg max-w-lg mx-auto leading-relaxed">
-            Três perspectivas de mercado combinadas em uma única tarde de imersão estratégica.
+            Três perspectivas complementares, combinadas em uma tarde de imersão.
           </blockquote>
         </motion.div>
 

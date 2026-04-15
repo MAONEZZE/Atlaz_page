@@ -8,25 +8,25 @@ const cards = [
     icon: Eye,
     label: "Diagnóstico",
     title: "A Ilusão",
-    description: "Por que vender mais barato não resolve — e onde a maioria dos negócios trava.",
-  },
-  {
-    icon: Layers,
-    label: "Posicionamento",
-    title: "A Fundação",
-    description: "Como construir percepção de valor real e cobrar mais sem perder clientes.",
+    description: "Por que baixar preço não melhora a performance comercial de um negócio e só revela um comercial frágil.",
   },
   {
     icon: TrendingUp,
     label: "Operação Comercial",
     title: "O Processo",
-    description: "Estrutura para vender com consistência e fechar contratos de alto valor.",
+    description: "Como uma venda de alto valor é construída do início ao fim, da escolha do canal de captação à condução da conversa, do pitch ao fechamento.",
+  },
+  {
+    icon: Layers,
+    label: "Posicionamento",
+    title: "A Fundação",
+    description: "O que o mercado precisa perceber sobre o seu negócio antes da venda, para que preço deixe de ser objeção e valor passe a conduzir a decisão.",
   },
   {
     icon: Compass,
     label: "Visão Estratégica",
     title: "O Horizonte",
-    description: "Crescimento sustentável de longo prazo com decisões com critério e direção.",
+    description: "Como decisões estratégicas moldam um comercial mais sólido, mais coerente e mais preparado para crescer no longo prazo.",
   },
 ];
 

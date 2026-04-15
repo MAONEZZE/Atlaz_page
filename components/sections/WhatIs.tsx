@@ -12,7 +12,7 @@ const jornada = [
     items: [
       "Por que vender mais barato não resolve",
       "O que impede o salto para alto valor",
-      "Onde a maioria dos negócios trava",
+      "Onde o comercial realmente se fragiliza",
     ],
     dark: true,
   },
@@ -34,9 +34,9 @@ const jornada = [
     subtitle: "Posicionamento",
     icon: Layers,
     items: [
-      "Construindo percepção de valor real",
-      "Narrativa, autoridade e oferta de alto valor",
-      "Como cobrar mais sem perder clientes",
+      "Como construir valor percebido antes da proposta",
+      "O que faz narrativa, autoridade e oferta trabalharem juntas na venda",
+      "Como sustentar preços mais altos na tomada de decisão do cliente",
     ],
     dark: true,
   },
@@ -47,7 +47,7 @@ const jornada = [
     icon: Compass,
     items: [
       "Crescimento sustentável de longo prazo",
-      "Decisões com critério e direção",
+      "Decisões, critérios e direção",
       "O negócio que você quer construir",
     ],
     dark: false,

@@ -210,7 +210,7 @@ export function ApplicationForm() {
             </div>
             {discounted && (
               <p className="text-green-400/70 text-xs mt-2">
-                Código aplicado com sucesso — inscrição gratuita!
+                Código aplicado com sucesso
               </p>
             )}
           </div>
@@ -270,7 +270,7 @@ export function ApplicationForm() {
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2 w-full py-4 rounded-xl bg-[#7C3AED] text-white font-semibold text-base hover:bg-[#6D28D9] transition-all duration-200 cursor-pointer shadow-[0_0_30px_rgba(124,58,237,0.25)] hover:shadow-[0_0_50px_rgba(124,58,237,0.4)]"
               >
-                Garantir vaga gratuita
+                garantir ingresso de convidado
                 <ArrowRight className="w-4 h-4" />
               </a>
             ) : (

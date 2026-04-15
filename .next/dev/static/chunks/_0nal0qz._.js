@@ -474,7 +474,7 @@ function Hero() {
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                     className: "text-white",
-                                    children: "O medo de ficar onde está deve ser maior"
+                                    children: "O medo de ficar onde está, deve ser maior"
                                 }, void 0, false, {
                                     fileName: "[project]/components/sections/Hero.tsx",
                                     lineNumber: 84,
@@ -508,37 +508,25 @@ function Hero() {
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                             className: "text-xl md:text-2xl text-white/100 mb-10 leading-relaxed max-w-2xl mx-auto font-medium",
                             children: [
-                                "Imersão presencial de vendas de alto valor para empresários que querem crescer com",
-                                " ",
+                                "A imersão para empresários que querem dominar o",
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                     className: "text-[#BF78D6] font-semibold",
-                                    children: "processo"
+                                    children: " processo de vendas de alto valor "
                                 }, void 0, false, {
                                     fileName: "[project]/components/sections/Hero.tsx",
                                     lineNumber: 93,
                                     columnNumber: 13
                                 }, this),
-                                ",",
-                                " ",
+                                "e",
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                     className: "text-[#BF78D6] font-semibold",
-                                    children: "posicionamento"
-                                }, void 0, false, {
-                                    fileName: "[project]/components/sections/Hero.tsx",
-                                    lineNumber: 94,
-                                    columnNumber: 13
-                                }, this),
-                                " e",
-                                " ",
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                    className: "text-[#BF78D6] font-semibold",
-                                    children: "direção estratégica"
+                                    children: " aumentar a performance comercial "
                                 }, void 0, false, {
                                     fileName: "[project]/components/sections/Hero.tsx",
                                     lineNumber: 95,
                                     columnNumber: 13
                                 }, this),
-                                "."
+                                " e do negócio."
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/sections/Hero.tsx",
@@ -564,14 +552,14 @@ function Hero() {
                                             className: "w-4 h-4 text-[#7C3AED]"
                                         }, void 0, false, {
                                             fileName: "[project]/components/sections/Hero.tsx",
-                                            lineNumber: 112,
+                                            lineNumber: 113,
                                             columnNumber: 15
                                         }, this),
                                         label
                                     ]
                                 }, label, true, {
                                     fileName: "[project]/components/sections/Hero.tsx",
-                                    lineNumber: 108,
+                                    lineNumber: 109,
                                     columnNumber: 13
                                 }, this)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -581,20 +569,20 @@ function Hero() {
                                         className: "w-2 h-2 rounded-full bg-green-400 animate-pulse flex-shrink-0"
                                     }, void 0, false, {
                                         fileName: "[project]/components/sections/Hero.tsx",
-                                        lineNumber: 117,
+                                        lineNumber: 118,
                                         columnNumber: 13
                                     }, this),
                                     "São Paulo · 13h–19h"
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/sections/Hero.tsx",
-                                lineNumber: 116,
+                                lineNumber: 117,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/sections/Hero.tsx",
-                        lineNumber: 100,
+                        lineNumber: 101,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -613,13 +601,13 @@ function Hero() {
                                         className: "w-5 h-5 group-hover:translate-x-1 transition-transform duration-200"
                                     }, void 0, false, {
                                         fileName: "[project]/components/sections/Hero.tsx",
-                                        lineNumber: 135,
+                                        lineNumber: 136,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/sections/Hero.tsx",
-                                lineNumber: 130,
+                                lineNumber: 131,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -628,13 +616,13 @@ function Hero() {
                                 children: "Ver programação"
                             }, void 0, false, {
                                 fileName: "[project]/components/sections/Hero.tsx",
-                                lineNumber: 137,
+                                lineNumber: 138,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/sections/Hero.tsx",
-                        lineNumber: 123,
+                        lineNumber: 124,
                         columnNumber: 9
                     }, this)
                 ]
@@ -647,7 +635,7 @@ function Hero() {
                 className: "absolute bottom-0 left-0 right-0 h-40 bg-gradient-to-t from-[#0D0618] to-transparent pointer-events-none"
             }, void 0, false, {
                 fileName: "[project]/components/sections/Hero.tsx",
-                lineNumber: 147,
+                lineNumber: 148,
                 columnNumber: 7
             }, this)
         ]
@@ -1197,7 +1185,7 @@ function VideoFrame() {
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                             className: "text-white/65 text-sm md:text-base leading-relaxed",
-                                            children: "Uma tarde imersiva em que empresários e experts aprendem a vender alto valor com processo, construir posicionamento real e tomar decisões com direção estratégica de longo prazo."
+                                            children: "Uma tarde imersiva para empresários que querem dominar a lógica das vendas de alto valor com processo, construção de posicionamento e direção estratégica de longo prazo."
                                         }, void 0, false, {
                                             fileName: "[project]/components/sections/VideoFrame.tsx",
                                             lineNumber: 168,
@@ -1552,25 +1540,25 @@ const cards = [
         icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$eye$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Eye$3e$__["Eye"],
         label: "Diagnóstico",
         title: "A Ilusão",
-        description: "Por que vender mais barato não resolve — e onde a maioria dos negócios trava."
-    },
-    {
-        icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$layers$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Layers$3e$__["Layers"],
-        label: "Posicionamento",
-        title: "A Fundação",
-        description: "Como construir percepção de valor real e cobrar mais sem perder clientes."
+        description: "Por que baixar preço não melhora a performance comercial de um negócio e só revela um comercial frágil."
     },
     {
         icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$trending$2d$up$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__TrendingUp$3e$__["TrendingUp"],
         label: "Operação Comercial",
         title: "O Processo",
-        description: "Estrutura para vender com consistência e fechar contratos de alto valor."
+        description: "Como uma venda de alto valor é construída do início ao fim, da escolha do canal de captação à condução da conversa, do pitch ao fechamento."
+    },
+    {
+        icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$layers$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Layers$3e$__["Layers"],
+        label: "Posicionamento",
+        title: "A Fundação",
+        description: "O que o mercado precisa perceber sobre o seu negócio antes da venda, para que preço deixe de ser objeção e valor passe a conduzir a decisão."
     },
     {
         icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$compass$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Compass$3e$__["Compass"],
         label: "Visão Estratégica",
         title: "O Horizonte",
-        description: "Crescimento sustentável de longo prazo com decisões com critério e direção."
+        description: "Como decisões estratégicas moldam um comercial mais sólido, mais coerente e mais preparado para crescer no longo prazo."
     }
 ];
 function EventCards() {
@@ -1740,16 +1728,25 @@ function QuoteSection() {
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                             className: "font-heading text-2xl md:text-3xl lg:text-4xl font-bold text-white leading-snug",
                             children: [
-                                "Vender mais é sobre fazer o básico bem feito com processo",
-                                " ",
+                                "Só existem 2 setores em uma empresa: o ",
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                     className: "text-[#B775E0]",
-                                    children: "e assim construir o caminho certo."
+                                    children: "comercial"
                                 }, void 0, false, {
                                     fileName: "[project]/components/sections/QuoteSection.tsx",
-                                    lineNumber: 24,
-                                    columnNumber: 13
-                                }, this)
+                                    lineNumber: 23,
+                                    columnNumber: 52
+                                }, this),
+                                ", e todos os outros que ",
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                    className: "text-[#B775E0]",
+                                    children: "ajudam o comercial a vender"
+                                }, void 0, false, {
+                                    fileName: "[project]/components/sections/QuoteSection.tsx",
+                                    lineNumber: 23,
+                                    columnNumber: 125
+                                }, this),
+                                "."
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/sections/QuoteSection.tsx",
@@ -1763,7 +1760,7 @@ function QuoteSection() {
                                     className: "h-px w-12 bg-[#7C3AED]/50"
                                 }, void 0, false, {
                                     fileName: "[project]/components/sections/QuoteSection.tsx",
-                                    lineNumber: 27,
+                                    lineNumber: 26,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1771,20 +1768,20 @@ function QuoteSection() {
                                     children: "Jacob Lima"
                                 }, void 0, false, {
                                     fileName: "[project]/components/sections/QuoteSection.tsx",
-                                    lineNumber: 28,
+                                    lineNumber: 27,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     className: "h-px w-12 bg-[#7C3AED]/50"
                                 }, void 0, false, {
                                     fileName: "[project]/components/sections/QuoteSection.tsx",
-                                    lineNumber: 29,
+                                    lineNumber: 28,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/sections/QuoteSection.tsx",
-                            lineNumber: 26,
+                            lineNumber: 25,
                             columnNumber: 11
                         }, this)
                     ]
@@ -1838,7 +1835,7 @@ const jornada = [
         items: [
             "Por que vender mais barato não resolve",
             "O que impede o salto para alto valor",
-            "Onde a maioria dos negócios trava"
+            "Onde o comercial realmente se fragiliza"
         ],
         dark: true
     },
@@ -1860,9 +1857,9 @@ const jornada = [
         subtitle: "Posicionamento",
         icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$layers$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Layers$3e$__["Layers"],
         items: [
-            "Construindo percepção de valor real",
-            "Narrativa, autoridade e oferta de alto valor",
-            "Como cobrar mais sem perder clientes"
+            "Como construir valor percebido antes da proposta",
+            "O que faz narrativa, autoridade e oferta trabalharem juntas na venda",
+            "Como sustentar preços mais altos na tomada de decisão do cliente"
         ],
         dark: true
     },
@@ -1873,7 +1870,7 @@ const jornada = [
         icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$compass$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Compass$3e$__["Compass"],
         items: [
             "Crescimento sustentável de longo prazo",
-            "Decisões com critério e direção",
+            "Decisões, critérios e direção",
             "O negócio que você quer construir"
         ],
         dark: false
@@ -2605,7 +2602,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$imag
 const mentors = [
     {
         name: "Jacob Lima",
-        role: "Co-fundador da Atlaz",
+        role: "Fundador da Atlaz",
         photo: "/mentores/jacob.jpg",
         badges: [
             "R$2M no 1º Ano",
@@ -2719,7 +2716,7 @@ function Mentors() {
                         className: "text-center mb-14",
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("blockquote", {
                             className: "font-heading italic text-white/45 text-lg max-w-lg mx-auto leading-relaxed",
-                            children: "Três perspectivas de mercado combinadas em uma única tarde de imersão estratégica."
+                            children: "Três perspectivas complementares, combinadas em uma tarde de imersão."
                         }, void 0, false, {
                             fileName: "[project]/components/sections/Mentors.tsx",
                             lineNumber: 72,
@@ -3639,7 +3636,7 @@ function ApplicationForm() {
                                 }, this),
                                 discounted && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                     className: "text-green-400/70 text-xs mt-2",
-                                    children: "Código aplicado com sucesso — inscrição gratuita!"
+                                    children: "Código aplicado com sucesso"
                                 }, void 0, false, {
                                     fileName: "[project]/components/sections/ApplicationForm.tsx",
                                     lineNumber: 212,
@@ -3761,7 +3758,7 @@ function ApplicationForm() {
                                     rel: "noopener noreferrer",
                                     className: "inline-flex items-center justify-center gap-2 w-full py-4 rounded-xl bg-[#7C3AED] text-white font-semibold text-base hover:bg-[#6D28D9] transition-all duration-200 cursor-pointer shadow-[0_0_30px_rgba(124,58,237,0.25)] hover:shadow-[0_0_50px_rgba(124,58,237,0.4)]",
                                     children: [
-                                        "Garantir vaga gratuita",
+                                        "garantir ingresso de convidado",
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$right$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowRight$3e$__["ArrowRight"], {
                                             className: "w-4 h-4"
                                         }, void 0, false, {

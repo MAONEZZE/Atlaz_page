@@ -44,9 +44,9 @@ export default function Home() {
 
         {/* 8. Frase impactante */}
         <ImpactPhrase
-          text="Você está a uma decisão de mudar a trajetória"
+          text="Você está a uma decisão de mudar o patamar comercial"
           highlight="do seu negócio."
-          subtext="Empresários que crescem são os que param de improvisar e constroem com processo."
+          subtext="Empresários que crescem com consistência são os que entendem a lógica das vendas de alto valor e constroem um comercial capaz de sustentar esse crescimento."
         />
 
         {/* 9. Mentores */}
@@ -54,8 +54,8 @@ export default function Home() {
 
         {/* 10. Frase impactante */}
         <ImpactPhrase
-          text="Crescimento real começa quando você decide"
-          highlight="parar de reagir e começar a construir."
+          text="Crescimento real começa quando você deixa de buscar soluções isoladas e passa a construir"
+          highlight="processo, posicionamento e direção comercial."
         />
 
         {/* 11. Para quem é essa imersão */}
