@@ -1,0 +1,19 @@
+1:"$Sreact.fragment"
+2:I[85878,["/_next/static/chunks/0fsi8lw5utejl.js","/_next/static/chunks/0d3tkj33oycf2.js","/_next/static/chunks/0.2q.q2c8r6-e.js"],"Nav"]
+3:I[37088,["/_next/static/chunks/0fsi8lw5utejl.js","/_next/static/chunks/0d3tkj33oycf2.js","/_next/static/chunks/0.2q.q2c8r6-e.js"],"SectionDock"]
+4:I[36181,["/_next/static/chunks/0fsi8lw5utejl.js","/_next/static/chunks/0d3tkj33oycf2.js","/_next/static/chunks/0.2q.q2c8r6-e.js"],"Hero"]
+5:I[95763,["/_next/static/chunks/0fsi8lw5utejl.js","/_next/static/chunks/0d3tkj33oycf2.js","/_next/static/chunks/0.2q.q2c8r6-e.js"],"VideoFrame"]
+6:I[43367,["/_next/static/chunks/0fsi8lw5utejl.js","/_next/static/chunks/0d3tkj33oycf2.js","/_next/static/chunks/0.2q.q2c8r6-e.js"],"Cases"]
+7:I[70023,["/_next/static/chunks/0fsi8lw5utejl.js","/_next/static/chunks/0d3tkj33oycf2.js","/_next/static/chunks/0.2q.q2c8r6-e.js"],"EventCards"]
+8:I[67735,["/_next/static/chunks/0fsi8lw5utejl.js","/_next/static/chunks/0d3tkj33oycf2.js","/_next/static/chunks/0.2q.q2c8r6-e.js"],"QuoteSection"]
+9:I[41600,["/_next/static/chunks/0fsi8lw5utejl.js","/_next/static/chunks/0d3tkj33oycf2.js","/_next/static/chunks/0.2q.q2c8r6-e.js"],"WhatIs"]
+a:I[76499,["/_next/static/chunks/0fsi8lw5utejl.js","/_next/static/chunks/0d3tkj33oycf2.js","/_next/static/chunks/0.2q.q2c8r6-e.js"],"Testimonials"]
+b:I[23281,["/_next/static/chunks/0fsi8lw5utejl.js","/_next/static/chunks/0d3tkj33oycf2.js","/_next/static/chunks/0.2q.q2c8r6-e.js"],"ImpactPhrase"]
+c:I[31858,["/_next/static/chunks/0fsi8lw5utejl.js","/_next/static/chunks/0d3tkj33oycf2.js","/_next/static/chunks/0.2q.q2c8r6-e.js"],"Mentors"]
+d:I[7873,["/_next/static/chunks/0fsi8lw5utejl.js","/_next/static/chunks/0d3tkj33oycf2.js","/_next/static/chunks/0.2q.q2c8r6-e.js"],"ForWhom"]
+e:I[94044,["/_next/static/chunks/0fsi8lw5utejl.js","/_next/static/chunks/0d3tkj33oycf2.js","/_next/static/chunks/0.2q.q2c8r6-e.js"],"ApplicationForm"]
+f:I[99172,["/_next/static/chunks/0fsi8lw5utejl.js","/_next/static/chunks/0d3tkj33oycf2.js","/_next/static/chunks/0.2q.q2c8r6-e.js"],"Footer"]
+10:I[97367,["/_next/static/chunks/0fsi8lw5utejl.js","/_next/static/chunks/0d3tkj33oycf2.js"],"OutletBoundary"]
+11:"$Sreact.suspense"
+0:{"rsc":["$","$1","c",{"children":[[["$","$L2",null,{}],["$","$L3",null,{}],["$","main",null,{"children":[["$","$L4",null,{}],["$","$L5",null,{}],["$","$L6",null,{}],["$","$L7",null,{}],["$","$L8",null,{}],["$","$L9",null,{}],["$","div",null,{"id":"depo","children":["$","$La",null,{}]}],["$","$Lb",null,{"text":"Você está a uma decisão de mudar o patamar comercial","highlight":"do seu negócio.","subtext":"Empresários que crescem com consistência são os que entendem a lógica das vendas de alto valor e constroem um comercial capaz de sustentar esse crescimento."}],["$","$Lc",null,{}],["$","$Lb",null,{"text":"Crescimento real começa quando você deixa de buscar soluções isoladas e passa a construir","highlight":"processo, posicionamento e direção comercial."}],["$","div",null,{"id":"forwhom","children":["$","$Ld",null,{}]}],["$","$Le",null,{}]]}],["$","$Lf",null,{}]],[["$","script","script-0",{"src":"/_next/static/chunks/0.2q.q2c8r6-e.js","async":true}]],["$","$L10",null,{"children":["$","$11",null,{"name":"Next.MetadataOutlet","children":"$@12"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"EZ28naYRtIQ9D0I6Ffa6S"}
+12:null
