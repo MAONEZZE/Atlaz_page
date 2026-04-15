@@ -89,11 +89,8 @@ export function Hero() {
         {/* Subtitle */}
         <motion.div custom={2} variants={fadeUp} initial="hidden" animate="visible">
           <p className="text-xl md:text-2xl text-white/100 mb-10 leading-relaxed max-w-2xl mx-auto font-medium">
-            A imersão para empresários que querem dominar o 
-            <span className="text-[#BF78D6] font-semibold"> processo de vendas de alto valor </span>
-            e  
-            <span className="text-[#BF78D6] font-semibold"> aumentar a performance comercial </span> e
-            do negócio.
+            Uma imersão para empresários que querem dominar o 
+            <span className="text-[#BF78D6] font-semibold"> processo de vendas de alto valor</span>.
           </p>
         </motion.div>
 
