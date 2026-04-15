@@ -32,7 +32,7 @@ export function Includes() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.7, delay: 0.1 }}
-          className="glass-card p-8 md:p-10 grid grid-cols-1 md:grid-cols-2 gap-5"
+          className="glass-card p-6 md:p-10 grid grid-cols-1 md:grid-cols-2 gap-5"
         >
           {includesItems.map((item, i) => (
             <div key={i} className="flex items-start gap-3">

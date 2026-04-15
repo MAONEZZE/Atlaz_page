@@ -50,20 +50,20 @@ function Countdown() {
   }
 
   return (
-    <div className="flex items-center gap-2 md:gap-3" aria-live="off">
+    <div className="flex items-center gap-1.5 md:gap-3" aria-live="off">
       {[
         { value: t.d,  unit: "dias" },
         { value: t.h,  unit: "h" },
         { value: t.m,  unit: "m" },
         { value: t.s,  unit: "s" },
       ].map(({ value, unit }, i) => (
-        <div key={unit} className="flex items-center gap-1.5">
-          {i > 0 && <span className="text-white/25 text-sm">·</span>}
-          <div className="flex items-baseline gap-1">
-            <span className="font-mono font-bold text-white text-xl md:text-2xl tabular-nums leading-none">
+        <div key={unit} className="flex items-center gap-1 md:gap-1.5">
+          {i > 0 && <span className="text-white/25 text-xs md:text-sm">·</span>}
+          <div className="flex items-baseline gap-0.5 md:gap-1">
+            <span className="font-mono font-bold text-white text-sm md:text-2xl tabular-nums leading-none">
               {unit === "dias" ? value : pad(value)}
             </span>
-            <span className="text-[#C77DFF]/80 text-[11px] font-semibold">{unit}</span>
+            <span className="text-[#C77DFF]/80 text-[9px] md:text-[11px] font-semibold">{unit}</span>
           </div>
         </div>
       ))}

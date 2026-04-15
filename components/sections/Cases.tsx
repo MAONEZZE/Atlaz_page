@@ -70,7 +70,7 @@ export function Cases() {
       <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-[#7C3AED]/30 to-transparent" />
 
       <div className="relative max-w-5xl mx-auto" ref={ref}>
-        <div className="grid grid-cols-2 lg:grid-cols-3 gap-y-10 gap-x-6 text-center">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 text-center">
           {stats.map((stat, i) => (
             <motion.div
               key={i}
@@ -80,7 +80,7 @@ export function Cases() {
               transition={{ duration: 0.6, delay: i * 0.1 }}
               className="cursor-default"
             >
-              <p className="font-heading text-5xl md:text-6xl lg:text-7xl font-bold leading-none bg-gradient-to-br from-white via-[#C77DFF] to-[#7C3AED] bg-clip-text text-transparent">
+              <p className="font-heading text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-none bg-gradient-to-br from-white via-[#C77DFF] to-[#7C3AED] bg-clip-text text-transparent">
                 <CountUp
                   target={stat.value}
                   prefix={stat.prefix}

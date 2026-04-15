@@ -42,7 +42,7 @@ const mentors = [
 
 export function Mentors() {
   return (
-    <section id="mentores" className="relative py-24 px-4">
+    <section id="mentores" className="relative py-16 md:py-24 px-4">
       {/* Top accent line */}
       <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-[#7C3AED]/25 to-transparent" />
 
@@ -57,7 +57,7 @@ export function Mentors() {
           <p className="text-[#7C3AED] text-xs font-bold uppercase tracking-[0.2em] mb-4">
             Nossos Mentores
           </p>
-          <h2 className="font-heading text-4xl md:text-5xl font-bold text-white mb-4 leading-tight">
+          <h2 className="font-heading text-3xl md:text-5xl font-bold text-white mb-4 leading-tight">
             Quem vai conduzir sua tarde
           </h2>
         </motion.div>
@@ -84,7 +84,7 @@ export function Mentors() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: i * 0.15 }}
-              className="glass-card p-8 flex flex-col items-center text-center group cursor-default"
+              className="glass-card p-6 md:p-8 flex flex-col items-center text-center group cursor-default"
             >
               {/* Circular photo — 150px with hover zoom */}
               <div className="relative w-[150px] h-[150px] rounded-full overflow-hidden mb-5 border-2 border-[#7C3AED]/30 group-hover:border-[#7C3AED]/60 transition-colors duration-300 flex-shrink-0">

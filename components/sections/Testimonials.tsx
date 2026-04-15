@@ -90,7 +90,7 @@ export function Testimonials() {
   const trackOffset = current * (cardWidth + GAP);
 
   return (
-    <section className="relative py-20 px-4">
+    <section className="relative py-20 px-4 overflow-hidden">
       <div className="max-w-5xl mx-auto">
         {/* Header */}
         <motion.div
@@ -115,7 +115,7 @@ export function Testimonials() {
             onClick={prev}
             disabled={current === 0}
             aria-label="Depoimento anterior"
-            className="absolute -left-4 md:-left-6 top-[40%] -translate-y-1/2 z-10 w-10 h-10 rounded-full bg-[#1D0D45]/80 border border-[#7C3AED]/30 flex items-center justify-center text-white/70 hover:text-white hover:border-[#7C3AED]/60 hover:bg-[#1D0D45] transition-all duration-200 disabled:opacity-30 disabled:cursor-not-allowed cursor-pointer"
+            className="absolute left-1 md:-left-6 top-[40%] -translate-y-1/2 z-10 w-9 h-9 md:w-10 md:h-10 rounded-full bg-[#1D0D45]/80 border border-[#7C3AED]/30 flex items-center justify-center text-white/70 hover:text-white hover:border-[#7C3AED]/60 hover:bg-[#1D0D45] transition-all duration-200 disabled:opacity-30 disabled:cursor-not-allowed cursor-pointer"
           >
             <ChevronLeft className="w-5 h-5" />
           </button>
@@ -181,7 +181,7 @@ export function Testimonials() {
             onClick={next}
             disabled={current === maxIndex}
             aria-label="Próximo depoimento"
-            className="absolute -right-4 md:-right-6 top-[40%] -translate-y-1/2 z-10 w-10 h-10 rounded-full bg-[#1D0D45]/80 border border-[#7C3AED]/30 flex items-center justify-center text-white/70 hover:text-white hover:border-[#7C3AED]/60 hover:bg-[#1D0D45] transition-all duration-200 disabled:opacity-30 disabled:cursor-not-allowed cursor-pointer"
+            className="absolute right-1 md:-right-6 top-[40%] -translate-y-1/2 z-10 w-9 h-9 md:w-10 md:h-10 rounded-full bg-[#1D0D45]/80 border border-[#7C3AED]/30 flex items-center justify-center text-white/70 hover:text-white hover:border-[#7C3AED]/60 hover:bg-[#1D0D45] transition-all duration-200 disabled:opacity-30 disabled:cursor-not-allowed cursor-pointer"
           >
             <ChevronRight className="w-5 h-5" />
           </button>

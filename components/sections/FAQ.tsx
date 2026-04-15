@@ -51,7 +51,7 @@ export function FAQ() {
           className="text-center mb-10"
         >
           <p className="text-[#7C3AED] text-xs font-bold uppercase tracking-[0.2em] mb-4">FAQ</p>
-          <h2 className="font-heading text-4xl md:text-5xl font-bold text-white mb-4 leading-tight">
+          <h2 className="font-heading text-3xl md:text-5xl font-bold text-white mb-4 leading-tight">
             Perguntas Frequentes
           </h2>
         </motion.div>

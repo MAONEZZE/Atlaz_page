@@ -149,15 +149,16 @@ export function VideoFrame() {
 
           {/* Layer 4 — text + play button */}
           <div
-            className="absolute inset-0 flex items-center justify-between px-8 md:px-16 gap-8"
+            className="absolute inset-0 flex items-center justify-center md:justify-between px-6 md:px-16 gap-6 md:gap-8"
             style={{ zIndex: 4 }}
           >
+            {/* Text block — hidden on mobile (no room in aspect-video height) */}
             <motion.div
               initial={{ opacity: 0, x: -30 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.7, delay: 0.2 }}
-              className="max-w-sm md:max-w-md"
+              className="hidden md:block max-w-md"
             >
               <p className="text-[#7C3AED] text-xs font-bold uppercase tracking-[0.2em] mb-3">
                 Sobre a Imersão
@@ -179,13 +180,13 @@ export function VideoFrame() {
             >
               <button
                 onClick={() => setOpen(true)}
-                className="group relative w-20 h-20 md:w-24 md:h-24 rounded-full bg-[#7C3AED]/20 border-2 border-[#7C3AED]/50 flex items-center justify-center hover:bg-[#7C3AED]/40 hover:border-[#7C3AED] hover:scale-110 transition-all duration-300 cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-[#7C3AED]"
+                className="group relative w-16 h-16 md:w-24 md:h-24 rounded-full bg-[#7C3AED]/20 border-2 border-[#7C3AED]/50 flex items-center justify-center hover:bg-[#7C3AED]/40 hover:border-[#7C3AED] hover:scale-110 transition-all duration-300 cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-[#7C3AED]"
                 aria-label="Assistir vídeo completo"
               >
-                <Play className="w-8 h-8 md:w-10 md:h-10 text-white fill-white ml-1 group-hover:scale-110 transition-transform duration-200" />
+                <Play className="w-6 h-6 md:w-10 md:h-10 text-white fill-white ml-0.5 group-hover:scale-110 transition-transform duration-200" />
                 <span className="absolute inset-0 rounded-full border border-[#7C3AED]/40 animate-ping opacity-50 pointer-events-none" />
               </button>
-              <p className="text-white/50 text-xs text-center mt-3 font-medium tracking-wide">
+              <p className="text-white/50 text-xs text-center mt-2 md:mt-3 font-medium tracking-wide">
                 Assistir vídeo
               </p>
             </motion.div>

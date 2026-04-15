@@ -46,7 +46,7 @@ export function ForWhom() {
           <p className="text-[#7C3AED] text-xs font-bold uppercase tracking-[0.2em] mb-4">
             Público-Alvo
           </p>
-          <h2 className="font-heading text-4xl md:text-5xl font-bold text-white mb-4 leading-tight">
+          <h2 className="font-heading text-3xl md:text-5xl font-bold text-white mb-4 leading-tight">
             Para quem é essa imersão
           </h2>
           <p className="text-white/45 text-lg max-w-xl mx-auto">
@@ -62,11 +62,11 @@ export function ForWhom() {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.7, delay: i * 0.15 }}
-              className="glass-card p-8 md:p-10 flex flex-col md:flex-row gap-8 md:gap-12"
+              className="glass-card p-6 md:p-10 flex flex-col md:flex-row gap-6 md:gap-12"
             >
               {/* Big number */}
               <div className="flex-shrink-0">
-                <span className="font-heading text-7xl md:text-8xl font-bold text-[#7C3AED]/20 leading-none select-none">
+                <span className="font-heading text-5xl md:text-8xl font-bold text-[#7C3AED]/20 leading-none select-none">
                   {item.number}
                 </span>
               </div>

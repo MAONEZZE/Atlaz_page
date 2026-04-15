@@ -26,12 +26,12 @@ export function ImpactPhrase({ text, highlight, subtext }: ImpactPhraseProps) {
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
         >
-          <p className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight">
+          <p className="font-heading text-2xl md:text-4xl lg:text-5xl font-bold text-white leading-tight">
             {text}{" "}
             {highlight && <span className="text-[#C77DFF]">{highlight}</span>}
           </p>
           {subtext && (
-            <p className="mt-5 text-white/50 text-lg max-w-2xl mx-auto leading-relaxed">
+            <p className="mt-5 text-white/50 text-base md:text-lg max-w-2xl mx-auto leading-relaxed">
               {subtext}
             </p>
           )}

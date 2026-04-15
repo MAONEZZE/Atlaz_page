@@ -32,9 +32,9 @@ export function Schedule() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.7 }}
-            className="glass-card p-8"
+            className="glass-card p-6 md:p-8"
           >
-            <div className="flex items-center gap-3 mb-8">
+            <div className="flex items-center gap-3 mb-6 md:mb-8">
               <Clock className="w-5 h-5 text-indigo-400" />
               <h3 className="text-white font-semibold text-lg">Programação</h3>
             </div>
@@ -60,7 +60,7 @@ export function Schedule() {
             transition={{ duration: 0.7 }}
             className="space-y-5"
           >
-            <div className="glass-card p-8">
+            <div className="glass-card p-6 md:p-8">
               <div className="flex items-center gap-3 mb-4">
                 <MapPin className="w-5 h-5 text-rose-400" />
                 <h3 className="text-white font-semibold">Local</h3>
@@ -82,7 +82,7 @@ export function Schedule() {
               </a>
             </div>
 
-            <div className="glass-card p-8">
+            <div className="glass-card p-6 md:p-8">
               <div className="flex items-center gap-3 mb-4">
                 <DollarSign className="w-5 h-5 text-[#CA8A04]" />
                 <h3 className="text-white font-semibold">Investimento</h3>
