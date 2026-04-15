@@ -10,6 +10,7 @@ const mentors = [
     photo: "/mentores/jacob.jpg",
     badges: ["R$2M no 1º Ano", "500+ Clientes Ativos"],
     highlights: [
+      "+30M gerados com vendas no x1 para times comerciais",
       "Startup com 500+ clientes ativos",
       "Projetos com Flávio Augusto, Caio Carneiro e Joel Jota",
       "Fundou a Atlaz — R$ 2M no 1º ano com 4 pessoas",

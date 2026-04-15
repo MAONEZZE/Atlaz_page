@@ -15,7 +15,7 @@ const features = [
   "Coquetel e networking até 21h",
   "Materiais de apoio",
   "Ambiente de alto nível",
-  "Ligação de triagem incluída",
+  "Processo seletivo dos membros",
 ];
 
 async function hashInput(input: string): Promise<string> {
