@@ -7,26 +7,24 @@ const overviewCards = [
     image: "/capa_cards/overview/todos_jacob.jpg",
     title: "Imersão Estratégica",
     description:
-      "Uma tarde completa desenhada para empresários que querem construir um comercial de alto valor. Da abertura ao coquetel, cada momento tem propósito: clareza, processo e direção.",
+      "Uma imersão para empresários que querem construir um comercial de alto valor. Cada momento tem o propósito de trazer clareza, processo e direção.",
   },
   {
     image: "/capa_cards/overview/jacob_kaio.jpg",
     title: "Conteúdo",
     bullets: [
-      "Diagnóstico: por que vender barato não resolve",
-      "Processo comercial de alto valor do início ao fim",
-      "Posicionamento que aumenta valor percebido",
-      "Visão estratégica para crescimento de longo prazo",
+      "5 horas de conteúdo",
+      "Cases de sucesso",
+      "Comercial por tras das cortinas"
     ],
   },
   {
     image: "/capa_cards/overview/todos.jpg",
     title: "Hands On",
     bullets: [
-      "Aplicação direta dos conceitos ao seu negócio",
-      "Construção da sua narrativa e oferta de alto valor",
-      "Mapeamento do processo comercial atual",
-      "Networking com empresários de alto nível",
+      "Aplicação direta dos conceitos",
+      "Mapeamento do processo comercial",
+      "Networking com grandes empresários",
     ],
   },
 ];
@@ -45,13 +43,19 @@ export function EventCards() {
               transition={{ duration: 0.5, delay: i * 0.1 }}
               className="group relative overflow-hidden rounded-2xl border border-white/[0.08] hover:border-[#7C3AED]/35 transition-all duration-300 cursor-default min-h-[380px] flex flex-col"
             >
-              {/* Background image */}
+              {/* Background image — visible at the top */}
               <div
                 className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-[1.04]"
                 style={{ backgroundImage: `url('${card.image}')` }}
               />
-              {/* Gradient overlay — strong at bottom for text readability */}
-              <div className="absolute inset-0 bg-gradient-to-t from-[#0D0618] via-[#0D0618]/70 to-[#0D0618]/20" />
+              {/* Gradient: transparent at top → solid at bottom (smooth split between image and text area) */}
+              <div
+                className="absolute inset-0"
+                style={{
+                  background:
+                    "linear-gradient(to top, #0D0618 42%, #0D0618e6 56%, #0D061880 68%, transparent)",
+                }}
+              />
 
               {/* Content anchored to bottom */}
               <div className="relative z-10 mt-auto p-6 flex flex-col gap-3">

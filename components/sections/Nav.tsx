@@ -98,7 +98,7 @@ export function Nav() {
         {/* Countdown — center */}
         <div className="absolute left-1/2 -translate-x-1/2 hidden md:flex flex-col items-center">
           <p className="text-white/90 text-[12px] font-semibold uppercase tracking-[0.15em] mb-2">
-            28 abril · São Paulo, Brooklin
+            28 abril · São Paulo
           </p>
           <Countdown />
         </div>

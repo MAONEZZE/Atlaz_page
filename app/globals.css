@@ -115,6 +115,10 @@
     letter-spacing: -0.02em;
   }
 
+  .font-cormorant {
+    font-family: var(--font-baskerville), "Playfair Display", Georgia, serif;
+  }
+
   .glass-card {
     background: rgba(29, 13, 69, 0.55);
     backdrop-filter: blur(12px);

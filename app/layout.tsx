@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, Poppins } from "next/font/google";
+import { Inter, Poppins, Playfair_Display } from "next/font/google";
 import "./globals.css";
 
 const inter = Inter({
@@ -16,6 +16,14 @@ const poppins = Poppins({
   display: "swap",
 });
 
+const playfair = Playfair_Display({
+  variable: "--font-baskerville",
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700", "800"],
+  style: ["normal", "italic"],
+  display: "swap",
+});
+
 export const metadata: Metadata = {
   title: "Fator de Longo Horizonte",
   description:
@@ -28,7 +36,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="pt-BR" className={`${inter.variable} ${poppins.variable} scroll-smooth`}>
+    <html lang="pt-BR" className={`${inter.variable} ${poppins.variable} ${playfair.variable} scroll-smooth`}>
       <body className="bg-[#0D0618] text-white overflow-x-hidden">
         <div className="fixed inset-0 bg-gradient-to-br from-[#7C3AED]/[0.04] via-transparent to-[#1D0D45]/[0.06] pointer-events-none" />
         {children}

@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 export function QuoteSection() {
   return (
-    <section className="relative py-12 px-4 overflow-hidden">
+    <section className="relative min-h-[260px] px-4 overflow-hidden flex items-center">
       {/* Distinct background: deep purple stripe */}
       <div className="absolute inset-0 bg-[#6740A9]/60" />
       <div className="absolute inset-0 bg-gradient-to-r from-[#3B0067] via-[#6740A9]/80 to-[#3B0067]" />
@@ -12,14 +12,14 @@ export function QuoteSection() {
       <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-[#7C3AED]/40 to-transparent" />
       <div className="absolute inset-x-0 bottom-0 h-px bg-gradient-to-r from-transparent via-[#7C3AED]/40 to-transparent" />
 
-      <div className="relative max-w-5xl mx-auto text-center">
+      <div className="relative max-w-5xl mx-auto text-center w-full py-10">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
         >
-          <p className="font-serif text-2xl md:text-3xl lg:text-4xl font-bold text-white leading-snug italic">
+          <p className="font-cormorant text-2xl md:text-3xl lg:text-4xl font-bold text-white leading-snug italic">
             "Só existem 2 setores em uma empresa: o <span className="text-[#B775E0]">comercial</span>, e todos os outros que <span className="text-[#B775E0]">ajudam o comercial a vender"</span>.            
           </p>
           <div className="mt-8 flex items-center justify-center ">

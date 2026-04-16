@@ -7,10 +7,10 @@ import { Dialog, DialogContent } from "@/components/ui/dialog";
 
 const testimonials = [
   {
-    name: "Walmir Bandeira",
-    role: "Criador da TCM | Fundador da BT Inova | NR-1 — Riscos psicossociais",
-    fileId: "1_Hcdt8ropUrCCgqtQSsx7S9xrzmLFmox",
-    thumbnail: "/capa_depoimento/walmir.jpeg",
+    name: "Eduardo Camargo",
+    role: "Fundador da Mauna",
+    fileId: "1WXgJ56pxUHTkSHDw6f8m_8U7-p8goTGW",
+    thumbnail: "/capa_depoimento/eduardo.jpeg",
   },
   {
     name: "Marcio Flores",
@@ -31,10 +31,10 @@ const testimonials = [
     thumbnail: "/capa_depoimento/camilly.jpeg",
   },
   {
-    name: "Eduardo Camargo",
-    role: "Fundador da Mauna",
-    fileId: "1WXgJ56pxUHTkSHDw6f8m_8U7-p8goTGW",
-    thumbnail: "/capa_depoimento/eduardo.jpeg",
+    name: "Walmir Bandeira",
+    role: "Criador da TCM | Fundador da BT Inova | NR-1 — Riscos psicossociais",
+    fileId: "1_Hcdt8ropUrCCgqtQSsx7S9xrzmLFmox",
+    thumbnail: "/capa_depoimento/walmir.jpeg",
   },
   {
     name: "Eduarda Fhamilly",

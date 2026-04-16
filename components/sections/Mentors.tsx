@@ -7,25 +7,28 @@ const mentors = [
   {
     name: "Jacob Lima",
     role: "Fundador da Atlaz",
-    photo: "/mentores/jacob.jpg",
+    photo: "/mentores/jacob.jpeg",
     badges: ["R$2M no 1º Ano", "+500 Clientes Ativos"],
     highlights: [
       "+30M gerados com vendas no x1 para times comerciais",
       "Startup com +500 clientes ativos",
-      "Projetos com Flávio Augusto, Caio Carneiro e Joel Jota",
       "Fundou a Atlaz — R$ 2M no 1º ano com 4 pessoas",
     ],
+    instagram: "https://instagram.com/jacobliima",
+    linkedin: "https://www.linkedin.com/in/jacob-lima-41b784224/",
   },
   {
     name: "Mariana Chinarelli",
     role: "Co-fundadora da Atlaz",
-    photo: "/mentores/mari.jpg",
+    photo: "/mentores/mari.jpeg",
     badges: ["ESPM", "+R$50M Gerados"],
     highlights: [
       "R$ +50M gerados em lançamentos digitais",
       "Formada pela ESPM",
       "Projetos com Flávio Augusto, Caio Carneiro e Joel Jota",
     ],
+    instagram: "https://instagram.com/mari.chinarelli",
+    linkedin: "https://www.linkedin.com/in/mariana-chinarelli-491757206/",
   },
   {
     name: "Kaio César",
@@ -37,6 +40,7 @@ const mentors = [
       "Soldiers Nutrition, Odd Sheep, Next10",
       "Marca de suplementação de Neymar Jr.",
     ],
+    instagram: "https://instagram.com/kaioccezar",
   },
 ];
 
@@ -114,12 +118,46 @@ export function Mentors() {
               </div>
 
               {/* Highlights */}
-              <div className="border-t border-white/[0.08] pt-5 w-full space-y-2.5">
+              <div className="border-t border-white/[0.08] pt-5 w-full space-y-2.5 mb-5">
                 {mentor.highlights.map((h, j) => (
                   <p key={j} className="text-white/80 text-sm leading-relaxed">
                     {h}
                   </p>
                 ))}
+              </div>
+
+              {/* Social links */}
+              <div className="flex items-center justify-center gap-3 mt-auto">
+                {mentor.instagram && (
+                  <a
+                    href={mentor.instagram}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={`Instagram de ${mentor.name}`}
+                    className="w-9 h-9 rounded-lg bg-white/[0.05] border border-white/[0.1] flex items-center justify-center text-white/50 hover:text-white hover:border-[#7C3AED]/40 hover:bg-[#7C3AED]/10 transition-all duration-200 cursor-pointer"
+                  >
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-4 h-4" aria-hidden="true">
+                      <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+                      <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                      <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+                    </svg>
+                  </a>
+                )}
+                {mentor.linkedin && (
+                  <a
+                    href={mentor.linkedin}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={`LinkedIn de ${mentor.name}`}
+                    className="w-9 h-9 rounded-lg bg-white/[0.05] border border-white/[0.1] flex items-center justify-center text-white/50 hover:text-white hover:border-[#7C3AED]/40 hover:bg-[#7C3AED]/10 transition-all duration-200 cursor-pointer"
+                  >
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-4 h-4" aria-hidden="true">
+                      <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                      <rect width="4" height="12" x="2" y="9" />
+                      <circle cx="4" cy="4" r="2" />
+                    </svg>
+                  </a>
+                )}
               </div>
             </motion.div>
           ))}
