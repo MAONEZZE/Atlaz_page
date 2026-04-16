@@ -50,7 +50,7 @@ export function ForWhom() {
             Para quem é essa imersão
           </h2>
           <p className="text-white/45 text-lg max-w-xl mx-auto">
-            A Fator de Longo Horizonte foi desenhada para quem já chegou longe — e quer ir mais longe ainda.
+            A Fator de Longo Horizonte foi desenhada para quem já chegou longe e quer ir mais longe ainda.
           </p>
         </motion.div>
 

@@ -63,7 +63,7 @@ interface HeroGeometricProps {
 }
 
 function HeroGeometric({
-  badge = "28 de abril · São Paulo · 13h–19h",
+  badge = "28 de abril · São Paulo, Brooklin · 13h–19h",
   title1 = "Fator de Longo Horizonte",
   animatedTitles = ["processo", "clareza", "direção", "consistência", "alto valor"],
 }: HeroGeometricProps) {

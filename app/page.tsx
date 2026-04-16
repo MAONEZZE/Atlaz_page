@@ -46,7 +46,6 @@ export default function Home() {
         <ImpactPhrase
           text="Você está a uma decisão de mudar o patamar comercial"
           highlight="do seu negócio."
-          subtext="Empresários que crescem com consistência são os que entendem a lógica das vendas de alto valor e constroem um comercial capaz de sustentar esse crescimento."
         />
 
         {/* 9. Mentores */}

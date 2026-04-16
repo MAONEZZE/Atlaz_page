@@ -8,10 +8,10 @@ const mentors = [
     name: "Jacob Lima",
     role: "Fundador da Atlaz",
     photo: "/mentores/jacob.jpg",
-    badges: ["R$2M no 1º Ano", "500+ Clientes Ativos"],
+    badges: ["R$2M no 1º Ano", "+500 Clientes Ativos"],
     highlights: [
       "+30M gerados com vendas no x1 para times comerciais",
-      "Startup com 500+ clientes ativos",
+      "Startup com +500 clientes ativos",
       "Projetos com Flávio Augusto, Caio Carneiro e Joel Jota",
       "Fundou a Atlaz — R$ 2M no 1º ano com 4 pessoas",
     ],
@@ -20,9 +20,9 @@ const mentors = [
     name: "Mariana Chinarelli",
     role: "Co-fundadora da Atlaz",
     photo: "/mentores/mari.jpg",
-    badges: ["ESPM", "R$50M+ Gerados"],
+    badges: ["ESPM", "+R$50M Gerados"],
     highlights: [
-      "R$ 50M+ gerados em lançamentos digitais",
+      "R$ +50M gerados em lançamentos digitais",
       "Formada pela ESPM",
       "Projetos com Flávio Augusto, Caio Carneiro e Joel Jota",
     ],
@@ -102,7 +102,7 @@ export function Mentors() {
               <p className="text-[#7C3AED] text-sm font-semibold mb-4">{mentor.role}</p>
 
               {/* Cert / credential badges */}
-              <div className="flex flex-wrap justify-center gap-2 mb-5">
+              <div className="flex flex-wrap justify-center gap-1 mb-5">
                 {mentor.badges.map((badge) => (
                   <span
                     key={badge}
@@ -116,7 +116,7 @@ export function Mentors() {
               {/* Highlights */}
               <div className="border-t border-white/[0.08] pt-5 w-full space-y-2.5">
                 {mentor.highlights.map((h, j) => (
-                  <p key={j} className="text-white/50 text-sm leading-relaxed">
+                  <p key={j} className="text-white/80 text-sm leading-relaxed">
                     {h}
                   </p>
                 ))}

@@ -98,7 +98,7 @@ export function Footer() {
               © 2026 Atlaz · Todos os direitos reservados
             </p>
             <p className="text-white/20 text-xs">
-              R. Pitu, 72 – 14º andar · Cidade Monções · São Paulo – SP
+              R. Pitu, 72 – 14º andar · Cidade Monções · São Paulo, Brooklin – SP
             </p>
           </div>
         </div>

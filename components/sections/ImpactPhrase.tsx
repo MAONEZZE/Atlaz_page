@@ -19,14 +19,14 @@ export function ImpactPhrase({ text, highlight, subtext }: ImpactPhraseProps) {
       <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-[#7C3AED]/40 to-transparent" />
       <div className="absolute inset-x-0 bottom-0 h-px bg-gradient-to-r from-transparent via-[#7C3AED]/40 to-transparent" />
 
-      <div className="relative max-w-4xl mx-auto text-center">
+      <div className="relative max-w-5xl mx-auto text-center">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
         >
-          <p className="font-heading text-2xl md:text-4xl lg:text-5xl font-bold text-white leading-tight">
+          <p className="font-serif text-2xl md:text-4xl lg:text-5xl font-bold text-white leading-tight italic">
             {text}{" "}
             {highlight && <span className="text-[#C77DFF]">{highlight}</span>}
           </p>

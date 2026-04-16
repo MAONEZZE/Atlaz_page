@@ -88,7 +88,7 @@ export function Hero() {
 
         {/* Subtitle */}
         <motion.div custom={2} variants={fadeUp} initial="hidden" animate="visible">
-          <p className="text-xl md:text-2xl text-white/100 mb-10 leading-relaxed max-w-2xl mx-auto font-medium">
+          <p className="text-xl md:text-2xl text-white/100 mb-10 leading-snug max-w-2xl mx-auto font-medium">
             Uma imersão para empresários que querem dominar o 
             <span className="text-[#BF78D6] font-semibold"> processo de vendas de alto valor</span>.
           </p>
@@ -113,7 +113,7 @@ export function Hero() {
           ))}
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/[0.05] border border-white/[0.1] text-white/65 text-sm">
             <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse flex-shrink-0" />
-            São Paulo · 13h–19h
+            São Paulo, Brooklin · 13h–19h
           </div>
         </motion.div>
 

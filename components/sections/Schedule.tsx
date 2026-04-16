@@ -70,7 +70,7 @@ export function Schedule() {
               </p>
               <p className="text-white/50 text-sm leading-relaxed mt-1">
                 R. Pitu, 72 – 14º andar – Cidade Monções<br />
-                São Paulo – SP, 04567-060
+                São Paulo, Brooklin – SP, 04567-060
               </p>
               <a
                 href="https://maps.google.com/?q=R.+Pitu,+72+Cidade+Mon%C3%A7%C3%B5es+S%C3%A3o+Paulo"

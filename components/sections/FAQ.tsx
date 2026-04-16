@@ -35,7 +35,7 @@ const faqItems = [
   },
   {
     question: "Onde será realizado o evento?",
-    answer: "Auditório da Investidores.VC — R. Pitu, 72 – 14º andar – Cidade Monções, São Paulo – SP, 04567-060.",
+    answer: "Auditório da Investidores.VC — R. Pitu, 72 – 14º andar – Cidade Monções, São Paulo, Brooklin – SP, 04567-060.",
   },
 ];
 

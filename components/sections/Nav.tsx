@@ -59,11 +59,11 @@ function Countdown() {
       ].map(({ value, unit }, i) => (
         <div key={unit} className="flex items-center gap-1 md:gap-1.5">
           {i > 0 && <span className="text-white/25 text-xs md:text-sm">·</span>}
-          <div className="flex items-baseline gap-0.5 md:gap-1">
+          <div className="flex items-baseline gap-2 md:gap-1">
             <span className="font-mono font-bold text-white text-sm md:text-2xl tabular-nums leading-none">
               {unit === "dias" ? value : pad(value)}
             </span>
-            <span className="text-[#C77DFF]/80 text-[9px] md:text-[11px] font-semibold">{unit}</span>
+            <span className="text-[#C77DFF]/80 text-[15px] md:text-[11px] font-semibold mb-2">{unit}</span>
           </div>
         </div>
       ))}
@@ -83,10 +83,10 @@ export function Nav() {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 backdrop-blur-xl border-b ${
         scrolled
-          ? "bg-[#0D0618]/90 backdrop-blur-md border-b border-white/[0.06]"
-          : "bg-transparent"
+          ? "bg-[#0D0618]/80 border-white/[0.08] shadow-[0_1px_24px_rgba(0,0,0,0.4)]"
+          : "bg-white/[0.03] border-white/[0.05]"
       }`}
     >
       <div className="max-w-6xl mx-auto px-4 md:px-6 h-16 flex items-center justify-between">
@@ -97,8 +97,8 @@ export function Nav() {
 
         {/* Countdown — center */}
         <div className="absolute left-1/2 -translate-x-1/2 hidden md:flex flex-col items-center">
-          <p className="text-white/30 text-[9px] font-semibold uppercase tracking-[0.15em] mb-0.5">
-            28 abril · São Paulo
+          <p className="text-white/90 text-[12px] font-semibold uppercase tracking-[0.15em] mb-2">
+            28 abril · São Paulo, Brooklin
           </p>
           <Countdown />
         </div>

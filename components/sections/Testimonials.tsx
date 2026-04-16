@@ -147,7 +147,7 @@ export function Testimonials() {
                       <img
                         src={t.thumbnail}
                         alt={t.name}
-                        className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                        className="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
                         loading="lazy"
                       />
                     ) : (

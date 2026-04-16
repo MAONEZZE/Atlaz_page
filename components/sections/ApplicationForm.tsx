@@ -8,15 +8,6 @@ import { Dialog, DialogContent } from "@/components/ui/dialog";
 // Hash computed at build-time from COUPON_CODE in .env (see next.config.ts).
 // Only the SHA-256 digest is exposed — the raw code stays server-side.
 const COUPON_HASH = process.env.COUPON_HASH ?? "";
-const WA_LINK = "https://wa.me/5511934581064?text=Ol%C3%A1%2C%20vim%20pela%20pagina%20da%20FLH%20e%20gostaria%20de%20saber%20mais%20sobre%20como%20funciona%20para%20garantir%20a%20vaga%3F";
-
-const features = [
-  "Acesso à imersão presencial (13h–19h)",
-  "Coquetel e networking até 21h",
-  "Materiais de apoio",
-  "Ambiente de alto nível",
-  "Processo seletivo dos membros",
-];
 
 async function hashInput(input: string): Promise<string> {
   const encoder = new TextEncoder();
@@ -96,47 +87,76 @@ export function ApplicationForm() {
           ))}
         </motion.div>
 
-        {/* Pricing card */}
+        {/* 3-tier pricing cards */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.7, delay: 0.15 }}
-          className="relative rounded-2xl border border-[#7C3AED]/40 bg-[#7C3AED]/10 p-6 sm:p-8 md:p-10 max-w-lg mx-auto mb-6 hover:border-[#7C3AED]/60 transition-colors duration-300"
+          className="grid grid-cols-1 md:grid-cols-[1fr_1.15fr_1fr] gap-4 items-center max-w-3xl mx-auto mb-8"
         >
-          <div className="absolute -top-3 left-1/2 -translate-x-1/2">
-            <span className="px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-[#7C3AED] text-white">
-              VAGAS LIMITADAS
-            </span>
+          {/* Card 1 — Pré Lançamento (esgotado) */}
+          <div className="rounded-2xl border border-white/[0.07] bg-white/[0.02] p-6 text-center opacity-55">
+            <p className="text-white/40 text-xs font-bold uppercase tracking-[0.2em] mb-4">Pré Lançamento</p>
+            <p className="font-heading text-3xl font-bold text-white/40 mb-1">R$ 4.000</p>
+            <p className="text-white/30 text-xs mb-6 leading-relaxed">
+              Lote inicial com vagas limitadas. Encerrado.
+            </p>
+            <button
+              disabled
+              className="flex items-center justify-center w-full py-3 rounded-xl bg-white/[0.04] border border-white/[0.06] text-white/25 font-semibold text-sm cursor-not-allowed"
+            >
+              Esgotado
+            </button>
           </div>
 
-          <p className="text-white/50 text-sm font-medium mb-4">Ingresso Individual</p>
-          <p className="font-heading text-4xl sm:text-5xl font-bold text-[#7C3AED] mb-1">R$ 7.500</p>
-          <p className="text-white/35 text-xs mb-6">
-            Uma tarde completa de imersão, coquetel e networking seleto.
-          </p>
+          {/* Card 2 — Valor Atual (featured) */}
+          <div className="relative rounded-2xl border border-[#7C3AED]/50 bg-[#7C3AED]/10 p-7 text-center hover:border-[#7C3AED]/70 transition-colors duration-300">
+            <div className="absolute -top-3 left-1/2 -translate-x-1/2">
+              <span className="px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-[#7C3AED] text-white whitespace-nowrap">
+                VAGAS LIMITADAS
+              </span>
+            </div>
+            <p className="text-[#7C3AED] text-xs font-bold uppercase tracking-[0.2em] mb-4">Valor Atual</p>
+            <p className="font-heading text-4xl sm:text-5xl font-bold text-[#7C3AED] mb-1">R$ 5.000</p>
+            <ul className="space-y-2 mb-7 mt-4 text-left">
+              {[
+                "Parcelamento disponível",
+                "Vagas limitadas",
+                "Processo seletivo por ligação de triagem",
+              ].map((item) => (
+                <li key={item} className="flex items-start gap-2.5">
+                  <CheckCircle className="w-4 h-4 flex-shrink-0 mt-0.5 text-[#7C3AED]" />
+                  <span className="text-white/65 text-sm leading-relaxed">{item}</span>
+                </li>
+              ))}
+            </ul>
+            <a
+              href="https://www.asaas.com/c/5fr1cys74fce3hjx"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center justify-center gap-2 w-full py-4 rounded-xl bg-[#7C3AED] text-white font-semibold text-base hover:bg-[#6D28D9] transition-colors duration-200 cursor-pointer group shadow-[0_0_30px_rgba(124,58,237,0.25)] hover:shadow-[0_0_50px_rgba(124,58,237,0.4)]"
+            >
+              Garantir minha vaga
+              <ArrowRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" />
+            </a>
+          </div>
 
-          <ul className="space-y-2.5 mb-8">
-            {features.map((feature) => (
-              <li key={feature} className="flex items-start gap-2.5">
-                <CheckCircle className="w-4 h-4 flex-shrink-0 mt-0.5 text-[#7C3AED]" />
-                <span className="text-white/60 text-sm leading-relaxed">{feature}</span>
-              </li>
-            ))}
-          </ul>
-
-          <a
-            href="https://www.asaas.com/c/5fr1cys74fce3hjx"
-            className="inline-flex items-center justify-center gap-2 w-full py-4 px-5 rounded-xl bg-[#7C3AED] text-white font-semibold text-base hover:bg-[#6D28D9] transition-colors duration-200 cursor-pointer group shadow-[0_0_30px_rgba(124,58,237,0.25)] hover:shadow-[0_0_50px_rgba(124,58,237,0.4)]"
-          >
-            Garantir vaga
-            <ArrowRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" />
-          </a>
+          {/* Card 3 — Valor Final (futuro) */}
+          <div className="rounded-2xl border border-white/[0.07] bg-white/[0.02] p-6 text-center opacity-55">
+            <p className="text-white/40 text-xs font-bold uppercase tracking-[0.2em] mb-4">Valor Final</p>
+            <p className="font-heading text-3xl font-bold text-white/40 mb-1">R$ 7.500</p>
+            <p className="text-white/30 text-xs mb-6 leading-relaxed">
+              Em breve — valor final do evento, sem ofertas exclusivas.
+            </p>
+            <button
+              disabled
+              className="flex items-center justify-center w-full py-3 rounded-xl bg-white/[0.04] border border-white/[0.06] text-white/25 font-semibold text-sm cursor-not-allowed"
+            >
+              Em breve
+            </button>
+          </div>
         </motion.div>
-
-        <p className="text-center text-white/30 text-xs sm:text-sm mb-12 sm:mb-16 px-4 leading-relaxed">
-          Parcelamento disponível · Vagas limitadas · Processo seletivo por ligação de triagem
-        </p>
 
         {/* Divider */}
         <div className="h-px bg-gradient-to-r from-transparent via-white/[0.08] to-transparent mb-12 sm:mb-16" />
@@ -159,7 +179,7 @@ export function ApplicationForm() {
             <div className="absolute inset-0 bg-gradient-to-t from-[#7C3AED]/20 via-transparent to-transparent" />
 
             <div className="relative z-10 flex flex-col items-center gap-6 px-6 py-12 text-center">
-              <p className="text-[#C1A6DF] text-xs font-bold uppercase tracking-[0.2em]">28 de abril · São Paulo</p>
+              <p className="text-[#C1A6DF] text-xs font-bold uppercase tracking-[0.2em]">28 de abril · São Paulo, Brooklin</p>
               <h4 className="font-heading text-3xl md:text-4xl font-bold text-white leading-tight max-w-xl">
                 Fator de Longo Horizonte
               </h4>
@@ -183,7 +203,7 @@ export function ApplicationForm() {
           <div className="pl-6 pr-12 pt-6 pb-5 border-b border-white/[0.07]">
             <p className="text-[#7C3AED] text-xs font-bold uppercase tracking-[0.2em] mb-1">Finalizar inscrição</p>
             <h3 className="font-heading text-xl font-bold text-white leading-snug">Fator de Longo Horizonte</h3>
-            <p className="text-white/45 text-sm mt-1">28 de abril · São Paulo · 13h–19h</p>
+            <p className="text-white/45 text-sm mt-1">28 de abril · São Paulo, Brooklin · 13h–19h</p>
           </div>
 
           {/* Price display */}
