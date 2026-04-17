@@ -213,7 +213,7 @@ export function ApplicationForm() {
                 <p className="text-white/40 text-xs font-medium mb-1">Valor do ingresso</p>
                 {discounted ? (
                   <div className="flex items-baseline gap-2 flex-wrap">
-                    <p className="font-heading text-2xl font-bold text-white/30 line-through">R$ 7.500</p>
+                    <p className="font-heading text-2xl font-bold text-white/30 line-through">R$ 5.000</p>
                     <p className="font-heading text-2xl font-bold text-green-400">R$ 0</p>
                   </div>
                 ) : (
