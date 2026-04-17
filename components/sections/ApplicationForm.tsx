@@ -217,7 +217,7 @@ export function ApplicationForm() {
                     <p className="font-heading text-2xl font-bold text-green-400">R$ 0</p>
                   </div>
                 ) : (
-                  <p className="font-heading text-2xl font-bold text-[#7C3AED]">R$ 7.500</p>
+                  <p className="font-heading text-2xl font-bold text-[#7C3AED]">R$ 5.000</p>
                 )}
               </div>
               {discounted && (
