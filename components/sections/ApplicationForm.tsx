@@ -284,7 +284,7 @@ export function ApplicationForm() {
           <div className="px-6 py-5">
             {discounted ? (
               <a
-                href="https://sed.learningbrands.cloud/e/imersao-fator-de-longo-horizonte-39a397"
+                href="https://sed.learningbrands.cloud/e/imersao-fator-de-longo-horizonte-0dc405"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center justify-center gap-2 w-full py-3.5 px-4 rounded-xl bg-[#7C3AED] text-white font-semibold text-sm hover:bg-[#6D28D9] transition-all duration-200 cursor-pointer shadow-[0_0_30px_rgba(124,58,237,0.25)] hover:shadow-[0_0_50px_rgba(124,58,237,0.4)]"
