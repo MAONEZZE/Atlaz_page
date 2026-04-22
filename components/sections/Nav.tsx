@@ -11,8 +11,7 @@ const navLinks = [
   { label: "Ingressos", href: "#ingressos" },
 ];
 
-// April 28 2026 at 13:00 BRT (UTC-3) = 16:00 UTC
-const EVENT_UTC = new Date("2026-04-28T16:00:00.000Z").getTime();
+const EVENT_UTC = new Date("2026-05-13T16:00:00.000Z").getTime();
 
 function pad(n: number) {
   return String(n).padStart(2, "0");
@@ -98,7 +97,7 @@ export function Nav() {
         {/* Countdown — center */}
         <div className="absolute left-1/2 -translate-x-1/2 hidden md:flex flex-col items-center">
           <p className="text-white/90 text-[12px] font-semibold uppercase tracking-[0.15em] mb-2">
-            28 abril · São Paulo
+            13 de maio · São Paulo
           </p>
           <Countdown />
         </div>
