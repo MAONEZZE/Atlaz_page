@@ -37,7 +37,7 @@ export function Footer() {
                 FLH<span className="text-[#7C3AED]">.</span>
               </p>
               <p className="text-white/40 text-sm">Fator de Longo Horizonte</p>
-              <p className="text-white/25 text-xs mt-1">13 de maio · São Paulo</p>
+              <p className="text-white/25 text-xs mt-1">{process.env.DATA_EVENTO} · São Paulo</p>
             </div>
 
             {/* Nav links */}

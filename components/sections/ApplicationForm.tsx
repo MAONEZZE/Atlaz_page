@@ -73,7 +73,7 @@ export function ApplicationForm() {
           className="flex flex-wrap justify-center gap-2 sm:gap-3 mb-10 sm:mb-12"
         >
           {[
-            { icon: Calendar, label: "13 de maio" },
+            { icon: Calendar, label: process.env.DATA_EVENTO },
             { icon: Clock, label: "13h–19h · Coquetel até 21h" },
             { icon: MapPin, label: "Auditório Investidores.VC — SP" },
           ].map(({ icon: Icon, label }) => (
@@ -179,7 +179,7 @@ export function ApplicationForm() {
             <div className="absolute inset-0 bg-gradient-to-t from-[#7C3AED]/20 via-transparent to-transparent" />
 
             <div className="relative z-10 flex flex-col items-center gap-6 px-6 py-12 text-center">
-              <p className="text-[#C1A6DF] text-xs font-bold uppercase tracking-[0.2em]">13 de maio · São Paulo, Brooklin</p>
+              <p className="text-[#C1A6DF] text-xs font-bold uppercase tracking-[0.2em]">{process.env.DATA_EVENTO} · São Paulo, Brooklin</p>
               <h4 className="font-heading text-3xl md:text-4xl font-bold text-white leading-tight max-w-xl">
                 Fator de Longo Horizonte
               </h4>
@@ -203,7 +203,7 @@ export function ApplicationForm() {
           <div className="pl-6 pr-12 pt-6 pb-5 border-b border-white/[0.07]">
             <p className="text-[#7C3AED] text-xs font-bold uppercase tracking-[0.2em] mb-1">Finalizar inscrição</p>
             <h3 className="font-heading text-xl font-bold text-white leading-snug">Fator de Longo Horizonte</h3>
-            <p className="text-white/45 text-sm mt-1">13 de maio · São Paulo, Brooklin · 13h–19h</p>
+            <p className="text-white/45 text-sm mt-1">{process.env.DATA_EVENTO} · São Paulo, Brooklin · 13h–19h</p>
           </div>
 
           {/* Price display */}
@@ -284,7 +284,7 @@ export function ApplicationForm() {
           <div className="px-6 py-5">
             {discounted ? (
               <a
-                href="https://sed.learningbrands.cloud/e/imersao-fator-de-longo-horizonte-0dc405"
+                href={process.env.LINK_CONVIDADO}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center justify-center gap-2 w-full py-3.5 px-4 rounded-xl bg-[#7C3AED] text-white font-semibold text-sm hover:bg-[#6D28D9] transition-all duration-200 cursor-pointer shadow-[0_0_30px_rgba(124,58,237,0.25)] hover:shadow-[0_0_50px_rgba(124,58,237,0.4)]"

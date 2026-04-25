@@ -97,7 +97,7 @@ export function Nav() {
         {/* Countdown — center */}
         <div className="absolute left-1/2 -translate-x-1/2 hidden md:flex flex-col items-center">
           <p className="text-white/90 text-[12px] font-semibold uppercase tracking-[0.15em] mb-2">
-            13 de maio · São Paulo
+            {process.env.DATA_EVENTO} · São Paulo
           </p>
           <Countdown />
         </div>
