@@ -13,6 +13,7 @@ const nextConfig: NextConfig = {
     // Injected into both server and client; SHA-256 is one-way so it is safe
     COUPON_HASH: couponHash,
     DATA_EVENTO: process.env.DATA_EVENTO ?? "",
+    DATA_CRON: process.env.DATA_CRON ?? "",
     LINK_CONVIDADO: process.env.LINK_CONVIDADO ?? "",
   },
   images: {

@@ -11,7 +11,7 @@ const navLinks = [
   { label: "Ingressos", href: "#ingressos" },
 ];
 
-const EVENT_UTC = new Date(process.env.DATA_CRON).getTime();
+const EVENT_UTC = new Date(process.env.DATA_CRON ?? "").getTime();
 
 function pad(n: number) {
   return String(n).padStart(2, "0");
