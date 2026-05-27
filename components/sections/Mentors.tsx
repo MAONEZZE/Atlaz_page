@@ -30,18 +30,18 @@ const mentors = [
     instagram: "https://instagram.com/mari.chinarelli",
     linkedin: "https://www.linkedin.com/in/mariana-chinarelli-491757206/",
   },
-  {
-    name: "Kaio César",
-    role: "Cofundador da BCC",
-    photo: "/mentores/kaio_cesar.jpeg",
-    badges: ["Estrategista de Marcas", "Alto Valor"],
-    highlights: [
-      "Estrategista de marcas de alto valor",
-      "Soldiers Nutrition, Odd Sheep, Next10",
-      "Marca de suplementação de Neymar Jr.",
-    ],
-    instagram: "https://instagram.com/kaioccezar",
-  },
+  // {
+  //   name: "Kaio César",
+  //   role: "Cofundador da BCC",
+  //   photo: "/mentores/kaio_cesar.jpeg",
+  //   badges: ["Estrategista de Marcas", "Alto Valor"],
+  //   highlights: [
+  //     "Estrategista de marcas de alto valor",
+  //     "Soldiers Nutrition, Odd Sheep, Next10",
+  //     "Marca de suplementação de Neymar Jr.",
+  //   ],
+  //   instagram: "https://instagram.com/kaioccezar",
+  // },
 ];
 
 export function Mentors() {
@@ -80,7 +80,7 @@ export function Mentors() {
         </motion.div>
 
         {/* Mentor cards */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid md:grid-cols-2 gap-6">
           {mentors.map((mentor, i) => (
             <motion.div
               key={i}
