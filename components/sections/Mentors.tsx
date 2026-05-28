@@ -75,7 +75,7 @@ export function Mentors() {
           className="text-center mb-14"
         >
           <blockquote className="font-heading italic text-white/45 text-lg max-w-lg mx-auto leading-relaxed">
-            Três perspectivas complementares, combinadas em uma tarde de imersão.
+            Duas perspectivas complementares, combinadas em uma tarde de imersão.
           </blockquote>
         </motion.div>
 
