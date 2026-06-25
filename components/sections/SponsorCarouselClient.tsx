@@ -23,7 +23,7 @@ export function SponsorCarouselClient({ brands }: { brands: string[] }) {
 
         <div className="flex w-max items-center animate-marquee">
           {loop.map((file, i) => (
-            <div key={i} className="flex-shrink-0 px-14 flex items-center justify-center">
+            <div key={i} className="flex-shrink-0 px-8 md:px-14 flex items-center justify-center">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src={`/marcas/${file}`}

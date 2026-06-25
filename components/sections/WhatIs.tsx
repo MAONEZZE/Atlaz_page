@@ -109,8 +109,8 @@ export function WhatIs() {
                 <div
                   className={`absolute inset-0 ${
                     isRight
-                      ? "bg-gradient-to-r from-[#0D0618] from-[38%] via-[#0D0618]/70 via-[62%] to-transparent"
-                      : "bg-gradient-to-l from-[#0D0618] from-[38%] via-[#0D0618]/70 via-[62%] to-transparent"
+                      ? "bg-gradient-to-r from-[#0D0618] from-[58%] md:from-[38%] via-[#0D0618]/80 md:via-[#0D0618]/70 via-[82%] md:via-[62%] to-transparent"
+                      : "bg-gradient-to-l from-[#0D0618] from-[58%] md:from-[38%] via-[#0D0618]/80 md:via-[#0D0618]/70 via-[82%] md:via-[62%] to-transparent"
                   }`}
                 />
 

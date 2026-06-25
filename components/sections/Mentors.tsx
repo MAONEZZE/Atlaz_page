@@ -78,7 +78,7 @@ export function Mentors() {
               className="relative rounded-3xl bg-[#F7F5F2] border border-gray-200/60 shadow-[0_8px_40px_rgba(0,0,0,0.18)] overflow-hidden cursor-default"
             >
               {/* Photo fills the entire card — zoomed in */}
-              <div className="relative h-[500px]">
+              <div className="relative h-[400px] sm:h-[500px]">
                 <Image
                   src={mentor.photo}
                   alt={mentor.name}

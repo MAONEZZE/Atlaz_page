@@ -80,7 +80,7 @@ export function Hero() {
 
         {/* H1 */}
         <motion.div custom={1} variants={fadeUp} initial="hidden" animate="visible">
-          <h3 className="font-heading text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-[1.1] tracking-tight mb-6 max-w-3xl mx-auto">
+          <h3 className="font-heading text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-[1.1] tracking-tight mb-6 max-w-3xl mx-auto">
             <span className="text-white">Você passou anos acumulando o que poucos têm. Agora é hora de</span>{" "}
             <span className="text-[#C77DFF]"> transformar</span>
             <span className="text-white"> isso em</span>

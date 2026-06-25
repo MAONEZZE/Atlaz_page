@@ -63,7 +63,7 @@ function Countdown() {
             <span className="font-mono font-bold text-white text-sm md:text-2xl tabular-nums leading-none">
               {unit === "dias" ? value : pad(value)}
             </span>
-            <span className="text-[#C77DFF]/80 text-[15px] md:text-[11px] font-semibold mb-2">{unit}</span>
+            <span className="text-[#C77DFF]/80 text-[11px] font-semibold mb-2">{unit}</span>
           </div>
         </div>
       ))}
@@ -91,7 +91,7 @@ export function Nav() {
     >
       <div className="max-w-6xl mx-auto px-4 md:px-6 h-16 flex items-center justify-between">
         {/* Logo */}
-        <a href="#" className="font-heading font-bold text-xl text-white tracking-wide flex-shrink-0">
+        <a href="/#topo" className="font-heading font-bold text-xl text-white tracking-wide flex-shrink-0">
           FLH<span className="text-[#7C3AED]">.</span>
         </a>
 
