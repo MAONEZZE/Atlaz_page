@@ -4,25 +4,25 @@ import { motion } from "framer-motion";
 
 const overviewCards = [
   {
-    image: "/capa_cards/overview/todos_jacob.jpg",
+    image: "/capa_cards/overview/mari_palestra.jpg",
     title: "Imersão Estratégica",
     description:
-      "Uma imersão para empresários que querem construir um comercial de alto valor. Cada momento tem o propósito de trazer clareza, processo e direção.",
+      "Uma tarde imersiva para executivos e empresários que querem transformar conhecimento em marca educacional e ganhar dinheiro com isso.",
   },
   {
-    image: "/capa_cards/overview/jacob_kaio.jpg",
+    image: "/capa_cards/overview/dominar_situacao.jpg",
     title: "Conteúdo",
     bullets: [
       "5 horas de conteúdo",
       "Cases de sucesso",
-      "Comercial por trás das cortinas",
+      "Empresa por trás das cortinas",
     ],
   },
   {
     image: "/capa_cards/overview/todos.jpg",
     title: "Hands On",
     bullets: [
-      "Aplicação direta dos conceitos",
+      "Resolução prática de cases",
       "Mapeamento do processo comercial",
       "Networking com grandes empresários",
     ],
@@ -64,11 +64,11 @@ export function EventCards() {
                   <p className="text-white/65 text-sm leading-relaxed">{card.description}</p>
                 )}
                 {"bullets" in card && (
-                  <ul className="space-y-1.5">
+                  <ul className="space-y-1.5 pl-4">
                     {card.bullets!.map((b, j) => (
                       <li
                         key={j}
-                        className="flex items-start gap-2 text-white/65 text-sm leading-relaxed"
+                        className="flex items-start gap-3 text-white/65 text-sm leading-relaxed"
                       >
                         <span className="text-[#7C3AED] flex-shrink-0 font-bold mt-px">›</span>
                         {b}

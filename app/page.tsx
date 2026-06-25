@@ -9,6 +9,7 @@ import { Testimonials } from "@/components/sections/Testimonials";
 import { ImpactPhrase } from "@/components/sections/ImpactPhrase";
 import { Mentors } from "@/components/sections/Mentors";
 import { ForWhom } from "@/components/sections/ForWhom";
+import { SponsorCarousel } from "@/components/sections/SponsorCarousel";
 import { ApplicationForm } from "@/components/sections/ApplicationForm";
 import { Footer } from "@/components/sections/Footer";
 import { SectionDock } from "@/components/sections/SectionDock";
@@ -61,6 +62,9 @@ export default function Home() {
         <div id="forwhom">
           <ForWhom />
         </div>
+
+        {/* 11.5. Faixa de marcas/patrocinadores — carrossel infinito */}
+        <SponsorCarousel />
 
         {/* 12. Escolha sua vaga */}
         <ApplicationForm />

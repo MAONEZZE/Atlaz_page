@@ -15,6 +15,8 @@ const nextConfig: NextConfig = {
     DATA_EVENTO: process.env.DATA_EVENTO ?? "",
     DATA_CRON: process.env.DATA_CRON ?? "",
     LINK_CONVIDADO: process.env.LINK_CONVIDADO ?? "",
+    PROXIMOS_EVENTOS: process.env.PROXIMOS_EVENTOS ?? "",
+    ANO_CALENDARIO: process.env.ANO_CALENDARIO ?? "",
   },
   images: {
     remotePatterns: [

@@ -80,17 +80,19 @@ export function Hero() {
 
         {/* H1 */}
         <motion.div custom={1} variants={fadeUp} initial="hidden" animate="visible">
-          <h1 className="font-heading text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-[1.1] tracking-tight mb-6 max-w-3xl mx-auto">
-            <span className="text-white">O medo de ficar onde está, deve ser maior</span>{" "}
-            <span className="text-[#C77DFF]">do que o de mudar</span>
-          </h1>
+          <h3 className="font-heading text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-[1.1] tracking-tight mb-6 max-w-3xl mx-auto">
+            <span className="text-white">Você passou anos acumulando o que poucos têm. Agora é hora de</span>{" "}
+            <span className="text-[#C77DFF]"> transformar</span>
+            <span className="text-white"> isso em</span>
+            <span className="text-[#C77DFF]"> produto.</span>
+          </h3>
         </motion.div>
 
         {/* Subtitle */}
         <motion.div custom={2} variants={fadeUp} initial="hidden" animate="visible">
           <p className="text-xl md:text-2xl text-white/100 mb-10 leading-snug max-w-2xl mx-auto font-medium">
-            Uma imersão para empresários que querem dominar o 
-            <span className="text-[#BF78D6] font-semibold"> processo de vendas de alto valor</span>.
+            Uma imersão estratégica para quem quer construir ou escalar um negócio de educação com  
+            <span className="text-[#BF78D6] font-semibold"> posicionamento sólido, produto de alto valor e direção de longo prazo.</span>
           </p>
         </motion.div>
 

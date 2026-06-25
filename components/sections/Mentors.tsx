@@ -6,42 +6,29 @@ import Image from "next/image";
 const mentors = [
   {
     name: "Jacob Lima",
-    role: "Fundador da Atlaz",
-    photo: "/mentores/jacob.jpeg",
-    badges: ["R$2M no 1º Ano", "+500 Clientes Ativos"],
-    highlights: [
-      "+30M gerados com vendas no x1 para times comerciais",
+    lines: [
+      "Fundador da Atlaz",
+      "+R$30M em vendas x1",
       "Startup com +500 clientes ativos",
-      "Fundou a Atlaz — R$ 2M no 1º ano com 4 pessoas",
+      "R$2M no 1º ano com 4 pessoas",
     ],
+    photo: "/mentores/jacob_foto_mentor_sem_fundo.png",
     instagram: "https://instagram.com/jacobliima",
     linkedin: "https://www.linkedin.com/in/jacob-lima-41b784224/",
+    imgStyle: { objectPosition: "center top", transform: "scale(1.65) translateY(7%) translateX(1%)" },
   },
   {
     name: "Mariana Chinarelli",
-    role: "Co-fundadora da Atlaz",
-    photo: "/mentores/mari.jpeg",
-    badges: ["ESPM", "+R$50M Gerados"],
-    highlights: [
-      "R$ +50M gerados em lançamentos digitais",
-      "Formada pela ESPM",
+    lines: [
+      "Co-fundadora da Atlaz",
+      "+R$50M em lançamentos digitais",
       "Projetos com Flávio Augusto, Caio Carneiro e Joel Jota",
     ],
+    photo: "/mentores/mari_foto_mentor_sem_fundo.png",
     instagram: "https://instagram.com/mari.chinarelli",
     linkedin: "https://www.linkedin.com/in/mariana-chinarelli-491757206/",
+    imgStyle: { objectPosition: "center top", transform: "scale(1.75) translateY(8%) translateX(2%)" },
   },
-  // {
-  //   name: "Kaio César",
-  //   role: "Cofundador da BCC",
-  //   photo: "/mentores/kaio_cesar.jpeg",
-  //   badges: ["Estrategista de Marcas", "Alto Valor"],
-  //   highlights: [
-  //     "Estrategista de marcas de alto valor",
-  //     "Soldiers Nutrition, Odd Sheep, Next10",
-  //     "Marca de suplementação de Neymar Jr.",
-  //   ],
-  //   instagram: "https://instagram.com/kaioccezar",
-  // },
 ];
 
 export function Mentors() {
@@ -80,7 +67,7 @@ export function Mentors() {
         </motion.div>
 
         {/* Mentor cards */}
-        <div className="grid md:grid-cols-2 gap-6">
+        <div className="grid md:grid-cols-2 gap-8 max-w-3xl mx-auto">
           {mentors.map((mentor, i) => (
             <motion.div
               key={i}
@@ -88,76 +75,65 @@ export function Mentors() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: i * 0.15 }}
-              className="glass-card p-6 md:p-8 flex flex-col items-center text-center group cursor-default"
+              className="relative rounded-3xl bg-[#F7F5F2] border border-gray-200/60 shadow-[0_8px_40px_rgba(0,0,0,0.18)] overflow-hidden cursor-default"
             >
-              {/* Circular photo — 150px with hover zoom */}
-              <div className="relative w-[150px] h-[150px] rounded-full overflow-hidden mb-5 border-2 border-[#7C3AED]/30 group-hover:border-[#7C3AED]/60 transition-colors duration-300 flex-shrink-0">
+              {/* Photo fills the entire card — zoomed in */}
+              <div className="relative h-[500px]">
                 <Image
                   src={mentor.photo}
                   alt={mentor.name}
                   fill
-                  className="object-cover transition-transform duration-500 group-hover:scale-110"
-                  sizes="150px"
+                  className="object-contain"
+                  style={mentor.imgStyle}
+                  sizes="(max-width: 768px) 100vw, 500px"
                 />
               </div>
 
-              {/* Name + role */}
-              <h3 className="font-heading font-bold text-white text-xl mb-1">{mentor.name}</h3>
-              <p className="text-[#7C3AED] text-sm font-semibold mb-4">{mentor.role}</p>
+              {/* Overlay group: info card + social icons — float over image */}
+              <div className="absolute bottom-4 inset-x-3 z-10 flex flex-col items-center gap-2">
+                {/* White info card */}
+                <div className="bg-white rounded-xl px-4 py-3 text-center w-full shadow-lg">
+                  <h3 className="font-heading font-bold text-gray-900 text-base leading-tight">
+                    {mentor.name}
+                  </h3>
+                  <div className="mt-1 space-y-px">
+                    {mentor.lines.map((line, j) => (
+                      <p key={j} className="text-gray-500 text-xs font-medium leading-snug">
+                        {line}
+                      </p>
+                    ))}
+                  </div>
+                </div>
 
-              {/* Cert / credential badges */}
-              <div className="flex flex-wrap justify-center gap-1 mb-5">
-                {mentor.badges.map((badge) => (
-                  <span
-                    key={badge}
-                    className="px-2.5 py-1 rounded-full bg-[#7C3AED]/10 border border-[#7C3AED]/20 text-[#7C3AED] text-xs font-medium"
-                  >
-                    {badge}
-                  </span>
-                ))}
-              </div>
-
-              {/* Highlights */}
-              <div className="border-t border-white/[0.08] pt-5 w-full space-y-2.5 mb-5">
-                {mentor.highlights.map((h, j) => (
-                  <p key={j} className="text-white/80 text-sm leading-relaxed">
-                    {h}
-                  </p>
-                ))}
-              </div>
-
-              {/* Social links */}
-              <div className="flex items-center justify-center gap-3 mt-auto">
-                {mentor.instagram && (
-                  <a
-                    href={mentor.instagram}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label={`Instagram de ${mentor.name}`}
-                    className="w-9 h-9 rounded-lg bg-white/[0.05] border border-white/[0.1] flex items-center justify-center text-white/50 hover:text-white hover:border-[#7C3AED]/40 hover:bg-[#7C3AED]/10 transition-all duration-200 cursor-pointer"
-                  >
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-4 h-4" aria-hidden="true">
-                      <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
-                      <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
-                      <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
-                    </svg>
-                  </a>
-                )}
-                {mentor.linkedin && (
+                {/* Social icons — below info card, on top of image */}
+                <div className="flex items-center gap-2">
+                  {mentor.instagram && (
+                    <a
+                      href={mentor.instagram}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label={`Instagram de ${mentor.name}`}
+                      className="w-8 h-8 rounded-full bg-white/90 backdrop-blur-sm flex items-center justify-center text-gray-700 hover:bg-white hover:text-[#7C3AED] shadow-md transition-all duration-200 cursor-pointer"
+                    >
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-4 h-4" aria-hidden="true">
+                        <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                        <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+                      </svg>
+                    </a>
+                  )}
                   <a
                     href={mentor.linkedin}
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label={`LinkedIn de ${mentor.name}`}
-                    className="w-9 h-9 rounded-lg bg-white/[0.05] border border-white/[0.1] flex items-center justify-center text-white/50 hover:text-white hover:border-[#7C3AED]/40 hover:bg-[#7C3AED]/10 transition-all duration-200 cursor-pointer"
+                    className="w-8 h-8 rounded-full bg-[#7C3AED] flex items-center justify-center shadow-[0_0_12px_rgba(124,58,237,0.5)] hover:bg-[#6D28D9] hover:shadow-[0_0_18px_rgba(124,58,237,0.7)] transition-all duration-200 cursor-pointer"
                   >
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-4 h-4" aria-hidden="true">
-                      <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
-                      <rect width="4" height="12" x="2" y="9" />
-                      <circle cx="4" cy="4" r="2" />
+                    <svg viewBox="0 0 24 24" fill="white" className="w-4 h-4" aria-hidden="true">
+                      <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
                     </svg>
                   </a>
-                )}
+                </div>
               </div>
             </motion.div>
           ))}

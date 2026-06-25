@@ -7,53 +7,53 @@ const jornada = [
   {
     image: "/capa_cards/jornada/ilusao.png",
     imageAlign: "right" as const,
-    act: "Inicio da Jornada",
+    act: "Momento I",
     title: "A Ilusão",
-    subtitle: "Diagnóstico",
+    subtitle: "OPORTUNIDADE DE MERCADO",
     icon: Eye,
     items: [
-      "Por que vender mais barato não resolve",
-      "O que impede o salto para alto valor",
-      "Onde o comercial realmente se fragiliza",
+      "Qual o timing do mercado de educação (mentoria, conselhos, consultoria…) hoje.",
+      "O que separa quem tem sucesso de quem não tem",
+      "Todas as fases para estruturar uma marca educacional",
     ],
   },
   {
     image: "/capa_cards/jornada/desenvolvimento.png",
     imageAlign: "left" as const,
-    act: "Desenvolvimento",
+    act: "Momento II",
     title: "O Processo",
-    subtitle: "Operação Comercial",
+    subtitle: "OPERAÇÃO COMERCIAL",
     icon: TrendingUp,
     items: [
-      "Estrutura para vender com consistência",
-      "Qualificação e condução comercial",
-      "Fechamento de contratos de alto valor",
+      "Como vender produto de alto valor",
+      "Como chegar nos clientes certos e ter demanda",
+      "Processo comercial para guiar uma venda",
     ],
   },
   {
     image: "/capa_cards/jornada/fundacao.png",
     imageAlign: "right" as const,
-    act: "Aprofundamento",
-    title: "A Fundação",
-    subtitle: "Posicionamento",
+    act: "Momento III",
+    title: "A Resolução",
+    subtitle: "CONSTRUINDO NA PRÁTICA",
     icon: Layers,
     items: [
-      "Como construir valor percebido antes da proposta",
-      "Narrativa, autoridade e oferta trabalhando juntas",
-      "Como sustentar preços mais altos na decisão do cliente",
+      "Solucionando casos reais dos participantes",
+      "Como se tornar uma referência",
+      "Plano de ação",
     ],
   },
   {
     image: "/capa_cards/jornada/horizonte.png",
     imageAlign: "left" as const,
-    act: "Reflexão",
+    act: "Momento IV",
     title: "O Horizonte",
-    subtitle: "Visão Estratégica",
+    subtitle: "VISÃO ESTRATÉGICA",
     icon: Compass,
     items: [
-      "Crescimento sustentável de longo prazo",
-      "Decisões, critérios e direção",
-      "O negócio que você quer construir",
+      "Servir, honrar e prosperar",
+      "Decisões, critérios e direção de longo prazo",
+      "O negócio educacional que você quer e pode construir",
     ],
   },
 ];
@@ -143,9 +143,7 @@ export function WhatIs() {
                       {item.items.map((bullet, j) => (
                         <li
                           key={j}
-                          className={`flex items-start gap-1.5 text-white/65 text-xs leading-snug ${
-                            isRight ? "" : "flex-row-reverse"
-                          }`}
+                          className={`flex items-start gap-1.5 text-white/65 text-xs leading-snug`}
                         >
                           <span className="text-[#7C3AED] flex-shrink-0 font-bold">›</span>
                           {bullet}

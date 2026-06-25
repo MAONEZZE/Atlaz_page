@@ -167,7 +167,8 @@ export function VideoFrame() {
                 O que é o Fator de Longo Horizonte?
               </h2>
               <p className="text-white/65 text-sm md:text-base leading-relaxed">
-                Uma tarde imersiva para empresários que querem dominar a lógica das vendas de alto valor com processo, construção de posicionamento e direção estratégica de longo prazo.
+                Uma tarde imersiva para executivos e empresários que querem transformar conhecimento em marca educacional, ou escalar o que já existe com lucro e método.
+Um negócio educacional construído sobre bagagem real, que só acumulam valor com o tempo e são capazes de gerar transformação contínua. Não vive de pico. Quanto mais o tempo passa, mais ele vale.
               </p>
             </motion.div>
 
