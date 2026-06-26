@@ -7,7 +7,7 @@ export function SponsorCarouselClient({ brands }: { brands: string[] }) {
   const loop = [...brands, ...brands];
 
   return (
-    <section className="relative min-h-[180px] px-4 overflow-hidden flex items-center">
+    <section className="relative min-h-[180px] overflow-hidden flex items-center">
       {/* Band background — same deep purple stripe as the impact phrases */}
       <div className="absolute inset-0 bg-[#6740A9]/60" />
       <div className="absolute inset-0 bg-gradient-to-r from-[#3B0067] via-[#6740A9]/80 to-[#3B0067]" />
@@ -16,7 +16,7 @@ export function SponsorCarouselClient({ brands }: { brands: string[] }) {
       <div className="absolute inset-x-0 bottom-0 h-px bg-gradient-to-r from-transparent via-[#7C3AED]/40 to-transparent" />
 
       {/* Carousel — pauses on hover */}
-      <div className="group relative w-full overflow-hidden">
+      <div className="group relative w-full self-stretch flex items-center overflow-hidden">
         {/* edge fades to hide the loop entry/exit */}
         <div className="pointer-events-none absolute inset-y-0 left-0 z-10 w-24 bg-gradient-to-r from-[#3B0067] to-transparent" />
         <div className="pointer-events-none absolute inset-y-0 right-0 z-10 w-24 bg-gradient-to-l from-[#3B0067] to-transparent" />
@@ -28,7 +28,7 @@ export function SponsorCarouselClient({ brands }: { brands: string[] }) {
               <img
                 src={`/marcas/${file}`}
                 alt=""
-                className="h-20 w-60 object-contain [filter:grayscale(100%)_opacity(0.5)]"
+                className="h-20 w-60 object-contain mix-blend-lighten [filter:grayscale(100%)_opacity(0.5)]"
               />
             </div>
           ))}

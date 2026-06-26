@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { CheckCircle } from "lucide-react";
 import Image from "next/image";
+import { useState, useEffect } from "react";
 
 const targets = [
   {
@@ -42,8 +43,8 @@ const TOP_START = 8;
 // Near (foreground) photos get a COARSE grid — one photo per big cell, so
 // gaps are guaranteed and nothing overlaps. Far (blurred/depth) photos sit in
 // the half-cell gaps between them, filling the background.
-function generateLayout(count: number) {
-  const nearSizes = [72, 84, 76, 88, 80];
+function generateLayout(count: number, scale = 1) {
+  const nearSizes = [72, 84, 76, 88, 80].map((s) => Math.round(s * scale));
   const durs = [3.5, 4.1, 3.8, 4.4, 3.6, 4.2, 3.9, 4.6];
   const span = 94 - TOP_START;
   const cl = (v: number, a: number, b: number) => Math.min(Math.max(v, a), b);
@@ -129,10 +130,30 @@ function generateParticles(count: number) {
 const PARTICLES = generateParticles(200);
 
 export function ForWhomClient({ clientFiles }: { clientFiles: string[] }) {
-  const { near: positions, far: farPositions } = generateLayout(clientFiles.length);
+  // On phones, render fewer scattered photos so the section stays light.
+  // null = full set (server + desktop). Set after mount to avoid hydration mismatch.
+  const [maxPhotos, setMaxPhotos] = useState<number | null>(null);
+
+  useEffect(() => {
+    const update = () =>
+      setMaxPhotos(
+        window.innerWidth < 768 ? Math.max(6, Math.ceil(clientFiles.length * 0.7)) : null
+      );
+    update();
+    window.addEventListener("resize", update);
+    return () => window.removeEventListener("resize", update);
+  }, [clientFiles.length]);
+
+  const isPhone = maxPhotos != null;
+  const visibleFiles = maxPhotos == null ? clientFiles : clientFiles.slice(0, maxPhotos);
+  // Shrink photos on phones so the fixed px sizes don't overlap on a narrow grid.
+  const { near: positions, far: farPositions } = generateLayout(
+    visibleFiles.length,
+    isPhone ? 0.5 : 1
+  );
 
   return (
-    <section className="relative py-24 px-4 overflow-hidden">
+    <section className="relative pt-24 pb-40 md:pb-24 px-4 overflow-hidden">
 
       {/* Full-section background */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
@@ -143,7 +164,7 @@ export function ForWhomClient({ clientFiles }: { clientFiles: string[] }) {
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_40%_45%_at_50%_50%,rgba(196,181,253,0.12)_0%,transparent_70%)]" />
 
         {/* Far layer — repeated photos, smaller/blurred/darker (depth) */}
-        {clientFiles.map((file, idx) => {
+        {visibleFiles.map((file, idx) => {
           const pos = farPositions[idx];
           return (
             <motion.div
@@ -190,7 +211,7 @@ export function ForWhomClient({ clientFiles }: { clientFiles: string[] }) {
         ))}
 
         {/* Scattered client photos */}
-        {clientFiles.map((file, idx) => {
+        {visibleFiles.map((file, idx) => {
           const pos = positions[idx];
           return (
             <motion.div
@@ -244,7 +265,7 @@ export function ForWhomClient({ clientFiles }: { clientFiles: string[] }) {
             </p>
           </motion.div>
 
-          <div className="space-y-8">
+          <div className="space-y-20 md:space-y-8">
             {targets.map((item, i) => (
               <motion.div
                 key={i}
@@ -274,7 +295,7 @@ export function ForWhomClient({ clientFiles }: { clientFiles: string[] }) {
                         )
                       )}
                   </p>
-                  <ul className="space-y-2.5">
+                  <ul className="hidden md:block space-y-2.5">
                     {item.checks.map((check, j) => (
                       <li key={j} className="flex items-start gap-3">
                         <CheckCircle className="w-5 h-5 text-[#7C3AED] flex-shrink-0 mt-0.5" />
