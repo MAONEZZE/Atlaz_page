@@ -32,13 +32,13 @@ export function Hero() {
         style={{
           backgroundImage: "url('/logos/img_hero.png')",
           backgroundSize: "cover",
-          filter: "brightness(1.6) saturate(1.5)",
-          opacity: 0.65,
+          filter: "brightness(1.1) saturate(1.4)",
+          opacity: 0.4,
         }}
       />
 
       {/* Dark overlay — keeps text readable */}
-      <div className="absolute inset-0 bg-[#0a050f]/50 pointer-events-none" />
+      <div className="absolute inset-0 bg-[#0a050f]/75 pointer-events-none" />
 
       {/* Vignette: fade left/right/bottom edges to bg */}
       <div className="absolute inset-0 bg-gradient-to-r from-[#0a050f]/75 via-transparent to-[#0a050f]/75 pointer-events-none" />
@@ -78,21 +78,28 @@ export function Hero() {
           </div>
         </motion.div> */}
 
+        {/* Brand title */}
+        <motion.div custom={0} variants={fadeUp} initial="hidden" animate="visible">
+          <h1 className="font-heading text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-bold leading-none tracking-tight mb-8 text-white">
+            ATL<span className="text-[#BF78D6]">A</span>Z
+          </h1>
+        </motion.div>
+
         {/* H1 */}
         <motion.div custom={1} variants={fadeUp} initial="hidden" animate="visible">
-          <h3 className="font-heading text-3xl sm:text-5xl md:text-6xl lg:text-5xl font-bold leading-[1.1] tracking-tight mb-6 max-w-3xl mx-auto">
+          <h3 className="font-heading text-xl sm:text-2xl md:text-3xl lg:text-3xl font-bold leading-[1.15] tracking-tight mb-5 max-w-2xl mx-auto">
             <span className="text-white">Você passou anos acumulando o que poucos têm. Agora é hora de</span>{" "}
-            <span className="text-[#c79af0]"> transformar</span>
+            <span className="text-[#d8b673]"> transformar</span>
             <span className="text-white"> isso em</span>
-            <span className="text-[#c79af0]"> produto.</span>
+            <span className="text-[#d8b673]"> produto.</span>
           </h3>
         </motion.div>
 
         {/* Subtitle */}
         <motion.div custom={2} variants={fadeUp} initial="hidden" animate="visible">
-          <p className="text-xl md:text-2xl text-white/100 mb-10 leading-snug max-w-2xl mx-auto font-medium">
-            Uma imersão estratégica para quem quer construir ou escalar um negócio de educação com  
-            <span className="text-[#BF78D6] font-semibold"> posicionamento sólido, produto de alto valor e direção de longo prazo.</span>
+          <p className="text-base md:text-lg text-white/100 mb-10 leading-snug max-w-xl mx-auto font-medium">
+            Uma imersão estratégica para quem quer construir ou escalar um negócio de educação com
+            <span className="font-semibold"> posicionamento sólido, produto de alto valor e direção de longo prazo.</span>
           </p>
         </motion.div>
 

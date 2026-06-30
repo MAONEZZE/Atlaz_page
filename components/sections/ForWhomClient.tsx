@@ -298,7 +298,7 @@ export function ForWhomClient({ clientFiles }: { clientFiles: string[] }) {
                   <ul className="hidden md:block space-y-2.5">
                     {item.checks.map((check, j) => (
                       <li key={j} className="flex items-start gap-3">
-                        <CheckCircle className="w-5 h-5 text-[#6d2399] flex-shrink-0 mt-0.5" />
+                        <CheckCircle className="w-5 h-5 text-[#d8b673] flex-shrink-0 mt-0.5" />
                         <span className="text-white/65 text-sm leading-relaxed">{check}</span>
                       </li>
                     ))}
