@@ -91,10 +91,13 @@ export function PerfilCard({ pessoa }: { pessoa: Pessoa }) {
                       {secao.emb}
                     </p>
                     <h1
-                      className="font-heading font-bold uppercase leading-[0.85] tracking-[0.08em] text-[#f5eff8]"
+                      className="font-heading font-bold uppercase leading-[0.85] tracking-[0.08em] bg-clip-text text-transparent"
                       style={{
                         fontSize: "clamp(36px, 6vw, 80px)",
-                        textShadow: "0 0 24px rgba(109,35,153,0.25)",
+                        backgroundImage:
+                          "linear-gradient(to bottom, #e9d7ff, #c79af0, #6d2399)",
+                        filter:
+                          "drop-shadow(0 0 6px rgba(199,154,240,0.35)) drop-shadow(0 0 16px rgba(109,35,153,0.3))",
                       }}
                     >
                       {secao.nome}
