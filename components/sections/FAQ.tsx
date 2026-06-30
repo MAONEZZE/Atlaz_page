@@ -50,7 +50,7 @@ export function FAQ() {
           transition={{ duration: 0.7 }}
           className="text-center mb-10"
         >
-          <p className="text-[#7C3AED] text-xs font-bold uppercase tracking-[0.2em] mb-4">FAQ</p>
+          <p className="font-ui text-[#d8b673] text-xs font-bold uppercase tracking-[0.2em] mb-4">FAQ</p>
           <h2 className="font-heading text-3xl md:text-5xl font-bold text-white mb-4 leading-tight">
             Perguntas Frequentes
           </h2>
@@ -70,7 +70,7 @@ export function FAQ() {
                 value={i}
                 className="border-white/[0.08] border-b last:border-0"
               >
-                <AccordionTrigger className="text-white/80 hover:text-[#7C3AED] text-left text-sm md:text-base font-medium py-4 hover:no-underline transition-colors duration-200">
+                <AccordionTrigger className="text-white/80 hover:text-[#6d2399] text-left text-sm md:text-base font-medium py-4 hover:no-underline transition-colors duration-200">
                   {item.question}
                 </AccordionTrigger>
                 <AccordionContent className="text-white/50 text-sm leading-relaxed pb-4">

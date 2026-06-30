@@ -91,7 +91,7 @@ export function Schedule() {
               <p className="text-white/40 text-sm mt-1">Parcelamento disponível</p>
               <a
                 href="#aplicar"
-                className="inline-flex items-center justify-center w-full mt-5 px-6 py-3 rounded-xl bg-gradient-to-r from-indigo-500 to-rose-500 text-white font-semibold hover:opacity-90 transition-opacity text-sm"
+                className="font-ui inline-flex items-center justify-center w-full mt-5 px-6 py-3 rounded-xl bg-gradient-to-r from-indigo-500 to-rose-500 text-white font-semibold hover:opacity-90 transition-opacity text-sm"
               >
                 Quero aplicar
               </a>

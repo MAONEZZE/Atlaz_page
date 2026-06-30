@@ -7,8 +7,11 @@ import pessoasJson from "@/data/pessoas.json";
 // ---------------------------------------------------------------------------
 
 export interface Secao {
-  titulo: string;
-  descricao: string;
+  titulo?: string;
+  descricao?: string;
+  /** Quando presente, a seção vira cabeçalho: selo `emb` + `nome` em destaque. */
+  emb?: string;
+  nome?: string;
 }
 
 export interface Contatos {

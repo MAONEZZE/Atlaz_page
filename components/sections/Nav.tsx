@@ -43,7 +43,7 @@ function Countdown() {
 
   if (t.expired) {
     return (
-      <span className="text-[#7C3AED] text-xs font-semibold uppercase tracking-wider">
+      <span className="text-[#6d2399] text-xs font-semibold uppercase tracking-wider">
         Evento em andamento!
       </span>
     );
@@ -63,7 +63,7 @@ function Countdown() {
             <span className="font-mono font-bold text-white text-sm md:text-2xl tabular-nums leading-none">
               {unit === "dias" ? value : pad(value)}
             </span>
-            <span className="text-[#C77DFF]/80 text-[11px] font-semibold mb-2">{unit}</span>
+            <span className="text-[#c79af0]/80 text-[11px] font-semibold mb-2">{unit}</span>
           </div>
         </div>
       ))}
@@ -83,21 +83,21 @@ export function Nav() {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 backdrop-blur-xl border-b ${
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 backdrop-blur-md border-b ${
         scrolled
-          ? "bg-[#0D0618]/80 border-white/[0.08] shadow-[0_1px_24px_rgba(0,0,0,0.4)]"
+          ? "bg-[#0a050f]/80 border-white/[0.08] shadow-[0_1px_24px_rgba(0,0,0,0.4)]"
           : "bg-white/[0.03] border-white/[0.05]"
       }`}
     >
       <div className="max-w-6xl mx-auto px-4 md:px-6 h-16 flex items-center justify-between">
         {/* Logo */}
         <a href="/#topo" className="font-heading font-bold text-xl text-white tracking-wide flex-shrink-0">
-          FLH<span className="text-[#7C3AED]">.</span>
+          FLH<span className="text-[#6d2399]">.</span>
         </a>
 
         {/* Countdown — center */}
         <div className="absolute left-1/2 -translate-x-1/2 hidden md:flex flex-col items-center">
-          <p className="text-white/90 text-[12px] font-semibold uppercase tracking-[0.15em] mb-2">
+          <p className="font-ui text-white/90 text-[12px] font-semibold uppercase tracking-[0.15em] mb-2">
             {process.env.DATA_EVENTO} · São Paulo
           </p>
           <Countdown />
@@ -107,13 +107,13 @@ export function Nav() {
         <div className="hidden md:flex items-center gap-3 flex-shrink-0">
           <a
             href="/#ingressos"
-            className="inline-flex items-center justify-center px-5 py-2 rounded-lg bg-[#7C3AED] text-white text-sm font-semibold hover:bg-[#6D28D9] transition-colors duration-200 cursor-pointer"
+            className="font-ui inline-flex items-center justify-center px-5 py-2 rounded-lg bg-[#7c2fb0] text-white text-sm font-semibold hover:bg-[#6d2399] transition-colors duration-200 cursor-pointer"
           >
             Inscreva-se
           </a>
           <Link
             href="/proximas-edicoes"
-            className="inline-flex items-center justify-center px-5 py-2 rounded-lg border border-[#7C3AED]/50 text-white text-sm font-semibold hover:bg-[#7C3AED]/10 transition-colors duration-200 cursor-pointer"
+            className="font-ui inline-flex items-center justify-center px-5 py-2 rounded-lg border border-[#6d2399]/50 text-[#6d2399] text-sm font-semibold hover:bg-[#7c2fb0]/10 transition-colors duration-200 cursor-pointer"
           >
             Próximas edições
           </Link>
@@ -141,7 +141,7 @@ export function Nav() {
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.2 }}
-            className="md:hidden bg-[#0D0618]/95 backdrop-blur-md border-t border-white/[0.06] overflow-hidden"
+            className="md:hidden bg-[#0a050f]/95 backdrop-blur-md border-t border-white/[0.06] overflow-hidden"
           >
             <nav className="flex flex-col px-4 py-4 gap-1" aria-label="Menu móvel">
               {navLinks.map((link) => (
@@ -156,14 +156,14 @@ export function Nav() {
               ))}
               <a
                 href="/#ingressos"
-                className="inline-flex items-center justify-center px-5 py-3 rounded-lg bg-[#7C3AED] text-white text-sm font-semibold hover:bg-[#6D28D9] transition-colors mt-3 cursor-pointer"
+                className="font-ui inline-flex items-center justify-center px-5 py-3 rounded-lg bg-[#7c2fb0] text-white text-sm font-semibold hover:bg-[#6d2399] transition-colors mt-3 cursor-pointer"
                 onClick={() => setMenuOpen(false)}
               >
                 Inscreva-se
               </a>
               <Link
                 href="/proximas-edicoes"
-                className="inline-flex items-center justify-center px-5 py-3 rounded-lg border border-[#7C3AED]/50 text-white text-sm font-semibold hover:bg-[#7C3AED]/10 transition-colors mt-2 cursor-pointer"
+                className="font-ui inline-flex items-center justify-center px-5 py-3 rounded-lg border border-[#6d2399]/50 text-[#6d2399] text-sm font-semibold hover:bg-[#7c2fb0]/10 transition-colors mt-2 cursor-pointer"
                 onClick={() => setMenuOpen(false)}
               >
                 Próximas edições

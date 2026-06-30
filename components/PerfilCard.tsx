@@ -38,7 +38,7 @@ export function PerfilCard({ pessoa }: { pessoa: Pessoa }) {
       className="relative min-h-screen w-full flex items-center justify-center overflow-hidden"
     >
       {/* Background base */}
-      <div className="absolute inset-0 bg-[#0D0618]" />
+      <div className="absolute inset-0 bg-[#0a050f]" />
 
       {/* Hero image — mais escuro/opaco que o Hero da landing */}
       <div
@@ -52,14 +52,14 @@ export function PerfilCard({ pessoa }: { pessoa: Pessoa }) {
       />
 
       {/* Dark overlay — mais opaco */}
-      <div className="absolute inset-0 bg-[#0D0618]/75 pointer-events-none" />
+      <div className="absolute inset-0 bg-[#0a050f]/75 pointer-events-none" />
 
       {/* Vignette */}
-      <div className="absolute inset-0 bg-gradient-to-r from-[#0D0618]/85 via-transparent to-[#0D0618]/85 pointer-events-none" />
-      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[#0D0618] pointer-events-none" />
+      <div className="absolute inset-0 bg-gradient-to-r from-[#0a050f]/85 via-transparent to-[#0a050f]/85 pointer-events-none" />
+      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[#0a050f] pointer-events-none" />
 
       {/* Ambient purple glow */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px] bg-[#7C3AED]/[0.06] rounded-full blur-[140px] pointer-events-none" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px] bg-[#6d2399]/[0.06] rounded-full blur-[140px] pointer-events-none" />
 
       {/* Subtle grid */}
       <div
@@ -85,12 +85,35 @@ export function PerfilCard({ pessoa }: { pessoa: Pessoa }) {
                 animate="visible"
                 className="mb-8 last:mb-0"
               >
-                <p className="text-[#7C3AED] text-2xl font-bold uppercase tracking-[0.2em] mb-3">
-                  {secao.titulo}
-                </p>
-                <p className="text-white/80 text-lg leading-relaxed">
-                  {secao.descricao}
-                </p>
+                {secao.emb ? (
+                  <div className="text-center mb-12 md:mb-20">
+                    <p className="font-ui text-[#a89bb4] text-sm md:text-base font-semibold uppercase tracking-[0.3em] mb-4">
+                      {secao.emb}
+                    </p>
+                    <h1
+                      className="font-heading font-bold uppercase leading-[0.85] tracking-[0.08em] text-[#f5eff8]"
+                      style={{
+                        fontSize: "clamp(36px, 6vw, 80px)",
+                        textShadow: "0 0 24px rgba(109,35,153,0.25)",
+                      }}
+                    >
+                      {secao.nome}
+                    </h1>
+                    <div
+                      className="mx-auto mt-10 h-0.5 w-20 bg-[#d8b673]"
+                      style={{ boxShadow: "0 0 16px rgba(216,182,115,0.6)" }}
+                    />
+                  </div>
+                ) : (
+                  <div className="text-center">
+                    <h2 className="font-ui text-[#d8b673] text-xs md:text-sm font-semibold uppercase tracking-[0.4em] mb-5">
+                      {secao.titulo}
+                    </h2>
+                    <p className="text-[#dcd3e3] text-lg leading-[1.65] max-w-[600px] mx-auto">
+                      {secao.descricao}
+                    </p>
+                  </div>
+                )}
               </motion.div>
             ))}
           </div>
@@ -120,7 +143,7 @@ export function PerfilCard({ pessoa }: { pessoa: Pessoa }) {
                 ) : (
                   // Fallback gracioso — inicial em círculo gradiente
                   <div className="absolute inset-0 flex items-center justify-center">
-                    <div className="w-40 h-40 rounded-full bg-gradient-to-br from-[#7C3AED] to-[#4F0069] flex items-center justify-center shadow-xl">
+                    <div className="w-40 h-40 rounded-full bg-gradient-to-br from-[#6d2399] to-[#241f2b] flex items-center justify-center shadow-xl">
                       <span className="font-heading font-bold text-white text-6xl">
                         {inicial(pessoa)}
                       </span>
@@ -132,9 +155,9 @@ export function PerfilCard({ pessoa }: { pessoa: Pessoa }) {
               {/* Info-box + ícones sociais — flutuam sobre a imagem */}
               <div className="absolute bottom-4 inset-x-3 z-10 flex flex-col items-center gap-2">
                 <div className="bg-white rounded-xl px-4 py-3 text-center w-full shadow-lg">
-                  <h1 className="font-heading font-bold text-gray-900 text-lg leading-tight">
+                  <p className="font-heading font-bold text-gray-900 text-lg leading-tight">
                     {pessoa.nome}
-                  </h1>
+                  </p>
                   <p className="text-gray-500 text-sm font-medium leading-snug mt-1">
                     {cargoCompleto(pessoa)}
                   </p>
@@ -148,7 +171,7 @@ export function PerfilCard({ pessoa }: { pessoa: Pessoa }) {
                         target="_blank"
                         rel="noopener noreferrer"
                         aria-label={`Instagram de ${pessoa.nome}`}
-                        className="w-8 h-8 rounded-full bg-white/90 backdrop-blur-sm flex items-center justify-center text-gray-700 hover:bg-white hover:text-[#7C3AED] shadow-md transition-all duration-200 cursor-pointer"
+                        className="w-8 h-8 rounded-full bg-white/90 backdrop-blur-sm flex items-center justify-center text-gray-700 hover:bg-white hover:text-[#6d2399] shadow-md transition-all duration-200 cursor-pointer"
                       >
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-4 h-4" aria-hidden="true">
                           <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
@@ -163,7 +186,7 @@ export function PerfilCard({ pessoa }: { pessoa: Pessoa }) {
                         target="_blank"
                         rel="noopener noreferrer"
                         aria-label={`LinkedIn de ${pessoa.nome}`}
-                        className="w-8 h-8 rounded-full bg-[#7C3AED] flex items-center justify-center shadow-[0_0_12px_rgba(124,58,237,0.5)] hover:bg-[#6D28D9] hover:shadow-[0_0_18px_rgba(124,58,237,0.7)] transition-all duration-200 cursor-pointer"
+                        className="w-8 h-8 rounded-full bg-[#6d2399] flex items-center justify-center shadow-[0_0_12px_rgba(109,35,153,0.5)] hover:bg-[#1f1133] hover:shadow-[0_0_18px_rgba(109,35,153,0.7)] transition-all duration-200 cursor-pointer"
                       >
                         <svg viewBox="0 0 24 24" fill="white" className="w-4 h-4" aria-hidden="true">
                           <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
@@ -179,7 +202,7 @@ export function PerfilCard({ pessoa }: { pessoa: Pessoa }) {
       </div>
 
       {/* Bottom fade */}
-      <div className="absolute bottom-0 left-0 right-0 h-40 bg-gradient-to-t from-[#0D0618] to-transparent pointer-events-none" />
+      <div className="absolute bottom-0 left-0 right-0 h-40 bg-gradient-to-t from-[#0a050f] to-transparent pointer-events-none" />
     </section>
   );
 }

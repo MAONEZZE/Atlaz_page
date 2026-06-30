@@ -11,12 +11,12 @@
     },
     "secoes": [
       {
-        "titulo": "Sobre",
-        "descricao": "Sócio e CRO da Portus Digital, um ecossistema que integra tecnologia, recrutamento e inteligência organizacional para o mercado digital e a creator economy. À frente do maior SaaS de talentos do Brasil focado em Marketing, Vendas, Produto e Gestão, conta com uma base de mais de 200 mil candidatos. Com forte presença nas maiores comunidades empresariais do país, já impactou mais de mil empresas e gerou mais de 3 mil empregos na nova economia."
+        "emb": "Embaixador Atlaz",
+        "nome": "Bruno Rodrigues"
       },
       {
-        "titulo": "O que faço",
-        "descricao": "Ajudo empresários da creator economy e de empresas digitais a construírem times de alta performance, profissionalizarem sua estrutura e escalarem com eficiência. Para isso, conecto tecnologia e processos premium de recrutamento diretamente com fundadores e gestores, resolvendo gargalos operacionais e posicionando talentos estratégicos que realmente movem os indicadores e aceleram o crescimento do negócio."
+        "titulo": "Sobre",
+        "descricao": "Sou Sócio e CRO da Portus Digital, um ecossistema que integra tecnologia, recrutamento e inteligência organizacional para o mercado digital e a creator economy. À frente do maior SaaS de talentos do Brasil focado em Marketing, Vendas, Produto e Gestão, conta com uma base de mais de 200 mil candidatos. Com forte presença nas maiores comunidades empresariais do país, já impactou mais de mil empresas e gerou mais de 3 mil empregos na nova economia."
       }
     ]
   },
@@ -31,12 +31,12 @@
     },
     "secoes": [
       {
-        "titulo": "Sobre",
-        "descricao": "Sou Engenheiro Industrial, Conselheiro e Executivo Sênior com 36 anos de experiência operacional e em supply chain. Atuei por décadas na Toledo do Brasil, liderando projetos internacionais na Alemanha, China e EUA. Sou pós-graduado pela FGV-SP, possuo MBA em Qualidade e Produtividade e atuo como Responsável Técnico no CREA-SP desde 1995."
+        "emb": "Embaixador Atlaz",
+        "nome": "Antonio Minarro"
       },
       {
-        "titulo": "O que faço",
-        "descricao": "Atuo como Conselheiro, Mentor e Consultor Estratégico para fundadores de PMEs e startups, tirando o líder do caos operacional e profissionalizando a gestão com estrutura e governança. Trabalho diretamente na estruturação de conselhos, automação de processos, indicadores de rotina e redução de custos (aplicando Lean, TOC e IA) para gerar crescimento sustentável, lucrativo e previsível."
+        "titulo": "Sobre",
+        "descricao": "Sou Engenheiro Industrial, Conselheiro e Executivo Sênior com 36 anos de experiência operacional e em supply chain. Atuei por décadas na Toledo do Brasil, liderando projetos internacionais na Alemanha, China e EUA. Sou pós-graduado pela FGV-SP, possuo MBA em Qualidade e Produtividade e atuo como Responsável Técnico no CREA-SP desde 1995."
       }
     ]
   },
@@ -51,12 +51,12 @@
     },
     "secoes": [
       {
-        "titulo": "Sobre",
-        "descricao": "Sou engenheiro formado pela UNICAMP, movido pela paixão de construir conexões autênticas e comunidades apaixonadas. Unindo a bagagem analítica com o foco em pessoas, dedico minha trajetória a transformar marcas comuns em movimentos poderosos e negócios impossíveis de copiar."
+        "emb": "Embaixador Atlaz",
+        "nome": "Thiago Silva"
       },
       {
-        "titulo": "O que faço",
-        "descricao": "Desenvolvi a metodologia CULTURA DE FÃ®, que transforma clientes e colaboradores em defensores que vendem espontaneamente a sua marca. Ensino esse método na Link School of Business e aplico-o em mentorias e consultorias para líderes que desejam criar negócios autênticos, altamente recomendados e fáceis de amar."
+        "titulo": "Sobre",
+        "descricao": "Sou engenheiro formado pela UNICAMP, movido pela paixão de construir conexões autênticas e comunidades apaixonadas. Unindo a bagagem analítica com o foco em pessoas, dedico minha trajetória a transformar marcas comuns em movimentos poderosos e negócios impossíveis de copiar."
       }
     ]
   },
@@ -71,12 +71,12 @@
     },
     "secoes": [
       {
-        "titulo": "Sobre",
-        "descricao": "Sou um executivo de inovação com mais de 20 anos de experiência liderando projetos que vão desde melhorias incrementais até transformações disruptivas de negócios. Como cofundador da Embraer-X, a aceleradora de mercado e corporate venture builder da Embraer, liderei a criação da plataforma Beacon e contribuí para parcerias estratégicas em iniciativas de mobilidade aérea urbana. Também atuo como palestrante e porta-voz nos principais festivais globais de inovação."
+        "emb": "Embaixador Atlaz",
+        "nome": "Marco Cesarino"
       },
       {
-        "titulo": "O que faço",
-        "descricao": "Ajudo organizações a dominarem a ambidestria organizacional, criando visões transformadoras, engajando equipes e atraindo parceiros estratégicos. Sou especialista em gerar impacto de alto valor por meio da gestão de inovação, acelerando novos negócios e posicionando marcas na vanguarda das tendências de mercado."
+        "titulo": "Sobre",
+        "descricao": "Sou um executivo de inovação com mais de 20 anos de experiência liderando projetos que vão desde melhorias incrementais até transformações disruptivas de negócios. Como cofundador da Embraer-X, a aceleradora de mercado e corporate venture builder da Embraer, liderei a criação da plataforma Beacon e contribuí para parcerias estratégicas em iniciativas de mobilidade aérea urbana. Também atuo como palestrante e porta-voz nos principais festivais globais de inovação."
       }
     ]
   },
@@ -91,12 +91,12 @@
     },
     "secoes": [
       {
-        "titulo": "Sobre",
-        "descricao": "Sou um profissional com mais de 20 anos de experiência em tecnologia, educação corporativa e transformação digital. Atuei como COO por mais de uma década, liderando operações focadas em eficiência e escala. Atualmente, sou Sócio e CRO da Revvo, onde impulsiono soluções digitais de aprendizagem corporativa, e atuo também como conselheiro independente e advisor de empresas, como a JBF Digital."
+        "emb": "Embaixador Atlaz",
+        "nome": "Nilson Figueiredo"
       },
       {
-        "titulo": "O que faço",
-        "descricao": "Lidero as estratégias de marketing, vendas e ações de growth na Revvo para acelerar o desenvolvimento profissional corporativo. Em paralelo, atuo como mentor e conselheiro estratégico, apoiando fundadores e participando de reuniões de conselho para ajudar empresas a crescerem com clareza, previsibilidade e impacto."
+        "titulo": "Sobre",
+        "descricao": "Sou um profissional com mais de 20 anos de experiência em tecnologia, educação corporativa e transformação digital. Atuei como COO por mais de uma década, liderando operações focadas em eficiência e escala. Atualmente, sou Sócio e CRO da Revvo, onde impulsiono soluções digitais de aprendizagem corporativa, e atuo também como conselheiro independente e advisor de empresas, como a JBF Digital."
       }
     ]
   },
@@ -111,12 +111,12 @@
     },
     "secoes": [
       {
-        "titulo": "Sobre",
-        "descricao": "Sou Conselheiro Consultivo, Consultor Estratégico e Psicanalista Clínico, após uma carreira de mais de 20 anos como executivo internacional liderando equipes multiculturais. Durante 16 anos, liderei a expansão de uma operação eletroeletrônica B2B2C para 9 países da América Latina, gerenciando P&L de oito dígitos, processos de M&A e integrações de empresas."
+        "emb": "Embaixador Atlaz",
+        "nome": "Sergio do Canto Paiva"
       },
       {
-        "titulo": "O que faço",
-        "descricao": "Ajudo empresas a estruturarem seu crescimento sustentável, alinhando a visão de futuro à execução disciplinada. Atuo no desenho estratégico, na governança e na implementação de programas de transformação organizacional. Além disso, utilizo minha bagagem em psicanálise para trazer a dimensão humana ao desenvolvimento de líderes, fortalecendo o engajamento e a alta performance dos times."
+        "titulo": "Sobre",
+        "descricao": "Sou Conselheiro Consultivo, Consultor Estratégico e Psicanalista Clínico, após uma carreira de mais de 20 anos como executivo internacional liderando equipes multiculturais. Durante 16 anos, liderei a expansão de uma operação eletroeletrônica B2B2C para 9 países da América Latina, gerenciando P&L de oito dígitos, processos de M&A e integrações de empresas."
       }
     ]
   }

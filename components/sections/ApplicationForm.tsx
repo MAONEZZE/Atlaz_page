@@ -44,8 +44,8 @@ export function ApplicationForm() {
 
   return (
     <section id="ingressos" className="relative py-16 sm:py-24 px-4 overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#1D0D45]/15 to-transparent pointer-events-none" />
-      <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-[#7C3AED]/25 to-transparent" />
+      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#1f1133]/15 to-transparent pointer-events-none" />
+      <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-[#d8b673]/25 to-transparent" />
 
       <div className="relative max-w-4xl mx-auto">
         {/* Section header */}
@@ -56,7 +56,7 @@ export function ApplicationForm() {
           transition={{ duration: 0.7 }}
           className="text-center mb-6"
         >
-          <p className="text-[#7C3AED] text-xs font-bold uppercase tracking-[0.2em] mb-4">
+          <p className="font-ui text-[#d8b673] text-xs font-bold uppercase tracking-[0.2em] mb-4">
             Ingressos
           </p>
           <h2 className="font-heading text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4 leading-tight">
@@ -81,7 +81,7 @@ export function ApplicationForm() {
               key={label}
               className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/[0.05] border border-white/[0.1] text-white/55 text-sm"
             >
-              <Icon className="w-4 h-4 text-[#7C3AED]" />
+              <Icon className="w-4 h-4 text-[#6d2399]" />
               {label}
             </div>
           ))}
@@ -97,7 +97,7 @@ export function ApplicationForm() {
         >
           {/* Card 1 — Pré Lançamento (esgotado) */}
           <div className="rounded-2xl border border-white/[0.07] bg-white/[0.02] p-6 text-center opacity-55">
-            <p className="text-white/40 text-xs font-bold uppercase tracking-[0.2em] mb-4">Pré Lançamento</p>
+            <p className="font-ui text-white/40 text-xs font-bold uppercase tracking-[0.2em] mb-4">Pré Lançamento</p>
             <p className="font-heading text-3xl font-bold text-white/40 mb-1">R$ 4.000</p>
             <p className="text-white/30 text-xs mb-6 leading-relaxed">
               Lote inicial com vagas limitadas. Encerrado.
@@ -111,14 +111,14 @@ export function ApplicationForm() {
           </div>
 
           {/* Card 2 — Valor Atual (featured) */}
-          <div className="relative rounded-2xl border border-[#7C3AED]/50 bg-[#7C3AED]/10 p-7 text-center hover:border-[#7C3AED]/70 transition-colors duration-300">
+          <div className="relative rounded-2xl border border-[#d8b673]/50 bg-gradient-to-b from-[#d8b673]/[0.08] to-transparent p-7 text-center md:scale-[1.04] shadow-[0_12px_48px_rgba(0,0,0,0.45)] hover:border-[#d8b673]/70 transition-colors duration-300">
             <div className="absolute -top-3 left-1/2 -translate-x-1/2">
-              <span className="px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-[#7C3AED] text-white whitespace-nowrap">
+              <span className="px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-[#6d2399] text-white whitespace-nowrap">
                 VAGAS LIMITADAS
               </span>
             </div>
-            <p className="text-[#7C3AED] text-xs font-bold uppercase tracking-[0.2em] mb-4">Valor Atual</p>
-            <p className="font-heading text-4xl sm:text-5xl font-bold text-[#7C3AED] mb-1">R$ 5.000</p>
+            <p className="font-ui text-[#d8b673] text-xs font-bold uppercase tracking-[0.2em] mb-4">Valor Atual</p>
+            <p className="font-heading text-4xl sm:text-5xl font-bold text-[#6d2399] mb-1">R$ 5.000</p>
             <ul className="space-y-2 mb-7 mt-4 text-left">
               {[
                 "Parcelamento disponível",
@@ -126,7 +126,7 @@ export function ApplicationForm() {
                 "Processo seletivo por ligação de triagem",
               ].map((item) => (
                 <li key={item} className="flex items-start gap-2.5">
-                  <CheckCircle className="w-4 h-4 flex-shrink-0 mt-0.5 text-[#7C3AED]" />
+                  <CheckCircle className="w-4 h-4 flex-shrink-0 mt-0.5 text-[#6d2399]" />
                   <span className="text-white/65 text-sm leading-relaxed">{item}</span>
                 </li>
               ))}
@@ -135,7 +135,7 @@ export function ApplicationForm() {
               href="https://www.asaas.com/c/5fr1cys74fce3hjx"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center justify-center gap-2 w-full py-4 rounded-xl bg-[#7C3AED] text-white font-semibold text-base hover:bg-[#6D28D9] transition-colors duration-200 cursor-pointer group shadow-[0_0_30px_rgba(124,58,237,0.25)] hover:shadow-[0_0_50px_rgba(124,58,237,0.4)]"
+              className="flex items-center justify-center gap-2 w-full py-4 rounded-xl bg-[#7c2fb0] text-white font-semibold text-base hover:bg-[#6d2399] transition-colors duration-200 cursor-pointer group shadow-[0_0_30px_rgba(124,47,176,0.25)] hover:shadow-[0_0_50px_rgba(124,47,176,0.4)]"
             >
               Garantir minha vaga
               <ArrowRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" />
@@ -144,7 +144,7 @@ export function ApplicationForm() {
 
           {/* Card 3 — Valor Final (futuro) */}
           <div className="rounded-2xl border border-white/[0.07] bg-white/[0.02] p-6 text-center opacity-55">
-            <p className="text-white/40 text-xs font-bold uppercase tracking-[0.2em] mb-4">Valor Final</p>
+            <p className="font-ui text-white/40 text-xs font-bold uppercase tracking-[0.2em] mb-4">Valor Final</p>
             <p className="font-heading text-3xl font-bold text-white/40 mb-1">R$ 7.500</p>
             <p className="text-white/30 text-xs mb-6 leading-relaxed">
               Em breve — valor final do evento, sem ofertas exclusivas.
@@ -159,7 +159,7 @@ export function ApplicationForm() {
         </motion.div>
 
         {/* Divider */}
-        <div className="h-px bg-gradient-to-r from-transparent via-white/[0.08] to-transparent mb-12 sm:mb-16" />
+        <div className="h-px bg-gradient-to-r from-transparent via-[#d8b673]/30 to-transparent mb-12 sm:mb-16" />
 
         {/* Wide CTA card with event background image */}
         <div id="aplicar">
@@ -168,7 +168,7 @@ export function ApplicationForm() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.7, delay: 0.1 }}
-            className="relative w-full overflow-hidden rounded-2xl border border-[#7C3AED]/20 shadow-[0_24px_80px_rgba(0,0,0,0.6)] min-h-[240px] sm:min-h-[280px] md:min-h-[340px] flex items-center justify-center group"
+            className="relative w-full overflow-hidden rounded-2xl border border-[#6d2399]/20 shadow-[0_24px_80px_rgba(0,0,0,0.6)] min-h-[240px] sm:min-h-[280px] md:min-h-[340px] flex items-center justify-center group"
           >
             {/* Background image */}
             <div
@@ -176,17 +176,17 @@ export function ApplicationForm() {
               style={{ backgroundImage: "url('/capa_chekout/capa_evento.jpg')" }}
             />
             <div className="absolute inset-0 bg-black/55 group-hover:bg-black/45 transition-colors duration-300" />
-            <div className="absolute inset-0 bg-gradient-to-t from-[#7C3AED]/20 via-transparent to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-t from-[#6d2399]/20 via-transparent to-transparent" />
 
             <div className="relative z-10 flex flex-col items-center gap-6 px-6 py-12 text-center">
-              <p className="text-[#C1A6DF] text-xs font-bold uppercase tracking-[0.2em]">{process.env.DATA_EVENTO} · São Paulo, Brooklin</p>
+              <p className="font-ui text-[#C1A6DF] text-xs font-bold uppercase tracking-[0.2em]">{process.env.DATA_EVENTO} · São Paulo, Brooklin</p>
               <h4 className="font-heading text-3xl md:text-4xl font-bold text-white leading-tight max-w-xl">
                 Fator de Longo Horizonte
               </h4>
               {/* Button opens coupon popup */}
               <button
                 onClick={resetAndOpen}
-                className="inline-flex items-center gap-2 px-8 sm:px-10 py-3 sm:py-4 rounded-xl bg-[#7C3AED] text-white font-semibold text-base sm:text-lg hover:bg-[#6D28D9] transition-all duration-200 shadow-[0_0_40px_rgba(124,58,237,0.4)] hover:shadow-[0_0_60px_rgba(124,58,237,0.6)] hover:scale-[1.03] cursor-pointer"
+                className="font-ui inline-flex items-center gap-2 px-8 sm:px-10 py-3 sm:py-4 rounded-xl bg-[#7c2fb0] text-white font-semibold text-base sm:text-lg hover:bg-[#6d2399] transition-all duration-200 shadow-[0_0_40px_rgba(124,47,176,0.4)] hover:shadow-[0_0_60px_rgba(124,47,176,0.6)] hover:scale-[1.03] cursor-pointer"
               >
                 Convidados
                 <ArrowRight className="w-5 h-5" />
@@ -198,10 +198,10 @@ export function ApplicationForm() {
 
       {/* ===== COUPON POPUP ===== */}
       <Dialog open={open} onOpenChange={setOpen}>
-        <DialogContent className="w-[calc(100%-2rem)] max-w-md bg-[#0D0618] border border-[#7C3AED]/25 p-0 overflow-hidden gap-0 rounded-2xl">
+        <DialogContent className="w-[calc(100%-2rem)] max-w-md bg-[#0a050f] border border-[#6d2399]/25 p-0 overflow-hidden gap-0 rounded-2xl">
           {/* Header */}
           <div className="pl-6 pr-12 pt-6 pb-5 border-b border-white/[0.07]">
-            <p className="text-[#7C3AED] text-xs font-bold uppercase tracking-[0.2em] mb-1">Finalizar inscrição</p>
+            <p className="font-ui text-[#d8b673] text-xs font-bold uppercase tracking-[0.2em] mb-1">Finalizar inscrição</p>
             <h3 className="font-heading text-xl font-bold text-white leading-snug">Fator de Longo Horizonte</h3>
             <p className="text-white/45 text-sm mt-1">{process.env.DATA_EVENTO} · São Paulo, Brooklin · 13h–19h</p>
           </div>
@@ -217,7 +217,7 @@ export function ApplicationForm() {
                     <p className="font-heading text-2xl font-bold text-green-400">R$ 0</p>
                   </div>
                 ) : (
-                  <p className="font-heading text-2xl font-bold text-[#7C3AED]">R$ 5.000</p>
+                  <p className="font-heading text-2xl font-bold text-[#6d2399]">R$ 5.000</p>
                 )}
               </div>
               {discounted && (
@@ -231,7 +231,7 @@ export function ApplicationForm() {
           {/* Coupon field */}
           <div className={`px-6 py-5 border-b transition-colors duration-300 ${discounted ? "border-green-500/20 bg-green-500/[0.04]" : "border-white/[0.07]"}`}>
             <p className="text-white/60 text-sm font-medium mb-3 flex items-center gap-2">
-              <Tag className="w-4 h-4 text-[#7C3AED] flex-shrink-0" />
+              <Tag className="w-4 h-4 text-[#6d2399] flex-shrink-0" />
               Código de convidado
             </p>
 
@@ -255,12 +255,12 @@ export function ApplicationForm() {
                     }}
                     onKeyDown={(e) => e.key === "Enter" && applyCoupon()}
                     placeholder="Insira seu código aqui"
-                    className={`min-w-0 flex-1 px-4 py-2.5 rounded-xl bg-white/[0.06] border text-white placeholder-white/25 focus:outline-none transition-all text-sm ${couponStatus === "invalid" ? "border-red-500/50 focus:border-red-500/70" : "border-white/[0.1] focus:border-[#7C3AED]/50"}`}
+                    className={`min-w-0 flex-1 px-4 py-2.5 rounded-xl bg-white/[0.06] border text-white placeholder-white/25 focus:outline-none transition-all text-sm ${couponStatus === "invalid" ? "border-red-500/50 focus:border-red-500/70" : "border-white/[0.1] focus:border-[#6d2399]/50"}`}
                   />
                   <button
                     onClick={applyCoupon}
                     disabled={couponStatus === "loading" || !coupon.trim()}
-                    className="flex-shrink-0 w-[82px] px-3 py-2.5 rounded-xl bg-[#7C3AED]/20 border border-[#7C3AED]/30 text-[#C77DFF] text-sm font-semibold hover:bg-[#7C3AED]/30 transition-colors duration-200 disabled:opacity-40 disabled:cursor-not-allowed cursor-pointer flex items-center justify-center"
+                    className="flex-shrink-0 w-[82px] px-3 py-2.5 rounded-xl bg-[#6d2399]/20 border border-[#6d2399]/30 text-[#c79af0] text-sm font-semibold hover:bg-[#6d2399]/30 transition-colors duration-200 disabled:opacity-40 disabled:cursor-not-allowed cursor-pointer flex items-center justify-center"
                   >
                     {couponStatus === "loading" ? (
                       <Loader2 className="w-4 h-4 animate-spin" />
@@ -287,7 +287,7 @@ export function ApplicationForm() {
                 href={process.env.LINK_CONVIDADO}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center justify-center gap-2 w-full py-3.5 px-4 rounded-xl bg-[#7C3AED] text-white font-semibold text-sm hover:bg-[#6D28D9] transition-all duration-200 cursor-pointer shadow-[0_0_30px_rgba(124,58,237,0.25)] hover:shadow-[0_0_50px_rgba(124,58,237,0.4)]"
+                className="flex items-center justify-center gap-2 w-full py-3.5 px-4 rounded-xl bg-[#7c2fb0] text-white font-semibold text-sm hover:bg-[#6d2399] transition-all duration-200 cursor-pointer shadow-[0_0_30px_rgba(124,47,176,0.25)] hover:shadow-[0_0_50px_rgba(124,47,176,0.4)]"
               >
                 Garantir ingresso de convidado
                 <ArrowRight className="w-4 h-4 flex-shrink-0" />

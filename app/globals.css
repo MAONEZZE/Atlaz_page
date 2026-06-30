@@ -9,7 +9,8 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-inter);
   --font-mono: var(--font-geist-mono);
-  --font-heading: var(--font-poppins), "Poppins", sans-serif;
+  --font-heading: var(--font-display), "DM Serif Display", Georgia, serif;
+  --font-ui: var(--font-space), "IBM Plex Sans", sans-serif;
   --font-body: var(--font-inter), "Inter", sans-serif;
   --color-sidebar-ring: var(--sidebar-ring);
   --color-sidebar-border: var(--sidebar-border);
@@ -50,7 +51,7 @@
 }
 
 :root {
-  --background: #0D0618;
+  --background: #0a050f;
   --foreground: oklch(0.985 0 0);
   --card: oklch(0.205 0 0);
   --card-foreground: oklch(0.985 0 0);
@@ -82,13 +83,29 @@
   --sidebar-accent-foreground: oklch(0.985 0 0);
   --sidebar-border: oklch(1 0 0 / 10%);
   --sidebar-ring: oklch(0.556 0 0);
-  --color-bg: #0D0618;
-  --color-accent: #C77DFF;
-  --color-cta: #7C3AED;
-  --color-cta-hover: #6D28D9;
-  --color-purple-deep: #1D0D45;
-  --color-glass: rgba(124, 58, 237, 0.05);
-  --color-glass-border: rgba(124, 58, 237, 0.15);
+  /* ---- Identidade "Bronze & Grafite" ---- */
+  --bg:          #0a050f;
+  --bg-2:        #1c1820;
+  --bg-3:        #241f2b;
+  --purple:      #6d2399;
+  --purple-deep: #1f1133;
+  --purple-soft: #c79af0;
+  --gold:        #d8b673;
+  --gold-dim:    #b9985a;
+  --accent2:     #b07a3c;
+  --ink:         #f5eff8;
+  --body:        #dcd3e3;
+  --text-muted:  #a89bb4;
+  --line:        rgba(216, 182, 115, 0.22);
+
+  /* tokens legados → remapeados */
+  --color-bg: var(--bg);
+  --color-accent: var(--gold);
+  --color-cta: var(--gold);
+  --color-cta-hover: var(--gold-dim);
+  --color-purple-deep: var(--bg-2);
+  --color-glass: rgba(216, 182, 115, 0.05);
+  --color-glass-border: var(--line);
 }
 
 @layer base {
@@ -102,37 +119,75 @@
   }
 
   body {
-    background-color: #0D0618;
-    color: white;
+    background-color: #0a050f;
+    color: var(--body);
     font-family: var(--font-inter), "Inter", sans-serif;
     overflow-x: hidden;
   }
 }
 
+/* ---- Backdrop global contínuo "Bronze & Grafite" (fixo, atrás de tudo) ---- */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background:
+    radial-gradient(ellipse 60% 40% at 78% 0%, color-mix(in srgb, var(--purple) 28%, transparent), transparent 60%),
+    radial-gradient(ellipse 50% 35% at 15% 35%, color-mix(in srgb, var(--purple-deep) 60%, transparent), transparent 55%),
+    radial-gradient(ellipse 55% 40% at 85% 80%, color-mix(in srgb, var(--purple) 18%, transparent), transparent 60%),
+    linear-gradient(180deg, #120a18 0%, var(--bg) 40%, #0d0712 70%, var(--bg) 100%);
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background-image:
+    linear-gradient(rgba(216, 182, 115, 0.045) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(216, 182, 115, 0.045) 1px, transparent 1px);
+  background-size: 72px 72px;
+  -webkit-mask: radial-gradient(ellipse 90% 70% at 50% 30%, #000, transparent 80%);
+          mask: radial-gradient(ellipse 90% 70% at 50% 30%, #000, transparent 80%);
+}
+
 @layer utilities {
+  /* DM Serif Display só tem peso 400 — evita faux-bold dos `font-bold`. */
   .font-heading {
-    font-family: var(--font-poppins), "Poppins", sans-serif;
-    letter-spacing: -0.02em;
+    font-family: var(--font-display), "DM Serif Display", Georgia, serif;
+    font-weight: 400;
+    letter-spacing: -0.01em;
   }
 
   .font-cormorant {
-    font-family: var(--font-baskerville), "Playfair Display", Georgia, serif;
+    font-family: var(--font-display), "DM Serif Display", Georgia, serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+
+  .font-ui {
+    font-family: var(--font-space), "IBM Plex Sans", sans-serif;
   }
 
   .glass-card {
-    background: rgba(29, 13, 69, 0.55);
+    background: rgba(36, 31, 43, 0.55);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
-    border: 1px solid rgba(124, 58, 237, 0.22);
+    border: 1px solid var(--line);
     border-radius: 1rem;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(124, 58, 237, 0.1);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(216, 182, 115, 0.08);
   }
 
+  /* Destaque neon — uso cirúrgico (máx. 1 por seção). */
   .gradient-text {
-    background: linear-gradient(to right, #C77DFF, rgba(255, 255, 255, 0.9), #7C3AED);
+    background: linear-gradient(to right, #c79af0, rgba(255, 255, 255, 0.9), #6d2399);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+    text-shadow: 0 0 24px rgba(109, 35, 153, 0.25);
   }
 
   /* Seamless logo marquee: track holds the list twice, slide -50% loops it. */

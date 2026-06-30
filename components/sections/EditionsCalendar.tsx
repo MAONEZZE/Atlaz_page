@@ -28,7 +28,7 @@ function MonthCard({
   for (let d = 1; d <= daysInMonth; d++) cells.push(d);
 
   return (
-    <div className="rounded-2xl border border-[#7C3AED]/25 bg-[#1A0D2E]/50 p-5 shadow-[0_8px_32px_rgba(0,0,0,0.45)]">
+    <div className="rounded-2xl border border-[#6d2399]/25 bg-[#1A0D2E]/50 p-5 shadow-[0_8px_32px_rgba(0,0,0,0.45)]">
       <h3 className="font-heading text-lg font-bold text-white mb-4 flex items-baseline justify-between">
         <span>{MONTHS[month]}</span>
         <span className="text-white/35 font-medium">{year}</span>
@@ -50,7 +50,7 @@ function MonthCard({
           return (
             <div key={i} className="flex items-center justify-center py-0.5">
               {isEvent ? (
-                <span className="flex h-8 w-8 items-center justify-center rounded-full bg-[#7C3AED] text-sm font-semibold text-white shadow-[0_2px_10px_rgba(124,58,237,0.55)]">
+                <span className="flex h-8 w-8 items-center justify-center rounded-full bg-[#d8b673] text-sm font-semibold text-[#1a0f24] shadow-[0_2px_10px_rgba(216,182,115,0.55)]">
                   {d}
                 </span>
               ) : (

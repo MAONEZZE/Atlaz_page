@@ -24,7 +24,7 @@ export function Hero() {
   return (
     <section id="topo" className="relative min-h-screen w-full flex items-center justify-center overflow-hidden">
       {/* Background base */}
-      <div className="absolute inset-0 bg-[#0D0618]" />
+      <div className="absolute inset-0 bg-[#0a050f]" />
 
       {/* Hero image — clean logo as full background */}
       <div
@@ -38,14 +38,14 @@ export function Hero() {
       />
 
       {/* Dark overlay — keeps text readable */}
-      <div className="absolute inset-0 bg-[#0D0618]/50 pointer-events-none" />
+      <div className="absolute inset-0 bg-[#0a050f]/50 pointer-events-none" />
 
       {/* Vignette: fade left/right/bottom edges to bg */}
-      <div className="absolute inset-0 bg-gradient-to-r from-[#0D0618]/75 via-transparent to-[#0D0618]/75 pointer-events-none" />
-      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[#0D0618] pointer-events-none" />
+      <div className="absolute inset-0 bg-gradient-to-r from-[#0a050f]/75 via-transparent to-[#0a050f]/75 pointer-events-none" />
+      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[#0a050f] pointer-events-none" />
 
       {/* Ambient purple glow to reinforce brand */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px] bg-[#7C3AED]/[0.06] rounded-full blur-[140px] pointer-events-none" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px] bg-[#6d2399]/[0.06] rounded-full blur-[140px] pointer-events-none" />
 
       {/* Subtle grid overlay */}
       <div
@@ -67,24 +67,24 @@ export function Hero() {
           className="flex justify-center mb-10"
         >
           <div className="relative">
-            <div className="w-20 h-20 rounded-full border-2 border-[#4F0069]/50 bg-[#4F0069]/10 flex flex-col items-center justify-center">
-              <span className="font-heading font-bold text-[#4F0069] text-2xl leading-none">28</span>
-              <span className="text-[#4F0069]/80 text-[10px] font-semibold uppercase tracking-widest mt-0.5">
+            <div className="w-20 h-20 rounded-full border-2 border-[#241f2b]/50 bg-[#241f2b]/10 flex flex-col items-center justify-center">
+              <span className="font-heading font-bold text-[#241f2b] text-2xl leading-none">28</span>
+              <span className="text-[#241f2b]/80 text-[10px] font-semibold uppercase tracking-widest mt-0.5">
                 ABR
               </span>
             </div>
             
-            <div className="absolute inset-0 rounded-full border border-[#4F0069]/30 animate-ping opacity-40" />
+            <div className="absolute inset-0 rounded-full border border-[#241f2b]/30 animate-ping opacity-40" />
           </div>
         </motion.div> */}
 
         {/* H1 */}
         <motion.div custom={1} variants={fadeUp} initial="hidden" animate="visible">
-          <h3 className="font-heading text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-[1.1] tracking-tight mb-6 max-w-3xl mx-auto">
+          <h3 className="font-heading text-3xl sm:text-5xl md:text-6xl lg:text-5xl font-bold leading-[1.1] tracking-tight mb-6 max-w-3xl mx-auto">
             <span className="text-white">Você passou anos acumulando o que poucos têm. Agora é hora de</span>{" "}
-            <span className="text-[#C77DFF]"> transformar</span>
+            <span className="text-[#c79af0]"> transformar</span>
             <span className="text-white"> isso em</span>
-            <span className="text-[#C77DFF]"> produto.</span>
+            <span className="text-[#c79af0]"> produto.</span>
           </h3>
         </motion.div>
 
@@ -109,7 +109,7 @@ export function Hero() {
               key={label}
               className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/[0.05] border border-white/[0.1] text-white/65 text-sm"
             >
-              <Icon className="w-4 h-4 text-[#7C3AED]" />
+              <Icon className="w-4 h-4 text-[#6d2399]" />
               {label}
             </div>
           ))}
@@ -129,7 +129,7 @@ export function Hero() {
         >
           <a
             href="#ingressos"
-            className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl bg-[#7C3AED] text-white font-semibold text-lg hover:bg-[#6D28D9] transition-colors duration-200 cursor-pointer group shadow-[0_0_40px_rgba(124,58,237,0.25)] hover:shadow-[0_0_60px_rgba(124,58,237,0.4)]"
+            className="font-ui inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl bg-[#7c2fb0] text-white font-semibold text-lg hover:bg-[#6d2399] transition-colors duration-200 cursor-pointer group shadow-[0_0_40px_rgba(124,47,176,0.25)] hover:shadow-[0_0_60px_rgba(124,47,176,0.4)]"
           >
             Garantir minha vaga
             <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-200" />
@@ -144,7 +144,7 @@ export function Hero() {
       </div>
 
       {/* Bottom fade */}
-      <div className="absolute bottom-0 left-0 right-0 h-40 bg-gradient-to-t from-[#0D0618] to-transparent pointer-events-none" />
+      <div className="absolute bottom-0 left-0 right-0 h-40 bg-gradient-to-t from-[#0a050f] to-transparent pointer-events-none" />
     </section>
   );
 }

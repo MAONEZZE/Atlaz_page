@@ -1,26 +1,29 @@
 import type { Metadata } from "next";
-import { Inter, Poppins, Playfair_Display } from "next/font/google";
+import { Inter, DM_Serif_Display, IBM_Plex_Sans } from "next/font/google";
 import "./globals.css";
 
+// Corpo / parágrafos
 const inter = Inter({
   variable: "--font-inter",
   subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700"],
+  weight: ["400", "500", "600"],
   display: "swap",
 });
 
-const poppins = Poppins({
-  variable: "--font-poppins",
+// Display / títulos (serif). Só peso 400.
+const dmSerif = DM_Serif_Display({
+  variable: "--font-display",
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700", "800"],
-  display: "swap",
-});
-
-const playfair = Playfair_Display({
-  variable: "--font-baskerville",
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700", "800"],
+  weight: ["400"],
   style: ["normal", "italic"],
+  display: "swap",
+});
+
+// UI / labels / botões / nav
+const plex = IBM_Plex_Sans({
+  variable: "--font-space",
+  subsets: ["latin"],
+  weight: ["400", "500", "600"],
   display: "swap",
 });
 
@@ -36,9 +39,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="pt-BR" className={`${inter.variable} ${poppins.variable} ${playfair.variable} scroll-smooth`}>
-      <body className="bg-[#0D0618] text-white overflow-x-hidden">
-        <div className="fixed inset-0 bg-gradient-to-br from-[#7C3AED]/[0.04] via-transparent to-[#1D0D45]/[0.06] pointer-events-none" />
+    <html lang="pt-BR" className={`${inter.variable} ${dmSerif.variable} ${plex.variable} scroll-smooth`}>
+      <body className="bg-[#0a050f] text-white overflow-x-hidden">
+        <div className="fixed inset-0 bg-gradient-to-br from-[#6d2399]/[0.04] via-transparent to-[#1f1133]/[0.06] pointer-events-none" />
         {children}
         {/* WhatsApp floating button */}
         <a

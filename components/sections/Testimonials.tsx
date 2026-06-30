@@ -100,7 +100,7 @@ export function Testimonials() {
           transition={{ duration: 0.7 }}
           className="text-center mb-12"
         >
-          <p className="text-[#7C3AED] text-xs font-bold uppercase tracking-[0.2em] mb-4">
+          <p className="font-ui text-[#d8b673] text-xs font-bold uppercase tracking-[0.2em] mb-4">
             Depoimentos
           </p>
           <h2 className="font-heading text-3xl md:text-4xl font-bold text-white mb-3">
@@ -115,7 +115,7 @@ export function Testimonials() {
             onClick={prev}
             disabled={current === 0}
             aria-label="Depoimento anterior"
-            className="absolute left-1 md:-left-6 top-[40%] -translate-y-1/2 z-10 w-9 h-9 md:w-10 md:h-10 rounded-full bg-[#1D0D45]/80 border border-[#7C3AED]/30 flex items-center justify-center text-white/70 hover:text-white hover:border-[#7C3AED]/60 hover:bg-[#1D0D45] transition-all duration-200 disabled:opacity-30 disabled:cursor-not-allowed cursor-pointer"
+            className="absolute left-1 md:-left-6 top-[40%] -translate-y-1/2 z-10 w-9 h-9 md:w-10 md:h-10 rounded-full bg-[#1f1133]/80 border border-[#6d2399]/30 flex items-center justify-center text-white/70 hover:text-white hover:border-[#6d2399]/60 hover:bg-[#1f1133] transition-all duration-200 disabled:opacity-30 disabled:cursor-not-allowed cursor-pointer"
           >
             <ChevronLeft className="w-5 h-5" />
           </button>
@@ -142,7 +142,7 @@ export function Testimonials() {
                   onKeyDown={(e) => e.key === "Enter" && setActiveVideo(t.fileId)}
                 >
                   {/* Thumbnail / placeholder */}
-                  <div className="relative aspect-video overflow-hidden bg-[#0E0520]">
+                  <div className="relative aspect-video overflow-hidden bg-[#0a050f]">
                     {t.thumbnail ? (
                       <img
                         src={t.thumbnail}
@@ -151,16 +151,16 @@ export function Testimonials() {
                         loading="lazy"
                       />
                     ) : (
-                      <div className="absolute inset-0 bg-gradient-to-br from-[#1D0D45] via-[#0E0520] to-[#0D0618]">
+                      <div className="absolute inset-0 bg-gradient-to-br from-[#1f1133] via-[#0a050f] to-[#0a050f]">
                         {/* Subtle purple glow */}
-                        <div className="absolute inset-0 bg-[#7C3AED]/10" />
-                        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-24 h-24 bg-[#7C3AED]/15 rounded-full blur-xl" />
+                        <div className="absolute inset-0 bg-[#6d2399]/10" />
+                        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-24 h-24 bg-[#6d2399]/15 rounded-full blur-xl" />
                       </div>
                     )}
 
                     {/* Dark overlay + play button */}
                     <div className="absolute inset-0 bg-black/45 group-hover:bg-black/30 transition-colors duration-200 flex items-center justify-center">
-                      <div className="w-14 h-14 rounded-full bg-[#7C3AED]/25 border-2 border-[#7C3AED]/60 flex items-center justify-center group-hover:bg-[#7C3AED]/40 group-hover:border-[#7C3AED] group-hover:scale-110 transition-all duration-200">
+                      <div className="w-14 h-14 rounded-full bg-[#6d2399]/25 border-2 border-[#6d2399]/60 flex items-center justify-center group-hover:bg-[#6d2399]/40 group-hover:border-[#6d2399] group-hover:scale-110 transition-all duration-200">
                         <Play className="w-5 h-5 text-white fill-white ml-0.5" />
                       </div>
                     </div>
@@ -169,7 +169,7 @@ export function Testimonials() {
                   {/* Name & role */}
                   <div className="p-5">
                     <p className="font-semibold text-white text-sm leading-snug">{t.name}</p>
-                    <p className="text-white/45 text-xs mt-1 leading-snug line-clamp-2">{t.role}</p>
+                    <p className="text-white/45 text-sm mt-1 leading-snug line-clamp-2">{t.role}</p>
                   </div>
                 </div>
               ))}
@@ -181,7 +181,7 @@ export function Testimonials() {
             onClick={next}
             disabled={current === maxIndex}
             aria-label="Próximo depoimento"
-            className="absolute right-1 md:-right-6 top-[40%] -translate-y-1/2 z-10 w-9 h-9 md:w-10 md:h-10 rounded-full bg-[#1D0D45]/80 border border-[#7C3AED]/30 flex items-center justify-center text-white/70 hover:text-white hover:border-[#7C3AED]/60 hover:bg-[#1D0D45] transition-all duration-200 disabled:opacity-30 disabled:cursor-not-allowed cursor-pointer"
+            className="absolute right-1 md:-right-6 top-[40%] -translate-y-1/2 z-10 w-9 h-9 md:w-10 md:h-10 rounded-full bg-[#1f1133]/80 border border-[#6d2399]/30 flex items-center justify-center text-white/70 hover:text-white hover:border-[#6d2399]/60 hover:bg-[#1f1133] transition-all duration-200 disabled:opacity-30 disabled:cursor-not-allowed cursor-pointer"
           >
             <ChevronRight className="w-5 h-5" />
           </button>
@@ -198,7 +198,7 @@ export function Testimonials() {
                 aria-current={i === current ? "true" : undefined}
                 className={`rounded-full transition-all duration-200 cursor-pointer ${
                   i === current
-                    ? "w-6 h-2 bg-[#7C3AED]"
+                    ? "w-6 h-2 bg-[#6d2399]"
                     : "w-2 h-2 bg-white/20 hover:bg-white/40"
                 }`}
               />
@@ -210,7 +210,7 @@ export function Testimonials() {
       {/* Video dialog */}
       <Dialog open={!!activeVideo} onOpenChange={() => setActiveVideo(null)}>
         <DialogContent
-          className="w-full bg-[#0D0618] border border-white/[0.1] p-0 overflow-hidden"
+          className="w-full bg-[#0a050f] border border-white/[0.1] p-0 overflow-hidden"
           style={{ maxWidth: "min(94vw, 1400px)" }}
         >
           {activeVideo && (

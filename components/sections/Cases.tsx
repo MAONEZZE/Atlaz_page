@@ -67,7 +67,7 @@ export function Cases() {
 
   return (
     <section id="sobre" className="relative py-16 px-4">
-      <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-[#7C3AED]/30 to-transparent" />
+      <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-[#d8b673]/30 to-transparent" />
 
       <div className="relative max-w-5xl mx-auto" ref={ref}>
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 text-center">
@@ -80,7 +80,7 @@ export function Cases() {
               transition={{ duration: 0.6, delay: i * 0.1 }}
               className="cursor-default"
             >
-              <p className="font-heading text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-none bg-gradient-to-br from-white via-[#C77DFF] to-[#7C3AED] bg-clip-text text-transparent">
+              <p className="font-heading text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-none text-[#d8b673]">
                 <CountUp
                   target={stat.value}
                   prefix={stat.prefix}
@@ -95,7 +95,7 @@ export function Cases() {
         </div>
       </div>
 
-      <div className="absolute inset-x-0 bottom-0 h-px bg-gradient-to-r from-transparent via-white/[0.06] to-transparent" />
+      <div className="absolute inset-x-0 bottom-0 h-px bg-gradient-to-r from-transparent via-[#d8b673]/25 to-transparent" />
     </section>
   );
 }

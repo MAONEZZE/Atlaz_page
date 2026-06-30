@@ -143,7 +143,7 @@ export function VideoFrame() {
           {/* Layer 3 — dark overlay */}
           <div className="absolute inset-0 bg-black/62 pointer-events-none" style={{ zIndex: 2 }} />
           <div
-            className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-[#7C3AED]/12 to-transparent pointer-events-none"
+            className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-[#6d2399]/12 to-transparent pointer-events-none"
             style={{ zIndex: 3 }}
           />
 
@@ -160,7 +160,7 @@ export function VideoFrame() {
               transition={{ duration: 0.7, delay: 0.2 }}
               className="hidden md:block max-w-md"
             >
-              <p className="text-[#7C3AED] text-xs font-bold uppercase tracking-[0.2em] mb-3">
+              <p className="font-ui text-[#d8b673] text-xs font-bold uppercase tracking-[0.2em] mb-3">
                 Sobre a Imersão
               </p>
               <h2 className="font-heading text-2xl md:text-3xl lg:text-4xl font-bold text-white leading-tight mb-4">
@@ -181,11 +181,11 @@ Um negócio educacional construído sobre bagagem real, que só acumulam valor c
             >
               <button
                 onClick={() => setOpen(true)}
-                className="group relative w-16 h-16 md:w-24 md:h-24 rounded-full bg-[#7C3AED]/20 border-2 border-[#7C3AED]/50 flex items-center justify-center hover:bg-[#7C3AED]/40 hover:border-[#7C3AED] hover:scale-110 transition-all duration-300 cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-[#7C3AED]"
+                className="group relative w-16 h-16 md:w-24 md:h-24 rounded-full bg-[#6d2399]/20 border-2 border-[#6d2399]/50 flex items-center justify-center hover:bg-[#6d2399]/40 hover:border-[#6d2399] hover:scale-110 transition-all duration-300 cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-[#6d2399]"
                 aria-label="Assistir vídeo completo"
               >
                 <Play className="w-6 h-6 md:w-10 md:h-10 text-white fill-white ml-0.5 group-hover:scale-110 transition-transform duration-200" />
-                <span className="absolute inset-0 rounded-full border border-[#7C3AED]/40 animate-ping opacity-50 pointer-events-none" />
+                <span className="absolute inset-0 rounded-full border border-[#6d2399]/40 animate-ping opacity-50 pointer-events-none" />
               </button>
               <p className="text-white/50 text-xs text-center mt-2 md:mt-3 font-medium tracking-wide">
                 Assistir vídeo
@@ -198,7 +198,7 @@ Um negócio educacional construído sobre bagagem real, que só acumulam valor c
       {/* Video modal */}
       <Dialog open={open} onOpenChange={setOpen}>
         <DialogContent
-          className="w-full bg-[#0D0618] border border-white/[0.1] p-0 overflow-hidden"
+          className="w-full bg-[#0a050f] border border-white/[0.1] p-0 overflow-hidden"
           style={{ maxWidth: "min(94vw, 1400px)" }}
         >
           <div className="relative aspect-video w-full">

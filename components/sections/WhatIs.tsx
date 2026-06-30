@@ -61,7 +61,7 @@ const jornada = [
 export function WhatIs() {
   return (
     <section id="jornada" className="relative py-24 px-4 overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-b from-[#1D0D45]/15 via-transparent to-[#1D0D45]/10 pointer-events-none" />
+      <div className="absolute inset-0 bg-gradient-to-b from-[#1f1133]/15 via-transparent to-[#1f1133]/10 pointer-events-none" />
 
       <div className="relative max-w-5xl mx-auto">
         <motion.div
@@ -71,7 +71,7 @@ export function WhatIs() {
           transition={{ duration: 0.7 }}
           className="text-center mb-14"
         >
-          <p className="text-[#7C3AED] text-xs font-semibold uppercase tracking-[0.2em] mb-4">
+          <p className="font-ui text-[#d8b673] text-xs font-semibold uppercase tracking-[0.2em] mb-4">
             Jornada da Imersão
           </p>
           <h2 className="font-heading text-3xl md:text-5xl font-bold text-white mb-4 leading-tight">
@@ -94,7 +94,7 @@ export function WhatIs() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: i * 0.08 }}
-                className="relative overflow-hidden rounded-2xl border border-white/[0.08] hover:border-[#7C3AED]/25 transition-colors duration-300 min-h-[200px] md:min-h-[220px]"
+                className="relative overflow-hidden rounded-2xl border border-white/[0.08] hover:border-[#6d2399]/25 transition-colors duration-300 min-h-[200px] md:min-h-[220px]"
               >
                 {/* Background image — concentrated on its designated side */}
                 <div
@@ -109,26 +109,28 @@ export function WhatIs() {
                 <div
                   className={`absolute inset-0 ${
                     isRight
-                      ? "bg-gradient-to-r from-[#0D0618] from-[58%] md:from-[38%] via-[#0D0618]/80 md:via-[#0D0618]/70 via-[82%] md:via-[62%] to-transparent"
-                      : "bg-gradient-to-l from-[#0D0618] from-[58%] md:from-[38%] via-[#0D0618]/80 md:via-[#0D0618]/70 via-[82%] md:via-[62%] to-transparent"
+                      ? "bg-gradient-to-r from-[#0a050f] from-[58%] md:from-[38%] via-[#0a050f]/80 md:via-[#0a050f]/70 via-[82%] md:via-[62%] to-transparent"
+                      : "bg-gradient-to-l from-[#0a050f] from-[58%] md:from-[38%] via-[#0a050f]/80 md:via-[#0a050f]/70 via-[82%] md:via-[62%] to-transparent"
                   }`}
                 />
 
                 {/* Text content */}
                 <div
-                  className={`absolute inset-0 flex items-center ${
-                    isRight ? "justify-start" : "justify-end"
-                  } p-6 md:p-10`}
+                  className={`absolute inset-0 flex items-center py-6 md:py-10 ${
+                    isRight
+                      ? "justify-start pl-6 md:pl-10 pr-6 md:pr-10"
+                      : "justify-end pr-6 md:pr-10 pl-6 md:pl-10"
+                  }`}
                 >
                   <div className={`w-full md:w-[48%] ${isRight ? "" : "text-right"}`}>
                     <div className={`flex items-center gap-2 mb-1.5 ${isRight ? "" : "justify-end"}`}>
                       {item.act && (
-                        <p className="text-[#7C3AED] text-[10px] font-bold uppercase tracking-[0.15em]">
+                        <p className="font-ui text-[#d8b673] text-[10px] font-bold uppercase tracking-[0.15em]">
                           {item.act}
                         </p>
                       )}
-                      <div className="w-6 h-6 rounded-md bg-[#7C3AED]/15 border border-[#7C3AED]/25 flex items-center justify-center flex-shrink-0">
-                        <Icon className="w-3 h-3 text-[#7C3AED]" />
+                      <div className="w-6 h-6 rounded-md bg-[#6d2399]/15 border border-[#6d2399]/25 flex items-center justify-center flex-shrink-0">
+                        <Icon className="w-3 h-3 text-[#6d2399]" />
                       </div>
                     </div>
 
@@ -139,13 +141,15 @@ export function WhatIs() {
                       {item.subtitle}
                     </p>
 
-                    <ul className={`space-y-1 ${isRight ? "" : "items-end"}`}>
+                    <ul
+                      className={`space-y-1 ${isRight ? "" : "w-fit ml-auto -mr-3 md:-mr-6"}`}
+                    >
                       {item.items.map((bullet, j) => (
                         <li
                           key={j}
-                          className={`flex items-start gap-1.5 text-white/65 text-xs leading-snug`}
+                          className="flex items-start gap-1.5 text-white/65 text-xs leading-snug text-left"
                         >
-                          <span className="text-[#7C3AED] flex-shrink-0 font-bold">›</span>
+                          <span className="text-[#d8b673] flex-shrink-0 font-bold">›</span>
                           {bullet}
                         </li>
                       ))}

@@ -41,7 +41,7 @@ export function EventCards() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: i * 0.1 }}
-              className="group overflow-hidden rounded-2xl border border-white/[0.08] hover:border-[#7C3AED]/35 transition-all duration-300 cursor-default flex flex-col"
+              className="group overflow-hidden rounded-2xl border border-white/[0.08] hover:border-[#6d2399]/35 transition-all duration-300 cursor-default flex flex-col"
             >
               {/* Image area — fixed height, object-top shows top of photo */}
               <div className="relative h-52 overflow-hidden flex-shrink-0">
@@ -52,11 +52,11 @@ export function EventCards() {
                   loading="lazy"
                 />
                 {/* Gradient blending image into text area */}
-                <div className="absolute inset-x-0 bottom-0 h-16 bg-gradient-to-t from-[#0D0618] to-transparent" />
+                <div className="absolute inset-x-0 bottom-0 h-16 bg-gradient-to-t from-[#0a050f] to-transparent" />
               </div>
 
               {/* Text area — solid dark background */}
-              <div className="bg-[#0D0618] p-6 pt-3 flex flex-col gap-3 flex-1">
+              <div className="bg-[#0a050f] p-6 pt-3 flex flex-col gap-3 flex-1">
                 <h3 className="font-heading font-bold text-white text-xl leading-tight">
                   {card.title}
                 </h3>
@@ -70,7 +70,7 @@ export function EventCards() {
                         key={j}
                         className="flex items-start gap-3 text-white/65 text-sm leading-relaxed"
                       >
-                        <span className="text-[#7C3AED] flex-shrink-0 font-bold mt-px">›</span>
+                        <span className="text-[#d8b673] flex-shrink-0 font-bold mt-px">›</span>
                         {b}
                       </li>
                     ))}

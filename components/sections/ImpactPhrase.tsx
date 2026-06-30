@@ -11,13 +11,11 @@ interface ImpactPhraseProps {
 export function ImpactPhrase({ text, highlight, subtext }: ImpactPhraseProps) {
   return (
     <section className="relative min-h-[260px] px-4 overflow-hidden flex items-center">
-      {/* Distinct background: deep purple stripe */}
-      <div className="absolute inset-0 bg-[#6740A9]/60" />
-      <div className="absolute inset-0 bg-gradient-to-r from-[#3B0067] via-[#6740A9]/80 to-[#3B0067]" />
-      {/* Purple glow center */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[200px] bg-[#7C3AED]/10 rounded-full blur-[80px] pointer-events-none" />
-      <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-[#7C3AED]/40 to-transparent" />
-      <div className="absolute inset-x-0 bottom-0 h-px bg-gradient-to-r from-transparent via-[#7C3AED]/40 to-transparent" />
+      {/* Distinct background: graphite stripe (bronze accent) */}
+      <div className="absolute inset-0 bg-[linear-gradient(120deg,rgba(28,24,32,0.82),rgba(21,18,27,0.82))]" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[200px] bg-[radial-gradient(circle_at_82%_120%,rgba(109,35,153,0.45),transparent_55%)] rounded-full blur-[80px] pointer-events-none" />
+      <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-[#d8b673]/25 to-transparent" />
+      <div className="absolute inset-x-0 bottom-0 h-px bg-gradient-to-r from-transparent via-[#d8b673]/25 to-transparent" />
 
       <div className="relative max-w-5xl mx-auto text-center w-full py-10">
         <motion.div
@@ -28,7 +26,7 @@ export function ImpactPhrase({ text, highlight, subtext }: ImpactPhraseProps) {
         >
           <p className="font-cormorant text-2xl md:text-4xl lg:text-5xl font-bold text-white leading-tight italic">
             {text}{" "}
-            {highlight && <span className="text-[#C77DFF]">{highlight}</span>}
+            {highlight && <span className="text-[#d8b673]">{highlight}</span>}
           </p>
           {subtext && (
             <p className="mt-5 text-white/50 text-base md:text-lg max-w-2xl mx-auto leading-relaxed">

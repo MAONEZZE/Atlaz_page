@@ -35,7 +35,7 @@ export function Mentors() {
   return (
     <section id="mentores" className="relative py-16 md:py-24 px-4">
       {/* Top accent line */}
-      <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-[#7C3AED]/25 to-transparent" />
+      <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-[#d8b673]/25 to-transparent" />
 
       <div className="max-w-5xl mx-auto">
         <motion.div
@@ -45,7 +45,7 @@ export function Mentors() {
           transition={{ duration: 0.7 }}
           className="text-center mb-6"
         >
-          <p className="text-[#7C3AED] text-xs font-bold uppercase tracking-[0.2em] mb-4">
+          <p className="font-ui text-[#d8b673] text-xs font-bold uppercase tracking-[0.2em] mb-4">
             Nossos Mentores
           </p>
           <h2 className="font-heading text-3xl md:text-5xl font-bold text-white mb-4 leading-tight">
@@ -113,7 +113,7 @@ export function Mentors() {
                       target="_blank"
                       rel="noopener noreferrer"
                       aria-label={`Instagram de ${mentor.name}`}
-                      className="w-8 h-8 rounded-full bg-white/90 backdrop-blur-sm flex items-center justify-center text-gray-700 hover:bg-white hover:text-[#7C3AED] shadow-md transition-all duration-200 cursor-pointer"
+                      className="w-8 h-8 rounded-full bg-white/90 backdrop-blur-sm flex items-center justify-center text-gray-700 hover:bg-white hover:text-[#6d2399] shadow-md transition-all duration-200 cursor-pointer"
                     >
                       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-4 h-4" aria-hidden="true">
                         <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
@@ -127,7 +127,7 @@ export function Mentors() {
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label={`LinkedIn de ${mentor.name}`}
-                    className="w-8 h-8 rounded-full bg-[#7C3AED] flex items-center justify-center shadow-[0_0_12px_rgba(124,58,237,0.5)] hover:bg-[#6D28D9] hover:shadow-[0_0_18px_rgba(124,58,237,0.7)] transition-all duration-200 cursor-pointer"
+                    className="w-8 h-8 rounded-full bg-[#6d2399] flex items-center justify-center shadow-[0_0_12px_rgba(109,35,153,0.5)] hover:bg-[#1f1133] hover:shadow-[0_0_18px_rgba(109,35,153,0.7)] transition-all duration-200 cursor-pointer"
                   >
                     <svg viewBox="0 0 24 24" fill="white" className="w-4 h-4" aria-hidden="true">
                       <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
@@ -149,7 +149,7 @@ export function Mentors() {
         >
           <a
             href="#ingressos"
-            className="inline-flex items-center justify-center px-8 py-4 rounded-xl bg-[#7C3AED] text-white font-semibold text-base hover:bg-[#6D28D9] transition-colors duration-200 cursor-pointer shadow-[0_0_30px_rgba(124,58,237,0.2)] hover:shadow-[0_0_50px_rgba(124,58,237,0.35)]"
+            className="font-ui inline-flex items-center justify-center px-8 py-4 rounded-xl bg-[#7c2fb0] text-white font-semibold text-base hover:bg-[#6d2399] transition-colors duration-200 cursor-pointer shadow-[0_0_30px_rgba(124,47,176,0.2)] hover:shadow-[0_0_50px_rgba(124,47,176,0.35)]"
           >
             Quero estar na imersão
           </a>
