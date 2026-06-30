@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Zap, Target, ArrowRight } from "lucide-react";
+import { Target, ArrowRight } from "lucide-react";
 
 const featureBadges = [
   { icon: Target, label: "Imersão Estratégica" },

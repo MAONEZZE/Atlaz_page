@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { Home, BarChart2, Map, Play, MessageSquare, Users, Target, Ticket } from "lucide-react";
+import { Home, BarChart2, Map, MessageSquare, Users, Target, Ticket } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const sections = [
