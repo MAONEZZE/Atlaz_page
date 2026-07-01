@@ -80,8 +80,24 @@ export function Hero() {
 
         {/* Brand title */}
         <motion.div custom={0} variants={fadeUp} initial="hidden" animate="visible">
-          <h1 className="font-heading text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-bold leading-none tracking-tight mb-8 text-white">
-            ATL<span className="text-[#BF78D6]">A</span>Z
+          <h1
+            className="font-heading text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-bold leading-none tracking-tight mb-8 text-white"
+            style={{
+              filter:
+                "drop-shadow(0 0 6px rgba(199,154,240,0.35)) drop-shadow(0 0 16px rgba(109,35,153,0.3))",
+            }}
+          >
+            ATL
+            <span
+              className="bg-clip-text text-transparent"
+              style={{
+                backgroundImage:
+                  "linear-gradient(to bottom, #e9d7ff, #c79af0, #6d2399)",
+              }}
+            >
+              A
+            </span>
+            Z
           </h1>
         </motion.div>
 
