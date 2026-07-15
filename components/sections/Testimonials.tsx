@@ -19,12 +19,6 @@ const testimonials = [
     thumbnail: "/capa_depoimento/marcio.jpeg",
   },
   {
-    name: "Fabrini Galo",
-    role: "Conselheiro Consultivo, Governança Corporativa | Advisor M&A · Mentor de CEOs",
-    fileId: "1wSiKPtC-yBSIyM-chJp-zuRKUW4ACI5_",
-    thumbnail: "/capa_depoimento/fabrini.jpeg",
-  },
-  {
     name: "Camilly Silva",
     role: "Especialista em Social Selling | Fundadora da S4 Growth",
     fileId: "1mS4dVeZBNO8GpYoGNUb3_W5wSPiBeKs0",
