@@ -66,20 +66,11 @@ export function Schedule() {
                 <h3 className="text-white font-semibold">Local</h3>
               </div>
               <p className="text-white/70 text-sm leading-relaxed">
-                Auditório da Investidores.VC
+                {process.env.EVT_LOCAL}
               </p>
               <p className="text-white/50 text-sm leading-relaxed mt-1">
-                R. Pitu, 72 – 14º andar – Cidade Monções<br />
-                São Paulo, Brooklin – SP, 04567-060
+                {process.env.EVT_RUA} – {process.env.EVT_COMPLEMENTO} – {process.env.EVT_BAIRRO}<br />
               </p>
-              <a
-                href="https://maps.google.com/?q=R.+Pitu,+72+Cidade+Mon%C3%A7%C3%B5es+S%C3%A3o+Paulo"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-1.5 mt-3 text-indigo-400 text-sm hover:text-indigo-300 transition-colors"
-              >
-                Ver no mapa →
-              </a>
             </div>
 
             <div className="glass-card p-6 md:p-8">

@@ -12,11 +12,15 @@ const nextConfig: NextConfig = {
   env: {
     // Injected into both server and client; SHA-256 is one-way so it is safe
     COUPON_HASH: couponHash,
-    DATA_EVENTO: process.env.DATA_EVENTO ?? "",
+    EVT_DATA: process.env.EVT_DATA ?? "",
     DATA_CRON: process.env.DATA_CRON ?? "",
     LINK_CONVIDADO: process.env.LINK_CONVIDADO ?? "",
     PROXIMOS_EVENTOS: process.env.PROXIMOS_EVENTOS ?? "",
     ANO_CALENDARIO: process.env.ANO_CALENDARIO ?? "",
+    EVT_LOCAL: process.env.EVT_LOCAL ?? "",
+    EVT_RUA: process.env.EVT_RUA ?? "",
+    EVT_COMPLEMENTO: process.env.EVT_COMPLEMENTO ?? "",
+    EVT_BAIRRO: process.env.EVT_BAIRRO ?? "",
   },
   images: {
     remotePatterns: [

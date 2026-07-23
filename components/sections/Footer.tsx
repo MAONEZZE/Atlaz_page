@@ -37,7 +37,7 @@ export function Footer() {
                 FLH<span className="text-[#6d2399]">.</span>
               </p>
               <p className="text-white/40 text-sm">Fator de Longo Horizonte</p>
-              <p className="text-white/25 text-xs mt-1">{process.env.DATA_EVENTO} · São Paulo</p>
+              <p className="text-white/25 text-xs mt-1">{process.env.EVT_DATA} · São Paulo</p>
             </div>
 
             {/* Nav links */}
@@ -98,7 +98,7 @@ export function Footer() {
               © 2026 Atlaz · Todos os direitos reservados
             </p>
             <p className="text-white/20 text-xs">
-              R. Pitu, 72 – 14º andar · Cidade Monções · São Paulo, Brooklin – SP
+              {process.env.EVT_RUA} – {process.env.EVT_COMPLEMENTO} · São Paulo, {process.env.EVT_BAIRRO} – SP
             </p>
           </div>
         </div>

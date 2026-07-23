@@ -30,7 +30,7 @@ const plex = IBM_Plex_Sans({
 export const metadata: Metadata = {
   title: "Fator de Longo Horizonte",
   description:
-    `Uma imersão presencial para empresários que querem dominar as vendas de alto valor com processo, clareza e direção. ${process.env.DATA_EVENTO}, São Paulo.`,
+    `Uma imersão presencial para empresários que querem dominar as vendas de alto valor com processo, clareza e direção. ${process.env.EVT_DATA}, São Paulo.`,
 };
 
 export default function RootLayout({

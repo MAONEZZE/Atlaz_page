@@ -35,7 +35,7 @@ const faqItems = [
   },
   {
     question: "Onde será realizado o evento?",
-    answer: "Auditório da Investidores.VC — R. Pitu, 72 – 14º andar – Cidade Monções, São Paulo, Brooklin – SP, 04567-060.",
+    answer: `${process.env.EVT_LOCAL} — ${process.env.EVT_RUA} – ${process.env.EVT_COMPLEMENTO}, São Paulo, ${process.env.EVT_BAIRRO} – SP`,
   },
 ];
 

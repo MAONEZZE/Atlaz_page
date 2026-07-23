@@ -63,7 +63,7 @@ interface HeroGeometricProps {
 }
 
 function HeroGeometric({
-  badge = (process.env.DATA_EVENTO) + " · São Paulo, Brooklin · 13h–19h",
+  badge = (process.env.EVT_DATA) + " · São Paulo, ${process.env.EVT_BAIRRO} · 13h–19h",
   title1 = "Fator de Longo Horizonte",
   animatedTitles = ["processo", "clareza", "direção", "consistência", "alto valor"],
 }: HeroGeometricProps) {
