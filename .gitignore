@@ -7,3 +7,5 @@ AGENTS.md
 .open-next
 .wrangler
 cloudflare-env.d.ts
+.next/
+.wrangler/
