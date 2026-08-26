@@ -22,7 +22,7 @@ import { SectionDock } from "@/components/sections/SectionDock";
 /** Divisória dourada entre transições de seção. */
 function Divider() {
   return (
-    <div className="max-w-5xl mx-auto h-px bg-gradient-to-r from-transparent via-[#d8b673]/40 to-transparent" />
+    <div className="max-w-5xl mx-auto h-px bg-gradient-to-r from-transparent via-accent/50 to-transparent" />
   );
 }
 

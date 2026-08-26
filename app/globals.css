@@ -30,7 +30,7 @@
   --color-border: var(--border);
   --color-destructive: var(--destructive);
   --color-accent-foreground: var(--accent-foreground);
-  --color-accent: var(--accent);
+  --color-ui-accent: var(--accent);
   --color-muted-foreground: var(--muted-foreground);
   --color-muted: var(--muted);
   --color-secondary-foreground: var(--secondary-foreground);
@@ -41,6 +41,15 @@
   --color-popover: var(--popover);
   --color-card-foreground: var(--card-foreground);
   --color-card: var(--card);
+
+  /* Identidade akeel — verde de duas superfícies */
+  --color-accent:     #8edd65; /* grafismo/texto sobre escuro — 9.69:1 */
+  --color-accent-ink: #2f6b0f; /* texto/UI sobre offwhite — 5.91:1 AA */
+  --color-bg-dark:    #071417; /* fundo escuro base */
+  --color-bg-dark-2:  #0c1b1f; /* rodapé, cards, bandas de frase */
+  --color-offwhite:   #f4f4f4; /* fundo claro */
+  --color-ink:        #0f1a1c; /* texto sobre offwhite — 16.11:1 AAA */
+
   --radius-sm: calc(var(--radius) * 0.6);
   --radius-md: calc(var(--radius) * 0.8);
   --radius-lg: var(--radius);
@@ -51,24 +60,24 @@
 }
 
 :root {
-  --background: #0a050f;
-  --foreground: oklch(0.985 0 0);
-  --card: oklch(0.205 0 0);
+  --background: #071417;
+  --foreground: #f4f4f4;
+  --card: #0c1b1f;
   --card-foreground: oklch(0.985 0 0);
-  --popover: oklch(0.205 0 0);
+  --popover: #0c1b1f;
   --popover-foreground: oklch(0.985 0 0);
   --primary: oklch(0.922 0 0);
   --primary-foreground: oklch(0.205 0 0);
   --secondary: oklch(0.269 0 0);
   --secondary-foreground: oklch(0.985 0 0);
-  --muted: oklch(0.269 0 0);
+  --muted: #0c1b1f;
   --muted-foreground: oklch(0.708 0 0);
   --accent: oklch(0.269 0 0);
   --accent-foreground: oklch(0.985 0 0);
   --destructive: oklch(0.704 0.191 22.216);
-  --border: oklch(1 0 0 / 10%);
-  --input: oklch(1 0 0 / 15%);
-  --ring: oklch(0.556 0 0);
+  --border: color-mix(in srgb, currentColor 50%, transparent);
+  --input: color-mix(in srgb, currentColor 50%, transparent);
+  --ring: #8edd65;
   --chart-1: oklch(0.87 0 0);
   --chart-2: oklch(0.556 0 0);
   --chart-3: oklch(0.439 0 0);
@@ -83,29 +92,6 @@
   --sidebar-accent-foreground: oklch(0.985 0 0);
   --sidebar-border: oklch(1 0 0 / 10%);
   --sidebar-ring: oklch(0.556 0 0);
-  /* ---- Identidade "Bronze & Grafite" ---- */
-  --bg:          #0a050f;
-  --bg-2:        #1c1820;
-  --bg-3:        #241f2b;
-  --purple:      #6d2399;
-  --purple-deep: #1f1133;
-  --purple-soft: #c79af0;
-  --gold:        #d8b673;
-  --gold-dim:    #b9985a;
-  --accent2:     #b07a3c;
-  --ink:         #f5eff8;
-  --body:        #dcd3e3;
-  --text-muted:  #a89bb4;
-  --line:        rgba(216, 182, 115, 0.22);
-
-  /* tokens legados → remapeados */
-  --color-bg: var(--bg);
-  --color-accent: var(--gold);
-  --color-cta: var(--gold);
-  --color-cta-hover: var(--gold-dim);
-  --color-purple-deep: var(--bg-2);
-  --color-glass: rgba(216, 182, 115, 0.05);
-  --color-glass-border: var(--line);
 }
 
 @layer base {
@@ -119,14 +105,14 @@
   }
 
   body {
-    background-color: #0a050f;
-    color: var(--body);
+    background-color: var(--color-bg-dark);
+    color: var(--color-offwhite);
     font-family: var(--font-inter), "Inter", sans-serif;
     overflow-x: hidden;
   }
 }
 
-/* ---- Backdrop global contínuo "Bronze & Grafite" (fixo, atrás de tudo) ---- */
+/* ---- Backdrop global contínuo akeel (fixo, atrás de tudo) ---- */
 body::before {
   content: "";
   position: fixed;
@@ -134,10 +120,10 @@ body::before {
   z-index: -1;
   pointer-events: none;
   background:
-    radial-gradient(ellipse 60% 40% at 78% 0%, color-mix(in srgb, var(--purple) 28%, transparent), transparent 60%),
-    radial-gradient(ellipse 50% 35% at 15% 35%, color-mix(in srgb, var(--purple-deep) 60%, transparent), transparent 55%),
-    radial-gradient(ellipse 55% 40% at 85% 80%, color-mix(in srgb, var(--purple) 18%, transparent), transparent 60%),
-    linear-gradient(180deg, #120a18 0%, var(--bg) 40%, #0d0712 70%, var(--bg) 100%);
+    radial-gradient(ellipse 60% 40% at 78% 0%, color-mix(in srgb, var(--color-accent) 28%, transparent), transparent 60%),
+    radial-gradient(ellipse 50% 35% at 15% 35%, color-mix(in srgb, var(--color-accent) 20%, transparent), transparent 55%),
+    radial-gradient(ellipse 55% 40% at 85% 80%, color-mix(in srgb, var(--color-accent) 18%, transparent), transparent 60%),
+    linear-gradient(180deg, var(--color-bg-dark) 0%, var(--color-bg-dark-2) 40%, var(--color-bg-dark) 70%, var(--color-bg-dark-2) 100%);
 }
 
 body::after {
@@ -147,8 +133,8 @@ body::after {
   z-index: -1;
   pointer-events: none;
   background-image:
-    linear-gradient(rgba(216, 182, 115, 0.045) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(216, 182, 115, 0.045) 1px, transparent 1px);
+    linear-gradient(color-mix(in srgb, var(--color-accent) 5%, transparent) 1px, transparent 1px),
+    linear-gradient(90deg, color-mix(in srgb, var(--color-accent) 5%, transparent) 1px, transparent 1px);
   background-size: 72px 72px;
   -webkit-mask: radial-gradient(ellipse 90% 70% at 50% 30%, #000, transparent 80%);
           mask: radial-gradient(ellipse 90% 70% at 50% 30%, #000, transparent 80%);
@@ -173,21 +159,21 @@ body::after {
   }
 
   .glass-card {
-    background: rgba(36, 31, 43, 0.55);
+    background: color-mix(in srgb, var(--color-bg-dark-2) 55%, transparent);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
-    border: 1px solid var(--line);
+    border: 1px solid color-mix(in srgb, var(--color-accent) 50%, transparent);
     border-radius: 1rem;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(216, 182, 115, 0.08);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5), 0 0 0 1px color-mix(in srgb, var(--color-accent) 8%, transparent);
   }
 
   /* Destaque neon — uso cirúrgico (máx. 1 por seção). */
   .gradient-text {
-    background: linear-gradient(to right, #c79af0, rgba(255, 255, 255, 0.9), #6d2399);
+    background: linear-gradient(to right, var(--color-accent), var(--color-offwhite), var(--color-accent-ink));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    text-shadow: 0 0 24px rgba(109, 35, 153, 0.25);
+    text-shadow: 0 0 24px color-mix(in srgb, var(--color-accent) 25%, transparent);
   }
 
   /* Seamless logo marquee: track holds the list twice, slide -50% loops it. */

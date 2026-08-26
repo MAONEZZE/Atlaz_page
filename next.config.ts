@@ -23,6 +23,11 @@ const nextConfig: NextConfig = {
     EVT_BAIRRO: process.env.EVT_BAIRRO ?? "",
   },
   images: {
+    // AVIF primeiro (melhor qualidade por byte), WebP como fallback
+    formats: ["image/avif", "image/webp"],
+    // Next 16 exige declarar as qualidades usadas via prop `quality`
+    qualities: [75, 90],
+    minimumCacheTTL: 60 * 60 * 24 * 365,
     remotePatterns: [
       {
         protocol: "https",

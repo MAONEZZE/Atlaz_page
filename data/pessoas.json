@@ -3,7 +3,7 @@
     "nome": "Bruno Rodrigues",
     "cargo": "Sócio & CRO",
     "empresa": "Portüs Digital",
-    "fotoPath": "/emb/bruno_sem_fundo.png",
+    "fotoPath": "/emb/bruno_sem_fundo.webp",
     "imgStyle": { "objectPosition": "center top", "transform": "scale(1.6) translateY(20%) translateX(1%)" },
     "contatos": {
       "instagram": "https://www.instagram.com/brunorodriguesds",
@@ -11,7 +11,7 @@
     },
     "secoes": [
       {
-        "emb": "Embaixador Atlaz",
+        "emb": "Embaixador akeel",
         "nome": "Bruno Rodrigues"
       },
       {
@@ -24,14 +24,14 @@
     "nome": "Antonio Minarro",
     "cargo": "Conselheiro | Board Advisor em Estratégia, Operações, Manufatura e Supply Chain ",
     "empresa": "Wharton",
-    "fotoPath": "/emb/minarro_sem_fundo.png",
+    "fotoPath": "/emb/minarro_sem_fundo.webp",
     "imgStyle": { "objectPosition": "center top", "transform": "scale(1.6) translateY(22%) translateX(2%)" },
     "contatos": {
       "linkedin": "https://www.linkedin.com/in/antonio-minarro-coo-chief-operation-officer-conselheiro-mentor-logistica-supply-chain-palestrante/"
     },
     "secoes": [
       {
-        "emb": "Embaixador Atlaz",
+        "emb": "Embaixador akeel",
         "nome": "Antonio Minarro"
       },
       {
@@ -44,14 +44,14 @@
     "nome": "Thiago Silva",
     "cargo": "Founder at Cultura de Fã® & Fan-Agent® & Professor na Link School of Business",
     "empresa": "Cultura de Fã® & Fan-Agent® & Link School of Business",
-    "fotoPath": "/emb/thiago_sem_fundo.png",
+    "fotoPath": "/emb/thiago_sem_fundo.webp",
     "imgStyle": { "objectPosition": "center top", "transform": "scale(1.5) translateY(22%) translateX(4%)" },
     "contatos": {
       "linkedin": "https://www.linkedin.com/in/thiago-fanshift/"
     },
     "secoes": [
       {
-        "emb": "Embaixador Atlaz",
+        "emb": "Embaixador akeel",
         "nome": "Thiago Silva"
       },
       {
@@ -64,14 +64,14 @@
     "nome": "Marco Cesarino",
     "cargo": "Executivo fractional + profissional plataforma | Advisor | Mentor | Palestrante: IA (risos), Ambidestria, Inovação Enxuta & Futuro no Presente | Nexialista | Embaixador da Abundância",
     "empresa": "MARCO-X",
-    "fotoPath": "/emb/marco_cesarino_sem_fundo.png",
+    "fotoPath": "/emb/marco_cesarino_sem_fundo.webp",
     "imgStyle": { "objectPosition": "center top", "transform": "scale(1.7) translateY(20%) translateX(-4%)" },
     "contatos": {
       "linkedin": "https://www.linkedin.com/in/marcocesarino/"
     },
     "secoes": [
       {
-        "emb": "Embaixador Atlaz",
+        "emb": "Embaixador akeel",
         "nome": "Marco Cesarino"
       },
       {
@@ -84,14 +84,14 @@
     "nome": "Nilson Figueiredo",
     "cargo": "Sócio CRO da REVVO | Empreendedor, Conselheiro Advisor Independente e Investidor Anjo",
     "empresa": "REVVO",
-    "fotoPath": "/emb/nilson_sem_fundo.png",
+    "fotoPath": "/emb/nilson_sem_fundo.webp",
     "imgStyle": { "objectPosition": "center top", "transform": "scale(1.5) translateY(22%) translateX(2%)" },
     "contatos": {
       "linkedin": "https://www.linkedin.com/in/nilsonfigueiredo/"
     },
     "secoes": [
       {
-        "emb": "Embaixador Atlaz",
+        "emb": "Embaixador akeel",
         "nome": "Nilson Figueiredo"
       },
       {
@@ -104,14 +104,14 @@
     "nome": "Sergio do Canto Paiva",
     "cargo": "CEO e Consultor em Estratégia",
     "empresa": "Board Academy Brasil",
-    "fotoPath": "/emb/sergio_sem_fundo.png",
+    "fotoPath": "/emb/sergio_sem_fundo.webp",
     "imgStyle": { "objectPosition": "center top", "transform": "scale(1.60) translateY(20%) translateX(0%)" },
     "contatos": {
       "linkedin": "https://www.linkedin.com/in/scpaiva/"
     },
     "secoes": [
       {
-        "emb": "Embaixador Atlaz",
+        "emb": "Embaixador akeel",
         "nome": "Sergio do Canto Paiva"
       },
       {

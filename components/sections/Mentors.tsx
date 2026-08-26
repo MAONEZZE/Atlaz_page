@@ -7,12 +7,12 @@ const mentors = [
   {
     name: "Jacob Lima",
     lines: [
-      "Fundador da Atlaz",
+      "Fundador da akeel",
       "+R$30M em vendas x1",
       "Startup com +500 clientes ativos",
       "R$2M no 1º ano com 4 pessoas",
     ],
-    photo: "/mentores/jacob_foto_mentor_sem_fundo.png",
+    photo: "/mentores/jacob_foto_mentor_sem_fundo.webp",
     instagram: "https://instagram.com/jacobliima",
     linkedin: "https://www.linkedin.com/in/jacob-lima-41b784224/",
     imgStyle: { objectPosition: "center top", transform: "scale(1.65) translateY(7%) translateX(1%)" },
@@ -20,11 +20,11 @@ const mentors = [
   {
     name: "Mariana Chinarelli",
     lines: [
-      "Co-fundadora da Atlaz",
+      "Co-fundadora da akeel",
       "+R$50M em lançamentos digitais",
       "Projetos com Flávio Augusto, Caio Carneiro e Joel Jota",
     ],
-    photo: "/mentores/mari_foto_mentor_sem_fundo.png",
+    photo: "/mentores/mari_foto_mentor_sem_fundo.webp",
     instagram: "https://instagram.com/mari.chinarelli",
     linkedin: "https://www.linkedin.com/in/mariana-chinarelli-491757206/",
     imgStyle: { objectPosition: "center top", transform: "scale(1.75) translateY(8%) translateX(2%)" },
@@ -33,9 +33,9 @@ const mentors = [
 
 export function Mentors() {
   return (
-    <section id="mentores" className="relative py-16 md:py-24 px-4">
+    <section id="mentores" className="relative py-16 md:py-24 px-4 bg-offwhite text-ink">
       {/* Top accent line */}
-      <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-[#d8b673]/25 to-transparent" />
+      <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-accent-ink/50 to-transparent" />
 
       <div className="max-w-5xl mx-auto">
         <motion.div
@@ -45,10 +45,10 @@ export function Mentors() {
           transition={{ duration: 0.7 }}
           className="text-center mb-6"
         >
-          <p className="font-ui text-[#d8b673] text-xs font-bold uppercase tracking-[0.2em] mb-4">
+          <p className="font-ui text-accent-ink text-xs font-bold uppercase tracking-[0.2em] mb-4">
             Nossos Mentores
           </p>
-          <h2 className="font-heading text-3xl md:text-5xl font-bold text-white mb-4 leading-tight">
+          <h2 className="font-heading text-3xl md:text-5xl font-bold text-ink mb-4 leading-tight">
             Quem vai conduzir sua tarde
           </h2>
         </motion.div>
@@ -61,7 +61,7 @@ export function Mentors() {
           transition={{ duration: 0.6, delay: 0.1 }}
           className="text-center mb-14"
         >
-          <blockquote className="font-heading italic text-white/45 text-lg max-w-lg mx-auto leading-relaxed">
+          <blockquote className="font-heading italic text-current/70 text-lg max-w-lg mx-auto leading-relaxed">
             Duas perspectivas complementares, combinadas em uma tarde de imersão.
           </blockquote>
         </motion.div>
@@ -75,7 +75,7 @@ export function Mentors() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: i * 0.15 }}
-              className="relative rounded-3xl bg-[#F7F5F2] border border-gray-200/60 shadow-[0_8px_40px_rgba(0,0,0,0.18)] overflow-hidden cursor-default"
+              className="relative rounded-3xl bg-white border border-accent-ink/50 shadow-lg overflow-hidden cursor-default"
             >
               {/* Photo fills the entire card — zoomed in */}
               <div className="relative h-[400px] sm:h-[500px]">
@@ -86,6 +86,7 @@ export function Mentors() {
                   className="object-contain"
                   style={mentor.imgStyle}
                   sizes="(max-width: 768px) 100vw, 500px"
+                  quality={90}
                 />
               </div>
 
@@ -113,7 +114,7 @@ export function Mentors() {
                       target="_blank"
                       rel="noopener noreferrer"
                       aria-label={`Instagram de ${mentor.name}`}
-                      className="w-8 h-8 rounded-full bg-white/90 backdrop-blur-sm flex items-center justify-center text-gray-700 hover:bg-white hover:text-[#6d2399] shadow-md transition-all duration-200 cursor-pointer"
+                      className="w-8 h-8 rounded-full bg-white/90 backdrop-blur-sm flex items-center justify-center text-gray-700 hover:bg-white hover:text-accent-ink shadow-md transition-all duration-200 cursor-pointer"
                     >
                       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-4 h-4" aria-hidden="true">
                         <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
@@ -127,7 +128,7 @@ export function Mentors() {
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label={`LinkedIn de ${mentor.name}`}
-                    className="w-8 h-8 rounded-full bg-[#6d2399] flex items-center justify-center shadow-[0_0_12px_rgba(109,35,153,0.5)] hover:bg-[#1f1133] hover:shadow-[0_0_18px_rgba(109,35,153,0.7)] transition-all duration-200 cursor-pointer"
+                    className="w-8 h-8 rounded-full bg-accent-ink flex items-center justify-center shadow-[0_0_12px_rgba(47,107,15,0.5)] hover:bg-accent-ink/80 hover:shadow-[0_0_18px_rgba(47,107,15,0.7)] transition-all duration-200 cursor-pointer"
                   >
                     <svg viewBox="0 0 24 24" fill="white" className="w-4 h-4" aria-hidden="true">
                       <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
@@ -149,7 +150,7 @@ export function Mentors() {
         >
           <a
             href="#ingressos"
-            className="font-ui inline-flex items-center justify-center px-8 py-4 rounded-xl bg-[#7c2fb0] text-white font-semibold text-base hover:bg-[#6d2399] transition-colors duration-200 cursor-pointer shadow-[0_0_30px_rgba(124,47,176,0.2)] hover:shadow-[0_0_50px_rgba(124,47,176,0.35)]"
+            className="font-ui inline-flex items-center justify-center px-8 py-4 rounded-xl bg-accent-ink text-offwhite font-semibold text-base hover:bg-accent-ink/80 transition-colors duration-200 cursor-pointer shadow-[0_0_30px_rgba(47,107,15,0.2)] hover:shadow-[0_0_50px_rgba(47,107,15,0.35)]"
           >
             Quero estar na imersão
           </a>

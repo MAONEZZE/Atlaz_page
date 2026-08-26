@@ -4,8 +4,8 @@ import { EditionsCalendar } from "@/components/sections/EditionsCalendar";
 import { BackButton } from "@/components/ui/back-button";
 
 export const metadata: Metadata = {
-  title: "Próximas edições · Fator de Longo Horizonte",
-  description: "Calendário das próximas edições da imersão Fator de Longo Horizonte.",
+  title: "Próximas edições · Imersão Longo Horizonte",
+  description: "Calendário das próximas edições da Imersão Longo Horizonte.",
 };
 
 export default function ProximasEdicoesPage() {
@@ -18,12 +18,12 @@ export default function ProximasEdicoesPage() {
             <BackButton />
           </div>
           <header className="mb-12 text-center">
-            <h1 className="font-heading text-3xl md:text-5xl font-bold text-white mb-4">
+            <h1 className="font-heading text-3xl md:text-5xl font-bold text-offwhite mb-4">
               Próximas edições
             </h1>
-            <p className="text-white/50 text-lg max-w-2xl mx-auto">
+            <p className="text-current/70 text-lg max-w-2xl mx-auto">
               Confira no calendário as datas das próximas edições da imersão. Os dias
-              destacados em roxo são as edições confirmadas.
+              destacados em verde são as edições confirmadas.
             </p>
           </header>
 

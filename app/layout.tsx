@@ -28,7 +28,7 @@ const plex = IBM_Plex_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Fator de Longo Horizonte",
+  title: "Imersão Longo Horizonte",
   description:
     `Uma imersão presencial para empresários que querem dominar as vendas de alto valor com processo, clareza e direção. ${process.env.EVT_DATA}, São Paulo.`,
 };
@@ -40,8 +40,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-BR" className={`${inter.variable} ${dmSerif.variable} ${plex.variable} scroll-smooth`}>
-      <body className="bg-[#0a050f] text-white overflow-x-hidden">
-        <div className="fixed inset-0 bg-gradient-to-br from-[#6d2399]/[0.04] via-transparent to-[#1f1133]/[0.06] pointer-events-none" />
+      <body className="text-offwhite overflow-x-hidden">
         {children}
         {/* WhatsApp floating button */}
         <a

@@ -108,7 +108,7 @@ function generateLayout(count: number, scale = 1) {
 }
 
 function generateParticles(count: number) {
-  const colorOptions = ["rgba(167,139,250,0.9)", "rgba(196,181,253,0.7)", "rgba(109,35,153,0.8)"];
+  const colorOptions = ["rgba(142,221,101,0.9)", "rgba(180,235,150,0.7)", "rgba(47,107,15,0.8)"];
   return Array.from({ length: count }, (_, i) => {
     const top  = 4 + ((i * 4.37) % 90);
     const left = 3 + ((i * 8.71) % 92);
@@ -153,15 +153,15 @@ export function ForWhomClient({ clientFiles }: { clientFiles: string[] }) {
   );
 
   return (
-    <section className="relative pt-24 pb-40 md:pb-24 px-4 overflow-hidden">
+    <section className="relative pt-24 pb-40 md:pb-24 px-4 overflow-hidden bg-offwhite text-ink">
 
       {/* Full-section background */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
 
         {/* Central clarity gradient — brightest dead center, fades to edges */}
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_70%_70%_at_50%_50%,rgba(167,139,250,0.28)_0%,rgba(109,35,153,0.14)_35%,rgba(76,29,149,0.05)_60%,transparent_82%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_70%_70%_at_50%_50%,rgba(142,221,101,0.28)_0%,rgba(142,221,101,0.14)_35%,rgba(142,221,101,0.05)_60%,transparent_82%)]" />
         {/* Secondary softer glow */}
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_40%_45%_at_50%_50%,rgba(196,181,253,0.12)_0%,transparent_70%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_40%_45%_at_50%_50%,rgba(142,221,101,0.12)_0%,transparent_70%)]" />
 
         {/* Far layer — repeated photos, smaller/blurred/darker (depth) */}
         {visibleFiles.map((file, idx) => {
@@ -169,7 +169,7 @@ export function ForWhomClient({ clientFiles }: { clientFiles: string[] }) {
           return (
             <motion.div
               key={`far-${file}`}
-              className="absolute rounded-xl overflow-hidden border border-white/5"
+              className="absolute rounded-xl overflow-hidden border border-current/50"
               style={{
                 top: `${pos.top}%`,
                 left: `${pos.left}%`,
@@ -216,7 +216,7 @@ export function ForWhomClient({ clientFiles }: { clientFiles: string[] }) {
           return (
             <motion.div
               key={file}
-              className="absolute rounded-2xl overflow-hidden border border-white/10 shadow-[0_6px_28px_rgba(0,0,0,0.45)]"
+              className="absolute rounded-2xl overflow-hidden border border-current/50 shadow-[0_6px_28px_rgba(0,0,0,0.45)]"
               style={{ top: `${pos.top}%`, left: `${pos.left}%`, width: pos.size, height: pos.size }}
               initial={{ opacity: 0, scale: 0.75 }}
               whileInView={{ opacity: 1, scale: 1 }}
@@ -234,6 +234,7 @@ export function ForWhomClient({ clientFiles }: { clientFiles: string[] }) {
                 alt={`cliente ${idx + 1}`}
                 width={pos.size}
                 height={pos.size}
+                quality={90}
                 className="object-cover w-full h-full"
               />
             </motion.div>
@@ -241,10 +242,10 @@ export function ForWhomClient({ clientFiles }: { clientFiles: string[] }) {
         })}
 
         {/* Left gradient — light text readability, no dark slab */}
-        <div className="absolute inset-y-0 left-0 w-[42%] bg-gradient-to-r from-[#0a050f]/55 via-[#0a050f]/25 to-transparent" />
+        <div className="absolute inset-y-0 left-0 w-[42%] bg-gradient-to-r from-offwhite/70 via-offwhite/35 to-transparent" />
         {/* Top / bottom edge fades */}
-        <div className="absolute top-0 inset-x-0 h-16 bg-gradient-to-b from-[#0a050f] to-transparent" />
-        <div className="absolute bottom-0 inset-x-0 h-16 bg-gradient-to-t from-[#0a050f] to-transparent" />
+        <div className="absolute top-0 inset-x-0 h-16 bg-gradient-to-b from-offwhite to-transparent" />
+        <div className="absolute bottom-0 inset-x-0 h-16 bg-gradient-to-t from-offwhite to-transparent" />
       </div>
 
       {/* Content */}
@@ -257,11 +258,11 @@ export function ForWhomClient({ clientFiles }: { clientFiles: string[] }) {
             transition={{ duration: 0.7 }}
             className="mb-16 text-center"
           >
-            <h2 className="font-heading text-3xl md:text-5xl font-bold text-white mb-4 leading-tight">
+            <h2 className="font-heading text-3xl md:text-5xl font-bold text-ink mb-4 leading-tight">
               Para quem é essa imersão
             </h2>
-            <p className="text-white/45 text-lg max-w-xl mx-auto">
-              A Fator de Longo Horizonte foi desenhada para quem já chegou longe e quer ir mais longe ainda.
+            <p className="text-current/70 text-lg max-w-xl mx-auto">
+              A Imersão Longo Horizonte foi desenhada para quem já chegou longe e quer ir mais longe ainda.
             </p>
           </motion.div>
 
@@ -273,23 +274,23 @@ export function ForWhomClient({ clientFiles }: { clientFiles: string[] }) {
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.7, delay: i * 0.15 }}
-                className="bg-[#1A0D2E] border border-[#6d2399]/30 rounded-2xl shadow-[0_8px_32px_rgba(0,0,0,0.65)] p-6 md:p-10 flex flex-col md:flex-row gap-6 md:gap-12"
+                className="bg-bg-dark-2 border border-accent/50 rounded-2xl shadow-[0_8px_32px_rgba(0,0,0,0.65)] p-6 md:p-10 flex flex-col md:flex-row gap-6 md:gap-12 text-offwhite"
               >
                 <div className="flex-shrink-0">
-                  <span className="font-heading text-5xl md:text-8xl font-bold text-transparent [-webkit-text-stroke:1px_#b9985a] opacity-70 leading-none select-none">
+                  <span className="font-heading text-5xl md:text-8xl font-bold text-transparent [-webkit-text-stroke:1px_var(--color-accent)] opacity-70 leading-none select-none">
                     {item.number}
                   </span>
                 </div>
                 <div className="flex-1">
-                  <h3 className="font-heading text-2xl md:text-3xl font-bold text-white mb-4 leading-tight">
+                  <h3 className="font-heading text-2xl md:text-3xl font-bold text-offwhite mb-4 leading-tight">
                     {item.title}
                   </h3>
-                  <p className="text-white/55 text-base md:text-lg leading-relaxed mb-6">
+                  <p className="text-current/70 text-base md:text-lg leading-relaxed mb-6">
                     {item.description
                       .split(new RegExp(`(${item.bold.join("|")})`))
                       .map((part, j) =>
                         item.bold.includes(part) ? (
-                          <strong key={j} className="text-white/80 font-semibold">{part}</strong>
+                          <strong key={j} className="text-current font-semibold">{part}</strong>
                         ) : (
                           part
                         )
@@ -298,8 +299,8 @@ export function ForWhomClient({ clientFiles }: { clientFiles: string[] }) {
                   <ul className="hidden md:block space-y-2.5">
                     {item.checks.map((check, j) => (
                       <li key={j} className="flex items-start gap-3">
-                        <CheckCircle className="w-5 h-5 text-[#d8b673] flex-shrink-0 mt-0.5" />
-                        <span className="text-white/65 text-sm leading-relaxed">{check}</span>
+                        <CheckCircle className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
+                        <span className="text-current/70 text-sm leading-relaxed">{check}</span>
                       </li>
                     ))}
                   </ul>

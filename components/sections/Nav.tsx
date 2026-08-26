@@ -43,7 +43,7 @@ function Countdown() {
 
   if (t.expired) {
     return (
-      <span className="text-[#6d2399] text-xs font-semibold uppercase tracking-wider">
+      <span className="text-accent text-xs font-semibold uppercase tracking-wider">
         Evento em andamento!
       </span>
     );
@@ -58,12 +58,12 @@ function Countdown() {
         { value: t.s,  unit: "s" },
       ].map(({ value, unit }, i) => (
         <div key={unit} className="flex items-center gap-1 md:gap-1.5">
-          {i > 0 && <span className="text-white/25 text-xs md:text-sm">·</span>}
+          {i > 0 && <span className="text-current/25 text-xs md:text-sm">·</span>}
           <div className="flex items-baseline gap-2 md:gap-1">
-            <span className="font-mono font-bold text-white text-sm md:text-2xl tabular-nums leading-none">
+            <span className="font-mono font-bold text-offwhite text-sm md:text-2xl tabular-nums leading-none">
               {unit === "dias" ? value : pad(value)}
             </span>
-            <span className="text-[#c79af0]/80 text-[11px] font-semibold mb-2">{unit}</span>
+            <span className="text-accent/80 text-[11px] font-semibold mb-2">{unit}</span>
           </div>
         </div>
       ))}
@@ -83,21 +83,19 @@ export function Nav() {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 backdrop-blur-md border-b ${
-        scrolled
-          ? "bg-[#0a050f]/80 border-white/[0.08] shadow-[0_1px_24px_rgba(0,0,0,0.4)]"
-          : "bg-white/[0.03] border-white/[0.05]"
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 backdrop-blur-md border-b bg-bg-dark-2/95 ${
+        scrolled ? "border-current/50 shadow-[0_1px_24px_rgba(0,0,0,0.4)]" : "border-current/50"
       }`}
     >
       <div className="max-w-6xl mx-auto px-4 md:px-6 h-16 flex items-center justify-between">
         {/* Logo */}
-        <a href="/#topo" className="font-heading font-bold text-xl text-white tracking-wide flex-shrink-0">
-          FLH<span className="text-[#6d2399]">.</span>
+        <a href="/#topo" className="font-heading font-bold text-xl text-offwhite tracking-wide flex-shrink-0">
+          akeel<span className="text-accent">.</span>
         </a>
 
         {/* Countdown — center */}
         <div className="absolute left-1/2 -translate-x-1/2 hidden md:flex flex-col items-center">
-          <p className="font-ui text-white/90 text-[12px] font-semibold uppercase tracking-[0.15em] mb-2">
+          <p className="font-ui text-offwhite/90 text-[12px] font-semibold uppercase tracking-[0.15em] mb-2">
             {process.env.EVT_DATA} · São Paulo
           </p>
           <Countdown />
@@ -107,13 +105,13 @@ export function Nav() {
         <div className="hidden md:flex items-center gap-3 flex-shrink-0">
           <a
             href="/#ingressos"
-            className="font-ui inline-flex items-center justify-center px-5 py-2 rounded-lg bg-[#7c2fb0] text-white text-sm font-semibold hover:bg-[#6d2399] transition-colors duration-200 cursor-pointer"
+            className="font-ui inline-flex items-center justify-center px-5 py-2 rounded-lg bg-accent text-bg-dark text-sm font-semibold hover:bg-accent/85 transition-colors duration-200 cursor-pointer"
           >
             Inscreva-se
           </a>
           <Link
             href="/proximas-edicoes"
-            className="font-ui inline-flex items-center justify-center px-5 py-2 rounded-lg border border-[#6d2399]/50 text-[#6d2399] text-sm font-semibold hover:bg-[#7c2fb0]/10 transition-colors duration-200 cursor-pointer"
+            className="font-ui inline-flex items-center justify-center px-5 py-2 rounded-lg border border-accent/50 text-accent text-sm font-semibold hover:bg-accent/10 transition-colors duration-200 cursor-pointer"
           >
             Próximas edições
           </Link>
@@ -123,7 +121,7 @@ export function Nav() {
         <div className="md:hidden flex items-center gap-3">
           <Countdown />
           <button
-            className="text-white/60 hover:text-white cursor-pointer p-1"
+            className="text-current/60 hover:text-offwhite cursor-pointer p-1"
             onClick={() => setMenuOpen(!menuOpen)}
             aria-label={menuOpen ? "Fechar menu" : "Abrir menu"}
             aria-expanded={menuOpen}
@@ -141,14 +139,14 @@ export function Nav() {
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.2 }}
-            className="md:hidden bg-[#0a050f]/95 backdrop-blur-md border-t border-white/[0.06] overflow-hidden"
+            className="md:hidden bg-bg-dark-2/95 backdrop-blur-md border-t border-current/50 overflow-hidden"
           >
             <nav className="flex flex-col px-4 py-4 gap-1" aria-label="Menu móvel">
               {navLinks.map((link) => (
                 <a
                   key={link.href}
                   href={link.href}
-                  className="text-white/70 hover:text-white text-sm py-2.5 border-b border-white/[0.05] last:border-0 transition-colors"
+                  className="text-current/70 hover:text-offwhite text-sm py-2.5 border-b border-current/50 last:border-0 transition-colors"
                   onClick={() => setMenuOpen(false)}
                 >
                   {link.label}
@@ -156,14 +154,14 @@ export function Nav() {
               ))}
               <a
                 href="/#ingressos"
-                className="font-ui inline-flex items-center justify-center px-5 py-3 rounded-lg bg-[#7c2fb0] text-white text-sm font-semibold hover:bg-[#6d2399] transition-colors mt-3 cursor-pointer"
+                className="font-ui inline-flex items-center justify-center px-5 py-3 rounded-lg bg-accent text-bg-dark text-sm font-semibold hover:bg-accent/85 transition-colors mt-3 cursor-pointer"
                 onClick={() => setMenuOpen(false)}
               >
                 Inscreva-se
               </a>
               <Link
                 href="/proximas-edicoes"
-                className="font-ui inline-flex items-center justify-center px-5 py-3 rounded-lg border border-[#6d2399]/50 text-[#6d2399] text-sm font-semibold hover:bg-[#7c2fb0]/10 transition-colors mt-2 cursor-pointer"
+                className="font-ui inline-flex items-center justify-center px-5 py-3 rounded-lg border border-accent/50 text-accent text-sm font-semibold hover:bg-accent/10 transition-colors mt-2 cursor-pointer"
                 onClick={() => setMenuOpen(false)}
               >
                 Próximas edições
