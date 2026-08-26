@@ -158,11 +158,6 @@ export function ForWhomClient({ clientFiles }: { clientFiles: string[] }) {
       {/* Full-section background */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
 
-        {/* Central clarity gradient — brightest dead center, fades to edges */}
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_70%_70%_at_50%_50%,rgba(142,221,101,0.28)_0%,rgba(142,221,101,0.14)_35%,rgba(142,221,101,0.05)_60%,transparent_82%)]" />
-        {/* Secondary softer glow */}
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_40%_45%_at_50%_50%,rgba(142,221,101,0.12)_0%,transparent_70%)]" />
-
         {/* Far layer — repeated photos, smaller/blurred/darker (depth) */}
         {visibleFiles.map((file, idx) => {
           const pos = farPositions[idx];
@@ -241,8 +236,6 @@ export function ForWhomClient({ clientFiles }: { clientFiles: string[] }) {
           );
         })}
 
-        {/* Left gradient — light text readability, no dark slab */}
-        <div className="absolute inset-y-0 left-0 w-[42%] bg-gradient-to-r from-offwhite/70 via-offwhite/35 to-transparent" />
         {/* Top / bottom edge fades */}
         <div className="absolute top-0 inset-x-0 h-16 bg-gradient-to-b from-offwhite to-transparent" />
         <div className="absolute bottom-0 inset-x-0 h-16 bg-gradient-to-t from-offwhite to-transparent" />

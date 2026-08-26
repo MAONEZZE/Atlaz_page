@@ -3,3 +3,7 @@
 CLAUDE.md
 AGENTS.md
 .env
+.dev.vars
+.open-next
+.wrangler
+cloudflare-env.d.ts

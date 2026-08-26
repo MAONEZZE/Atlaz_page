@@ -1,5 +1,6 @@
 import type { NextConfig } from "next";
 import crypto from "crypto";
+import { initOpenNextCloudflareForDev } from "@opennextjs/cloudflare";
 
 // Compute the coupon hash at build time from the env variable.
 // Only the hash (never the raw code) is exposed to the client bundle.
@@ -23,11 +24,10 @@ const nextConfig: NextConfig = {
     EVT_BAIRRO: process.env.EVT_BAIRRO ?? "",
   },
   images: {
-    // AVIF primeiro (melhor qualidade por byte), WebP como fallback
-    formats: ["image/avif", "image/webp"],
-    // Next 16 exige declarar as qualidades usadas via prop `quality`
-    qualities: [75, 90],
-    minimumCacheTTL: 60 * 60 * 24 * 365,
+    // Sem otimização no servidor: Cloudflare Workers não roda o pipeline
+    // de otimização de imagens do Next (sharp); as imagens já são servidas
+    // pré-convertidas (WEBP/AVIF) direto do CDN da Cloudflare.
+    unoptimized: true,
     remotePatterns: [
       {
         protocol: "https",
@@ -42,3 +42,5 @@ const nextConfig: NextConfig = {
 };
 
 export default nextConfig;
+
+initOpenNextCloudflareForDev();
